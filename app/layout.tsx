@@ -1,7 +1,20 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import { Manrope, Sora } from "next/font/google";
 import "./globals.css";
 import { siteContent } from "@/data/siteContent";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap"
+});
+
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteContent.seo.url),
@@ -41,7 +54,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es" className={`${manrope.variable} ${sora.variable} scroll-smooth`}>
       <body>{children}</body>
     </html>
   );

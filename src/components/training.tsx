@@ -10,10 +10,10 @@ const detailIcons = [CalendarDays, Clock3, MonitorSmartphone, BadgeCheck];
 
 export function Training() {
   return (
-    <AnimatedSection id={siteContent.training.id} className="py-20 sm:py-28">
+    <AnimatedSection id={siteContent.training.id} className="pt-4 pb-20 sm:pb-28">
       <Container>
         <SectionHeading
-          eyebrow="Formación / seminario"
+          eyebrow="Programa del seminario"
           title={siteContent.training.title}
           description={siteContent.training.description}
           align="center"
@@ -23,7 +23,7 @@ export function Training() {
           <div className="crece-image-frame overflow-hidden">
             <Image
               src={siteContent.training.image}
-              alt="Seminario financiero"
+              alt="Programa del seminario"
               width={1200}
               height={900}
               className="h-full w-full object-cover"
@@ -37,12 +37,14 @@ export function Training() {
                   <GraduationCap className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-sm uppercase tracking-[0.2em] text-[#9ea792]">Oferta</div>
+                  <div className="text-sm uppercase tracking-[0.2em] text-[#9ea792]">Inversión</div>
                   <div className="mt-1 flex items-end gap-3">
-                    <span className="text-4xl font-semibold text-[#f3efe3]">{siteContent.training.offer.price}</span>
-                    <span className="pb-1 text-sm text-[#9ea792] line-through">
-                      {siteContent.training.offer.regularPrice}
-                    </span>
+                    <span className="crece-display text-4xl font-semibold text-[#f3efe3]">{siteContent.training.offer.price}</span>
+                    {siteContent.training.offer.regularPrice ? (
+                      <span className="pb-1 text-sm text-[#9ea792] line-through">
+                        {siteContent.training.offer.regularPrice}
+                      </span>
+                    ) : null}
                   </div>
                 </div>
               </div>
@@ -71,9 +73,9 @@ export function Training() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 xl:grid-cols-[.65fr_1.35fr]">
+        <div className="mt-10 grid gap-6 xl:grid-cols-[.66fr_1.34fr]">
           <div className="crece-panel-soft rounded-[2rem] p-6">
-            <h3 className="text-lg font-semibold text-[#f3efe3]">Razones para asistir</h3>
+            <h3 className="crece-display text-xl font-semibold text-[#f3efe3]">Por qué asistir</h3>
             <ul className="mt-5 grid gap-3">
               {siteContent.training.reasons.map((reason) => (
                 <li key={reason} className="flex items-start gap-3 text-sm text-[#d1d8c8]">
@@ -85,7 +87,7 @@ export function Training() {
           </div>
 
           <div className="crece-panel-soft rounded-[2rem] p-6">
-            <h3 className="text-lg font-semibold text-[#f3efe3]">Qué aprenderás</h3>
+            <h3 className="crece-display text-xl font-semibold text-[#f3efe3]">Contenido del seminario</h3>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {siteContent.training.topics.map((topic) => (
                 <div

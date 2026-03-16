@@ -77,7 +77,7 @@ export function ContactForm() {
         <textarea
           value={form.message}
           onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
-          placeholder="Cuéntanos si te interesa consultoría, seminario o ambos."
+          placeholder="Cuéntanos si te interesa el anuncio institucional, la gerencia financiera tercerizada o el seminario."
           rows={5}
           className="w-full rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-[#f3efe3] outline-none ring-0 placeholder:text-[#97a08e] transition focus:border-[#a7cb4c]/44"
         />

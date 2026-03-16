@@ -1,32 +1,15 @@
 # CRECE Premium Landing
 
-Landing page premium para **CRECE**, construida con **Next.js App Router + TypeScript + Tailwind CSS + Motion + lucide-react**.
+Landing page para **CRECE**, construida con **Next.js App Router + TypeScript + Tailwind CSS + Motion + lucide-react**.
 
-## Actualización visual incluida
+## Esta versión incluye
 
-Este ZIP ya viene con un **restyle fuerte de identidad visual** para acercarlo mucho más a lo que pidió el cliente:
-
-- paleta verde bosque + oliva/lima + dorado cálido
-- header con logo más visible
-- hero más premium y menos SaaS azul
-- cards, CTAs y badges corregidos al ADN de CRECE
-- contraste y jerarquía visual mejorados
-- glow y overlays alineados al look financiero premium
-
----
-
-## Qué contiene
-
-- Hero full-screen premium con versión desktop y mobile
-- Propuesta de valor fusionada entre formación financiera + gerencia financiera tercerizada
-- Secciones modulares y editables
-- Animaciones elegantes con Motion
-- Formulario de contacto premium con envío por `mailto:` listo para personalizar
-- Botón directo a WhatsApp
-- SEO base con metadata y Open Graph
-- Placeholders visuales ya incluidos para que el proyecto levante aunque todavía no subas las imágenes finales
-
----
+- separación clara entre **anuncio institucional**, **gerencia financiera tercerizada** y **seminario**
+- hero más institucional
+- tipografía más llamativa y premium
+- logo más protagonista en el header
+- paleta visual alineada a verdes + dorado
+- componentes y textos centralizados en un solo archivo de datos
 
 ## Estructura principal
 
@@ -49,67 +32,59 @@ Este ZIP ya viene con un **restyle fuerte de identidad visual** para acercarlo m
     /textures
 ```
 
----
-
-## Dónde cambiar textos, métricas, servicios y contacto
-
-Edita este archivo:
+## Dónde cambiar textos, servicios, métricas y contacto
 
 ```text
 /src/data/siteContent.ts
 ```
 
-Ahí puedes cambiar fácilmente:
-
-- headlines
-- subtítulos
-- beneficios
-- servicios
-- contenidos del seminario
-- métricas
-- precio
+Ahí puedes editar:
+- navegación
+- hero
+- anuncio institucional
+- ventajas
+- gerencia financiera tercerizada
+- resultados
+- autoridad
+- seminario
 - contacto
-- links
-- metadata SEO
+- SEO
 - rutas de imágenes
 
----
-
-## Dónde cambiar la identidad visual
-
-### Paleta y estilo global
-
-```text
-/app/globals.css
-```
-
-Ahí están:
-- fondo general
-- gradientes principales
-- paneles oscuros
-- botones
-- badges
-- glows
-- estilo visual base de toda la landing
-
-### Componentes más sensibles al look premium
+## Componentes principales que se tocaron en esta ronda
 
 ```text
 /src/components/header.tsx
 /src/components/hero.tsx
-/src/components/section-heading.tsx
-/src/components/value-fusion.tsx
+/src/components/institutional-overview.tsx
 /src/components/benefits.tsx
 /src/components/services.tsx
-/src/components/training.tsx
 /src/components/results.tsx
 /src/components/authority.tsx
+/src/components/process.tsx
+/src/components/seminar-promo.tsx
+/src/components/training.tsx
 /src/components/contact-cta.tsx
 /src/components/contact-form.tsx
 /src/components/footer.tsx
+/src/components/section-heading.tsx
 ```
 
----
+## Identidad visual y tipografía
+
+```text
+/app/globals.css
+/app/layout.tsx
+```
+
+Ahí están:
+- gradientes y fondos
+- paneles
+- botones
+- badges
+- glows
+- tipografía display
+- look global de la landing
 
 ## Rutas exactas de imágenes
 
@@ -125,30 +100,13 @@ Ahí están:
 /public/images/textures/grid-overlay.png
 /public/images/sections/services-visual.webp
 /public/images/sections/results-visual.webp
-/public/images/sections/fusion-visual.webp
 ```
 
-### Cómo reemplazar imágenes
+## Cómo reemplazar imágenes
+
 1. Mantén exactamente el mismo nombre del archivo.
 2. Sube tu asset final sobre ese archivo.
 3. Si respetas la ruta, no tienes que tocar código.
-
----
-
-## Cómo correrlo localmente
-
-```bash
-npm install
-npm run dev
-```
-
-Abre:
-
-```text
-http://localhost:3000
-```
-
----
 
 ## Cómo desplegar en Vercel usando GitHub Web
 
@@ -159,29 +117,10 @@ http://localhost:3000
 5. Deja la configuración por defecto.
 6. Haz deploy.
 
----
-
-## Cómo usarlo sin CLI
-
-Puedes:
-- descomprimir este ZIP
-- subir la carpeta al repositorio desde el navegador de GitHub
-- conectar GitHub con Vercel
-- desplegar sin usar terminal en tu máquina
-
----
-
 ## Formulario actual
 
-El formulario está preparado para:
-- capturar nombre
-- correo
-- teléfono
-- empresa
-- mensaje
-
-Actualmente genera un correo usando `mailto:` con los datos capturados.
-Si luego quieres integrar envío real con Resend, Formspree, Make o API propia, el archivo a tocar es:
+El formulario usa `mailto:` y WhatsApp.
+Si luego quieres integrar envío real con Resend, Formspree, Make o API propia, toca:
 
 ```text
 /src/components/contact-form.tsx

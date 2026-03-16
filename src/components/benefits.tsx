@@ -12,7 +12,7 @@ export function Benefits() {
     <AnimatedSection className="py-12 sm:py-16">
       <Container>
         <SectionHeading
-          eyebrow="Ventaja estratégica"
+          eyebrow="Ventajas institucionales"
           title={siteContent.benefits.title}
           description={siteContent.benefits.description}
         />
@@ -23,17 +23,17 @@ export function Benefits() {
             const isWarm = index % 2 === 1;
             return (
               <RevealItem key={item.title}>
-                <article className="crece-panel h-full rounded-[1.75rem] p-6">
+                <article className="crece-panel h-full rounded-[1.8rem] p-6">
                   <div
                     className={`inline-flex rounded-2xl border p-3 ${
                       isWarm
-                        ? "border-[#f1b64d]/20 bg-[#d88d25]/12 text-[#f3c976]"
+                        ? "border-[#f1b64d]/22 bg-[#d88d25]/12 text-[#f3c976]"
                         : "border-[#a7cb4c]/18 bg-[#a7cb4c]/10 text-[#dce6bd]"
                     }`}
                   >
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="mt-5 text-lg font-semibold text-[#f3efe3]">{item.title}</h3>
+                  <h3 className="crece-display mt-5 text-xl font-semibold text-[#f3efe3]">{item.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-[#c6cec0]">{item.text}</p>
                 </article>
               </RevealItem>
