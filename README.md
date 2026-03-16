@@ -1,15 +1,18 @@
-# CRECE Premium Landing
+# CRECE Premium Landing — separación real + look premium
 
 Landing page para **CRECE**, construida con **Next.js App Router + TypeScript + Tailwind CSS + Motion + lucide-react**.
 
 ## Esta versión incluye
 
-- separación clara entre **anuncio institucional**, **gerencia financiera tercerizada** y **seminario**
-- hero más institucional
-- tipografía más llamativa y premium
-- logo más protagonista en el header
-- paleta visual alineada a verdes + dorado
-- componentes y textos centralizados en un solo archivo de datos
+- hero más institucional y menos mezclado
+- bloque premium que separa claramente **empresa / consultoría / seminario**
+- anuncio institucional más claro
+- bloque de **consultoría + gerencia financiera tercerizada** con ventajas mejor presentadas
+- seminario presentado como **promoción aparte**
+- tipografía display más llamativa
+- paleta alineada a **verde bosque + oliva/lima + dorado**
+- logo corregido y más visible en header
+- contenido centralizado en un solo archivo de datos
 
 ## Estructura principal
 
@@ -21,6 +24,7 @@ Landing page para **CRECE**, construida con **Next.js App Router + TypeScript + 
 
 /src
   /components
+    business-lines.tsx
   /data
     siteContent.ts
 
@@ -42,8 +46,8 @@ Ahí puedes editar:
 - navegación
 - hero
 - anuncio institucional
-- ventajas
-- gerencia financiera tercerizada
+- separación de líneas comerciales
+- consultoría y gerencia financiera tercerizada
 - resultados
 - autoridad
 - seminario
@@ -51,11 +55,12 @@ Ahí puedes editar:
 - SEO
 - rutas de imágenes
 
-## Componentes principales que se tocaron en esta ronda
+## Componentes principales tocados en esta ronda
 
 ```text
 /src/components/header.tsx
 /src/components/hero.tsx
+/src/components/business-lines.tsx
 /src/components/institutional-overview.tsx
 /src/components/benefits.tsx
 /src/components/services.tsx
@@ -79,7 +84,7 @@ Ahí puedes editar:
 
 Ahí están:
 - gradientes y fondos
-- paneles
+- paneles premium
 - botones
 - badges
 - glows

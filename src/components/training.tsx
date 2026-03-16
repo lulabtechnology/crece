@@ -20,7 +20,7 @@ export function Training() {
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1.02fr_.98fr]">
-          <div className="crece-image-frame overflow-hidden">
+          <div className="crece-image-frame crece-premium-stroke overflow-hidden">
             <Image
               src={siteContent.training.image}
               alt="Programa del seminario"
@@ -31,7 +31,7 @@ export function Training() {
           </div>
 
           <div className="grid gap-6">
-            <div className="crece-panel rounded-[2rem] p-6">
+            <div className="crece-panel crece-premium-stroke rounded-[2rem] p-6">
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl border border-[#f1b64d]/22 bg-[#d88d25]/12 p-3 text-[#f3c976]">
                   <GraduationCap className="h-5 w-5" />
@@ -39,7 +39,7 @@ export function Training() {
                 <div>
                   <div className="text-sm uppercase tracking-[0.2em] text-[#9ea792]">Inversión</div>
                   <div className="mt-1 flex items-end gap-3">
-                    <span className="crece-display text-4xl font-semibold text-[#f3efe3]">{siteContent.training.offer.price}</span>
+                    <span className="crece-display text-4xl font-semibold text-[#f5efe4]">{siteContent.training.offer.price}</span>
                     {siteContent.training.offer.regularPrice ? (
                       <span className="pb-1 text-sm text-[#9ea792] line-through">
                         {siteContent.training.offer.regularPrice}
@@ -62,7 +62,7 @@ export function Training() {
                         <Icon className={`h-5 w-5 ${isWarm ? "text-[#f1b64d]" : "text-[#a7cb4c]"}`} />
                         <div>
                           <p className="text-xs uppercase tracking-[0.2em] text-[#9ea792]">{detail.label}</p>
-                          <p className="mt-1 text-sm font-medium text-[#f3efe3]">{detail.value}</p>
+                          <p className="mt-1 text-sm font-medium text-[#f5efe4]">{detail.value}</p>
                         </div>
                       </div>
                     </div>
@@ -75,7 +75,7 @@ export function Training() {
 
         <div className="mt-10 grid gap-6 xl:grid-cols-[.66fr_1.34fr]">
           <div className="crece-panel-soft rounded-[2rem] p-6">
-            <h3 className="crece-display text-xl font-semibold text-[#f3efe3]">Por qué asistir</h3>
+            <h3 className="crece-display text-[1.5rem] font-semibold text-[#f5efe4]">Por qué asistir</h3>
             <ul className="mt-5 grid gap-3">
               {siteContent.training.reasons.map((reason) => (
                 <li key={reason} className="flex items-start gap-3 text-sm text-[#d1d8c8]">
@@ -87,7 +87,7 @@ export function Training() {
           </div>
 
           <div className="crece-panel-soft rounded-[2rem] p-6">
-            <h3 className="crece-display text-xl font-semibold text-[#f3efe3]">Contenido del seminario</h3>
+            <h3 className="crece-display text-[1.5rem] font-semibold text-[#f5efe4]">Contenido del seminario</h3>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {siteContent.training.topics.map((topic) => (
                 <div

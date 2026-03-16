@@ -11,7 +11,7 @@ export function Authority() {
       <Container className="grid items-center gap-14 lg:grid-cols-[.95fr_1.05fr]">
         <div className="relative order-2 lg:order-1">
           <div className="crece-glow-gold absolute -inset-6 rounded-[2rem] blur-3xl" />
-          <div className="crece-image-frame">
+          <div className="crece-image-frame crece-premium-stroke">
             <Image
               src={siteContent.authority.image}
               alt="Experiencia y autoridad"

@@ -38,7 +38,7 @@ export function InstitutionalOverview() {
               const warm = index % 2 === 1;
               return (
                 <RevealItem key={item.title}>
-                  <article className="crece-panel h-full rounded-[1.85rem] p-6">
+                  <article className="crece-panel crece-premium-stroke h-full rounded-[1.85rem] p-6">
                     <div
                       className={`inline-flex rounded-2xl border p-3 ${
                         warm
@@ -48,7 +48,7 @@ export function InstitutionalOverview() {
                     >
                       <Icon className="h-5 w-5" />
                     </div>
-                    <h3 className="crece-display mt-5 text-xl font-semibold text-[#f3efe3]">{item.title}</h3>
+                    <h3 className="crece-display mt-5 text-[1.45rem] font-semibold text-[#f5efe4]">{item.title}</h3>
                     <p className="mt-3 text-sm leading-7 text-[#c9d0c0]">{item.text}</p>
                   </article>
                 </RevealItem>
@@ -59,7 +59,7 @@ export function InstitutionalOverview() {
 
         <div className="relative">
           <div className="crece-glow-green absolute -inset-6 rounded-[2rem] blur-3xl" />
-          <div className="crece-image-frame">
+          <div className="crece-image-frame crece-premium-stroke">
             <Image
               src={siteContent.institutional.image}
               alt="Visual institucional de CRECE"

@@ -16,7 +16,7 @@ export function ContactCta() {
             src={siteContent.contact.ctaImages.desktop}
             alt="CTA financiero"
             fill
-            className="object-cover object-center opacity-20 saturate-[0.94]"
+            className="object-cover object-center opacity-22 saturate-[0.95]"
             sizes="100vw"
           />
         </div>
@@ -25,15 +25,15 @@ export function ContactCta() {
             src={siteContent.contact.ctaImages.mobile}
             alt="CTA financiero móvil"
             fill
-            className="object-cover object-center opacity-24 saturate-[0.94]"
+            className="object-cover object-center opacity-26 saturate-[0.95]"
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,16,13,.08),rgba(7,16,13,.76)_20%,rgba(7,16,13,.95)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(167,203,76,.14),transparent_22%),radial-gradient(circle_at_82%_12%,rgba(216,141,37,.16),transparent_22%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,16,13,.10),rgba(7,16,13,.76)_20%,rgba(7,16,13,.95)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(167,203,76,.14),transparent_22%),radial-gradient(circle_at_82%_12%,rgba(216,141,37,.18),transparent_22%)]" />
       </div>
 
-      <Container className="grid items-start gap-10 lg:grid-cols-[.88fr_1.12fr]">
+      <Container className="grid items-start gap-10 lg:grid-cols-[.9fr_1.1fr]">
         <div>
           <SectionHeading
             eyebrow="Contacto"
@@ -88,7 +88,7 @@ function InfoCard({
       <div className="rounded-2xl border border-white/8 bg-black/25 p-3">{icon}</div>
       <div>
         <div className="text-xs uppercase tracking-[0.2em] text-[#99a18f]">{label}</div>
-        <div className="mt-1 text-sm font-medium text-[#f3efe3] sm:text-base">{value}</div>
+        <div className="mt-1 text-sm font-medium text-[#f5efe4] sm:text-base">{value}</div>
       </div>
     </a>
   );

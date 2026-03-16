@@ -6,8 +6,8 @@ import { SectionHeading } from "./section-heading";
 
 function MetricCard({ value, label, warm }: { value: string; label: string; warm?: boolean }) {
   return (
-    <div className="crece-panel rounded-[1.75rem] p-6">
-      <div className={`text-4xl font-semibold tracking-tight sm:text-5xl ${warm ? "text-[#f1b64d]" : "text-[#f3efe3]"}`}>
+    <div className="crece-panel crece-premium-stroke rounded-[1.75rem] p-6">
+      <div className={`crece-display text-4xl font-semibold tracking-tight sm:text-5xl ${warm ? "text-[#f1b64d]" : "text-[#f5efe4]"}`}>
         {value}
       </div>
       <p className="mt-3 text-sm leading-7 text-[#c6cec0]">{label}</p>
@@ -34,7 +34,7 @@ export function Results() {
 
         <div className="relative">
           <div className="crece-glow-green absolute -inset-6 rounded-[2rem] blur-3xl" />
-          <div className="crece-image-frame">
+          <div className="crece-image-frame crece-premium-stroke">
             <Image
               src={siteContent.results.image}
               alt="Resultados financieros"

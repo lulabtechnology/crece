@@ -43,7 +43,7 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="crece-panel rounded-[2rem] p-6 sm:p-7">
+    <form onSubmit={handleSubmit} className="crece-panel crece-premium-stroke rounded-[2rem] p-6 sm:p-7">
       <div className="grid gap-4 sm:grid-cols-2">
         <Field
           label="Nombre"
@@ -77,9 +77,9 @@ export function ContactForm() {
         <textarea
           value={form.message}
           onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
-          placeholder="Cuéntanos si te interesa el anuncio institucional, la gerencia financiera tercerizada o el seminario."
+          placeholder="Cuéntanos si te interesa el anuncio institucional, la consultoría y gerencia tercerizada, o el seminario."
           rows={5}
-          className="w-full rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-[#f3efe3] outline-none ring-0 placeholder:text-[#97a08e] transition focus:border-[#a7cb4c]/44"
+          className="w-full rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] outline-none ring-0 placeholder:text-[#97a08e] transition focus:border-[#a7cb4c]/44"
         />
       </div>
 
@@ -128,7 +128,7 @@ function Field({
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-[#f3efe3] outline-none ring-0 placeholder:text-[#97a08e] transition focus:border-[#a7cb4c]/44"
+        className="w-full rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] outline-none ring-0 placeholder:text-[#97a08e] transition focus:border-[#a7cb4c]/44"
       />
     </div>
   );

@@ -20,11 +20,11 @@ export function SectionHeading({
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="crece-display text-balance text-[2.25rem] font-semibold leading-[0.98] tracking-[-0.04em] text-[#f3efe3] sm:text-[3rem] lg:text-[3.8rem]">
+      <h2 className="crece-display text-balance text-[2.45rem] font-semibold leading-[0.95] tracking-[-0.05em] text-[#f5efe4] sm:text-[3.3rem] lg:text-[4.3rem]">
         {title}
       </h2>
       {description ? (
-        <p className="mt-5 text-pretty text-base leading-7 text-[#c6cec0] sm:text-lg">
+        <p className="mt-5 text-pretty text-base leading-8 text-[#cdd4c5] sm:text-lg">
           {description}
         </p>
       ) : null}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
@@ -12,7 +12,7 @@ export function Services() {
       <Container className="grid items-center gap-14 lg:grid-cols-[.96fr_1.04fr]">
         <div className="relative order-2 lg:order-1">
           <div className="crece-glow-gold absolute -inset-6 rounded-[2rem] blur-3xl" />
-          <div className="crece-image-frame">
+          <div className="crece-image-frame crece-premium-stroke">
             <Image
               src={siteContent.services.image}
               alt="Gerencia financiera tercerizada"
@@ -25,10 +25,22 @@ export function Services() {
 
         <div className="order-1 lg:order-2">
           <SectionHeading
-            eyebrow="Gerencia financiera tercerizada"
+            eyebrow="Consultoría y gerencia tercerizada"
             title={siteContent.services.title}
             description={siteContent.services.description}
           />
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {siteContent.services.pillars.map((pillar, index) => (
+              <article key={pillar.title} className="crece-panel-soft rounded-[1.8rem] p-6">
+                <div className={`inline-flex rounded-full px-3 py-1 text-xs uppercase tracking-[0.22em] ${index === 1 ? "crece-outline-tag--warm" : "crece-outline-tag"}`}>
+                  Línea {index + 1}
+                </div>
+                <h3 className="crece-display mt-5 text-[1.5rem] font-semibold text-[#f5efe4]">{pillar.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[#c9d1c2]">{pillar.text}</p>
+              </article>
+            ))}
+          </div>
 
           <RevealList className="mt-8 grid gap-4">
             {siteContent.services.list.map((service) => (
@@ -40,17 +52,25 @@ export function Services() {
               </RevealItem>
             ))}
           </RevealList>
+
+          <a
+            href={siteContent.services.cta.href}
+            className="crece-button-primary mt-8 inline-flex items-center gap-2 rounded-full px-6 py-4 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5"
+          >
+            {siteContent.services.cta.label}
+            <ArrowRight className="h-4 w-4" />
+          </a>
         </div>
       </Container>
 
       <Container>
         <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {siteContent.services.advantages.map((item, index) => (
-            <article key={item.title} className="crece-panel rounded-[1.8rem] p-6">
+            <article key={item.title} className="crece-panel crece-premium-stroke rounded-[1.8rem] p-6">
               <div className={`inline-flex rounded-full px-3 py-1 text-xs uppercase tracking-[0.22em] ${index % 2 === 0 ? "crece-outline-tag" : "crece-outline-tag--warm"}`}>
                 Ventaja {index + 1}
               </div>
-              <h3 className="crece-display mt-5 text-xl font-semibold text-[#f3efe3]">{item.title}</h3>
+              <h3 className="crece-display mt-5 text-[1.45rem] font-semibold text-[#f5efe4]">{item.title}</h3>
               <p className="mt-3 text-sm leading-7 text-[#c6cec0]">{item.text}</p>
             </article>
           ))}

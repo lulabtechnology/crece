@@ -8,7 +8,7 @@ export function Footer() {
         <p>{siteContent.footer.legal}</p>
         <div className="flex flex-wrap items-center gap-4">
           {siteContent.navigation.map((item) => (
-            <a key={item.href} href={item.href} className="transition-colors duration-300 hover:text-[#f3efe3]">
+            <a key={item.href} href={item.href} className="transition-colors duration-300 hover:text-[#f5efe4]">
               {item.label}
             </a>
           ))}

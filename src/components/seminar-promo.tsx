@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CalendarDays, Clock3, GraduationCap, MapPin } from "lucide-react";
+import { CalendarDays, Clock3, GraduationCap, MapPin, BadgeCheck } from "lucide-react";
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
@@ -16,29 +16,39 @@ export function SeminarPromo() {
   return (
     <AnimatedSection id={siteContent.seminarPromo.id} className="relative py-20 sm:py-28">
       <Container>
-        <div className="crece-panel relative overflow-hidden rounded-[2rem] border border-[#f1b64d]/10 p-6 sm:p-8 lg:p-10">
+        <div className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[2.2rem] border border-[#f1b64d]/10 p-6 sm:p-8 lg:p-10">
           <div className="absolute inset-0">
             <Image
               src={siteContent.seminarPromo.image}
               alt="Seminario de análisis financiero con IA"
               fill
-              className="object-cover object-center opacity-18"
+              className="object-cover object-center opacity-20"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,16,13,.96)_0%,rgba(7,16,13,.84)_48%,rgba(7,16,13,.92)_100%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_20%,rgba(167,203,76,.14),transparent_24%),radial-gradient(circle_at_82%_12%,rgba(216,141,37,.18),transparent_24%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,16,13,.96)_0%,rgba(7,16,13,.84)_48%,rgba(7,16,13,.90)_100%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_20%,rgba(167,203,76,.14),transparent_24%),radial-gradient(circle_at_82%_12%,rgba(216,141,37,.22),transparent_24%)]" />
           </div>
 
-          <div className="relative grid gap-10 lg:grid-cols-[1fr_.9fr] lg:items-center">
+          <div className="relative grid gap-10 lg:grid-cols-[1fr_.92fr] lg:items-center">
             <div>
               <span className="crece-outline-tag--warm inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em]">
                 {siteContent.seminarPromo.badge}
               </span>
               <SectionHeading
-                eyebrow="Seminario"
+                eyebrow="Capacitación"
                 title={siteContent.seminarPromo.title}
                 description={siteContent.seminarPromo.description}
               />
+
+              <ul className="mt-7 grid gap-3">
+                {siteContent.seminarPromo.bullets.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#d8ddcf] sm:text-base">
+                    <BadgeCheck className="mt-0.5 h-5 w-5 text-[#a7cb4c]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href={siteContent.seminarPromo.cta.href}
@@ -75,7 +85,7 @@ export function SeminarPromo() {
                       </div>
                       <div>
                         <div className="text-xs uppercase tracking-[0.22em] text-[#98a18f]">{item.label}</div>
-                        <div className="mt-2 text-base font-semibold text-[#f3efe3] sm:text-lg">{item.value}</div>
+                        <div className="mt-2 text-base font-semibold text-[#f5efe4] sm:text-lg">{item.value}</div>
                       </div>
                     </div>
                   </div>
@@ -83,9 +93,9 @@ export function SeminarPromo() {
               })}
               <div className="crece-panel-soft rounded-[1.7rem] border border-[#f1b64d]/12 p-5 sm:col-span-2">
                 <div className="text-xs uppercase tracking-[0.22em] text-[#e2b85d]">Disponibilidad</div>
-                <div className="crece-display mt-2 text-2xl font-semibold text-[#f3efe3]">{siteContent.seminarPromo.urgency}</div>
+                <div className="crece-display mt-2 text-2xl font-semibold text-[#f5efe4]">{siteContent.seminarPromo.urgency}</div>
                 <p className="mt-2 text-sm leading-7 text-[#c9d0c0]">
-                  Oferta independiente del anuncio institucional y de la línea de gerencia financiera tercerizada.
+                  Este bloque está presentado como anuncio independiente para que no compita con la propuesta institucional ni con la línea de consultoría.
                 </p>
               </div>
             </div>

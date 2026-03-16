@@ -7,7 +7,7 @@ export const siteContent = {
   seo: {
     title: "CRECE | Consultoría financiera, gerencia tercerizada y seminarios ejecutivos",
     description:
-      "CRECE acompaña empresas con consultoría financiera, gerencia financiera tercerizada y seminarios ejecutivos de análisis financiero. Cada línea de servicio está presentada de forma clara y separada.",
+      "CRECE presenta por separado su perfil institucional, su línea de consultoría y gerencia financiera tercerizada, y su seminario ejecutivo de análisis financiero con IA.",
     url: "https://www.crecepanama.com",
     image: "/images/hero/hero-desktop.webp",
     keywords: [
@@ -22,17 +22,24 @@ export const siteContent = {
   },
   navigation: [
     { label: "Empresa", href: "#empresa" },
-    { label: "Gerencia tercerizada", href: "#gerencia" },
+    { label: "Consultoría", href: "#gerencia" },
     { label: "Seminario", href: "#seminario" },
     { label: "Contacto", href: "#contacto" }
   ],
   hero: {
     eyebrow: "Consultoría financiera e inversiones",
-    title: "Dirección financiera más clara para empresas que quieren crecer con criterio.",
+    titleLead: "La firma financiera que ayuda a",
+    titleAccent: "ordenar, decidir y crecer",
+    titleTail: "con más control.",
     subtitle:
-      "CRECE ayuda a ordenar la gestión financiera, fortalecer el control y acompañar decisiones estratégicas. La consultoría, la gerencia financiera tercerizada y el seminario ahora están presentados por separado para comunicar mejor cada valor.",
+      "Esta versión separa claramente el anuncio institucional, la línea de consultoría y gerencia financiera tercerizada, y la promoción del seminario. La idea es que el cliente entienda rápido qué es CRECE, cómo contribuye y qué solución concreta puede activar.",
     primaryCta: { label: "Solicitar diagnóstico", href: "#contacto" },
-    secondaryCta: { label: "Ver gerencia tercerizada", href: "#gerencia" },
+    secondaryCta: { label: "Explorar consultoría", href: "#gerencia" },
+    tracks: [
+      "Anuncio institucional",
+      "Consultoría y gerencia financiera tercerizada",
+      "Seminario ejecutivo independiente"
+    ],
     stats: [
       { value: "15+", label: "años de experiencia" },
       { value: "15–20%", label: "incremento promedio de liquidez" },
@@ -44,65 +51,99 @@ export const siteContent = {
       gridOverlay: "/images/textures/grid-overlay.png"
     }
   },
+  businessLines: {
+    eyebrow: "Estructura clara",
+    title: "Tres mensajes distintos dentro de una sola landing mejor organizada.",
+    items: [
+      {
+        label: "Empresa",
+        title: "Qué es CRECE",
+        text: "Un bloque institucional para explicar quiénes son, cómo trabajan y en qué pueden contribuir dentro de la empresa.",
+        href: "#empresa"
+      },
+      {
+        label: "Consultoría",
+        title: "Gerencia financiera tercerizada",
+        text: "Una línea concreta para vender dirección financiera externa, control, seguimiento y acompañamiento ejecutivo con sus ventajas.",
+        href: "#gerencia"
+      },
+      {
+        label: "Seminario",
+        title: "Capacitación aparte",
+        text: "Un anuncio independiente para el seminario, con su propia promoción, programa, inversión y urgencia comercial.",
+        href: "#seminario"
+      }
+    ]
+  },
   institutional: {
     id: "empresa",
-    title: "Qué es CRECE y en qué puede contribuir dentro de tu empresa.",
+    title: "Qué es CRECE y cómo puede contribuir dentro de tu empresa.",
     description:
-      "CRECE es una firma orientada a fortalecer la toma de decisiones financieras con enfoque ejecutivo, control, análisis y acompañamiento práctico. El anuncio institucional debe explicar con claridad quiénes somos, cómo aportamos y por qué representamos una ventaja estratégica.",
+      "CRECE es una firma de consultoría financiera e inversiones orientada a fortalecer control, criterio y toma de decisiones. Este bloque funciona como anuncio institucional: presenta la empresa, su enfoque y la forma en que aporta valor a dueños, gerencias y equipos con responsabilidad financiera.",
     image: "/images/sections/about-visual.webp",
     highlights: [
-      "Consultoría financiera con visión gerencial",
-      "Enfoque práctico para ordenar, medir y decidir",
-      "Acompañamiento especializado para negocios en crecimiento"
+      "Firma financiera con visión ejecutiva",
+      "Control, análisis y acompañamiento",
+      "Aporte práctico para empresas en crecimiento"
     ],
     contributions: [
       {
-        title: "Claridad financiera",
-        text: "Ayudamos a entender mejor estados financieros, liquidez, rentabilidad y señales de alerta para decidir con más seguridad."
+        title: "Diagnóstico con criterio",
+        text: "Se analiza el contexto financiero del negocio para identificar desorden, riesgos, señales de alerta y oportunidades reales de mejora."
       },
       {
-        title: "Control y seguimiento",
-        text: "Fortalecemos indicadores, presupuestos, flujo de caja y rutinas de seguimiento para que la gestión no dependa de intuición."
+        title: "Lectura gerencial de números",
+        text: "La información financiera se traduce en mensajes accionables para gerencia, dueños y responsables de operación."
       },
       {
-        title: "Criterio ejecutivo",
-        text: "Traducimos la data financiera en conversaciones útiles para directivos, dueños y responsables de operación."
+        title: "Orden y seguimiento",
+        text: "Se fortalecen rutinas de presupuesto, flujo, indicadores y revisión para que las decisiones no dependan de intuición."
       },
       {
         title: "Acompañamiento aplicable",
-        text: "La propuesta no se queda en teoría: se aterriza en decisiones, prioridades y acciones concretas para la empresa."
+        text: "La intervención no se queda en teoría: aterriza en prioridades, control y decisiones concretas para la empresa."
       }
     ]
   },
   benefits: {
-    title: "Ventajas de trabajar con CRECE",
+    title: "Por qué CRECE puede convertirse en una ventaja estratégica para la empresa.",
     description:
-      "La marca debe sentirse institucional, seria y premium. Esta sección responde por qué CRECE es una firma útil para empresas que necesitan criterio financiero, control y acompañamiento estratégico.",
+      "La parte institucional debe sentirse seria, premium y confiable. Esta sección responde por qué la firma aporta valor más allá de un servicio puntual.",
     items: [
       {
         title: "Enfoque ejecutivo real",
-        text: "Se trabaja con la lógica de negocio, no solo con teoría financiera aislada."
+        text: "Se trabaja con la lógica del negocio, no con teoría financiera aislada del día a día empresarial."
       },
       {
-        title: "Lectura práctica de KPIs",
-        text: "Los números se convierten en decisiones con implicaciones claras para la empresa."
+        title: "Criterio para decidir",
+        text: "Los números se convierten en claridad para decidir mejor sobre liquidez, gastos, crecimiento e inversión."
       },
       {
-        title: "Profesionalismo y confidencialidad",
-        text: "La información crítica se maneja con rigor, discreción y responsabilidad."
+        title: "Confidencialidad y rigor",
+        text: "La información crítica se maneja con profesionalismo, discreción y alta responsabilidad."
       },
       {
-        title: "Escalabilidad",
-        text: "La intervención se adapta al tamaño, etapa y necesidades reales del negocio."
+        title: "Intervención escalable",
+        text: "El acompañamiento puede adaptarse a la etapa, complejidad y ritmo de crecimiento de cada empresa."
       }
     ]
   },
   services: {
     id: "gerencia",
-    title: "Gerencia financiera tercerizada y consultoría para empresas que necesitan control sin inflar estructura interna.",
+    title: "Consultoría financiera y gerencia financiera tercerizada para negocios que necesitan más control sin inflar estructura interna.",
     description:
-      "Esta línea debe venderse como una acción concreta: dirección financiera externa, acompañamiento estratégico y control continuo, sin el costo fijo completo de un gerente interno.",
+      "Aquí la landing debe vender una acción concreta: dirección financiera externa con acompañamiento estratégico, control continuo y ventajas claras frente a asumir de inmediato un gerente interno de tiempo completo.",
     image: "/images/sections/services-visual.webp",
+    pillars: [
+      {
+        title: "Consultoría financiera",
+        text: "Ideal para revisar, ordenar y fortalecer decisiones en momentos clave del negocio."
+      },
+      {
+        title: "Gerencia financiera tercerizada",
+        text: "Ideal para empresas que necesitan una capa externa de dirección, seguimiento y control de forma más constante."
+      }
+    ],
     list: [
       "Presupuesto financiero y control de gastos",
       "Gestión de cuentas por pagar y por cobrar",
@@ -114,27 +155,31 @@ export const siteContent = {
     advantages: [
       {
         title: "Menor costo fijo",
-        text: "Accedes a visión financiera estratégica sin asumir toda la carga de un gerente financiero interno a tiempo completo."
+        text: "Accedes a dirección financiera estratégica sin asumir de entrada el costo completo de un gerente interno a tiempo completo."
       },
       {
-        title: "Mayor control gerencial",
-        text: "Se instalan rutinas, seguimiento y lectura de indicadores para tomar decisiones con más orden y anticipación."
+        title: "Más control gerencial",
+        text: "Se instalan rutinas, seguimiento y lectura de indicadores para tomar decisiones con mayor orden y anticipación."
       },
       {
-        title: "Apoyo en decisiones críticas",
-        text: "La empresa gana criterio para inversión, liquidez, gastos, crecimiento y manejo de riesgos."
+        title: "Soporte en decisiones críticas",
+        text: "La empresa gana criterio para inversión, liquidez, gastos, crecimiento y manejo de riesgos financieros."
       },
       {
-        title: "Escala según tu etapa",
-        text: "El acompañamiento puede crecer contigo sin obligarte a sobredimensionar estructura desde el inicio."
+        title: "Escala contigo",
+        text: "El acompañamiento puede crecer según tu etapa sin obligarte a sobredimensionar estructura demasiado pronto."
       }
-    ]
+    ],
+    cta: {
+      label: "Quiero evaluar esta línea",
+      href: "#contacto"
+    }
   },
   results: {
     id: "resultados",
-    title: "Resultados que respaldan la propuesta de valor institucional y gerencial.",
+    title: "Resultados que respaldan la propuesta consultiva y gerencial.",
     description:
-      "La promesa no se queda en discurso. La experiencia acumulada permite trabajar con enfoque práctico, ejecución y absoluta confidencialidad.",
+      "La promesa no se queda en discurso. El enfoque de CRECE combina ejecución, lectura gerencial y confidencialidad para generar decisiones más sólidas.",
     image: "/images/sections/results-visual.webp",
     metrics: [
       { value: "15–20%", label: "incremento promedio de liquidez" },
@@ -156,51 +201,58 @@ export const siteContent = {
     ]
   },
   process: {
-    title: "Cómo se activa la gerencia financiera tercerizada",
+    title: "Cómo se activa la consultoría o la gerencia financiera tercerizada.",
+    description:
+      "Un flujo claro para transformar diagnóstico, análisis y seguimiento en decisiones concretas con control continuo.",
     steps: [
       {
         title: "Diagnóstico inicial",
         text: "Entendemos situación actual, dolores, prioridades y nivel de control financiero existente."
       },
       {
-        title: "Ruta de intervención",
-        text: "Definimos alcance de consultoría, gerencia tercerizada y frecuencia de acompañamiento."
+        title: "Definición de alcance",
+        text: "Se aterriza si conviene una consultoría puntual, una intervención continua o un esquema de gerencia tercerizada."
       },
       {
         title: "Implementación y seguimiento",
-        text: "Se aterrizan presupuestos, indicadores, alertas, flujos y decisiones prioritarias."
+        text: "Se estructuran indicadores, presupuestos, alertas, flujo y decisiones prioritarias con acompañamiento ejecutivo."
       },
       {
-        title: "Ajuste continuo",
-        text: "La empresa gana una capa externa de dirección para revisar avances, corregir y escalar mejor."
+        title: "Ajuste y continuidad",
+        text: "La empresa gana una capa externa de dirección para revisar avances, corregir y escalar con más criterio."
       }
     ]
   },
   seminarPromo: {
     id: "seminario",
-    title: "Seminario de análisis financiero con IA — comunicado aparte.",
+    title: "Seminario de análisis financiero con IA — anuncio independiente del resto de la oferta.",
     description:
-      "El cliente pidió separar claramente el anuncio del seminario del mensaje institucional y de la gerencia financiera tercerizada. Esta sección funciona como promoción independiente del evento.",
+      "Este bloque funciona como promoción separada. No compite con el mensaje institucional ni con la gerencia financiera tercerizada; se presenta como capacitación ejecutiva con CTA propio.",
     image: "/images/sections/training-visual.webp",
-    badge: "Seminario independiente",
+    badge: "Seminario separado",
     date: "7 al 16 de abril 2026",
     schedule: "5:30 p.m. a 8:30 p.m.",
     format: "Presencial",
     investment: "$299",
     urgency: "Cupos limitados",
+    bullets: [
+      "Domina técnicas de análisis financiero con IA",
+      "Aprende metodologías modernas para valorar empresas",
+      "Toma decisiones basadas en datos precisos y proyecciones optimizadas"
+    ],
     cta: { label: "Reservar cupo", href: "#contacto" }
   },
   training: {
     id: "programa-seminario",
-    title: "Qué aprenderás en el seminario.",
+    title: "Programa del seminario y lo que aprenderás.",
     description:
-      "Una oferta formativa separada de la consultoría institucional. Está diseñada para profesionales, líderes y equipos que quieren dominar análisis financiero con apoyo de IA y metodologías actuales.",
+      "La capacitación se muestra aparte, con más detalle de contenidos, formato e inversión. Así el usuario entiende que es una oferta distinta dentro del ecosistema CRECE.",
     image: "/images/sections/training-visual.webp",
     reasons: [
-      "Domina técnicas de análisis financiero con IA",
-      "Aprende metodologías modernas para valorar empresas",
-      "Toma decisiones basadas en datos precisos y proyecciones optimizadas",
       "Casos reales y aplicación práctica",
+      "Herramientas actuales para valorar y proyectar",
+      "Mejor criterio para leer estados financieros y KPIs",
+      "Uso aplicado de IA en finanzas",
       "Certificado incluido"
     ],
     topics: [
@@ -223,14 +275,14 @@ export const siteContent = {
     offer: {
       price: "$299",
       regularPrice: "",
-      note: "Seminario separado de la línea de consultoría y gerencia financiera tercerizada."
+      note: "Bloque formativo separado de la consultoría y de la gerencia financiera tercerizada."
     }
   },
   contact: {
     id: "contacto",
-    title: "Conversemos según lo que necesites: institucional, gerencia tercerizada o seminario.",
+    title: "Conversemos según tu necesidad: empresa, consultoría o seminario.",
     subtitle:
-      "Esta versión de la landing separa claramente cada propuesta. Puedes escribir para una conversación institucional, para consultar la gerencia financiera tercerizada o para reservar información del seminario.",
+      "Puedes escribir para conocer mejor a CRECE, consultar la línea de consultoría y gerencia financiera tercerizada, o pedir información del seminario por separado.",
     email: "info@crecepanama.com.pa",
     phone: "+507 6678-9720",
     whatsapp: "50766789720",
@@ -241,7 +293,7 @@ export const siteContent = {
     }
   },
   footer: {
-    legal: "CRECE © 2026. Consultoría financiera e inversiones, gerencia tercerizada y seminarios ejecutivos."
+    legal: "CRECE © 2026. Consultoría financiera e inversiones, gerencia financiera tercerizada y seminarios ejecutivos."
   }
 } as const;
 
