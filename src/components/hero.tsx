@@ -12,7 +12,7 @@ export function Hero() {
   const y = useTransform(scrollY, [0, 500], [0, reducedMotion ? 0 : 56]);
 
   return (
-    <section className="relative min-h-screen overflow-clip border-b border-white/6">
+    <section className="relative min-h-[calc(100svh-72px)] overflow-clip border-b border-white/6 sm:min-h-screen">
       <div className="absolute inset-0">
         <div className="absolute inset-0 hidden sm:block">
           <Image
@@ -47,8 +47,8 @@ export function Hero() {
       </div>
 
       <motion.div style={{ y }} className="relative">
-        <Container className="flex min-h-screen flex-col justify-center py-24 sm:py-28">
-          <div className="max-w-6xl">
+        <Container className="flex min-h-[calc(100svh-72px)] flex-col justify-start py-10 pb-16 sm:min-h-screen sm:justify-center sm:py-28">
+          <div className="max-w-6xl pt-2 sm:pt-0">
             <motion.div
               initial={reducedMotion ? false : { opacity: 0, y: 18 }}
               animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ export function Hero() {
               initial={reducedMotion ? false : { opacity: 0, y: 26, filter: "blur(10px)" }}
               animate={reducedMotion ? {} : { opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.9, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="crece-display mt-6 max-w-6xl text-balance text-[3.3rem] leading-[0.9] font-semibold tracking-[-0.06em] text-[#f5efe4] sm:text-[4.45rem] lg:text-[6.3rem]"
+              className="crece-display mt-5 max-w-6xl text-balance text-[3rem] leading-[0.9] font-semibold tracking-[-0.06em] text-[#f5efe4] sm:mt-6 sm:text-[4.45rem] lg:text-[6.3rem]"
             >
               <span className="block">{siteContent.hero.titleLead}</span>
               <span className="crece-heading-accent block">{siteContent.hero.titleAccent}</span>
@@ -74,7 +74,7 @@ export function Hero() {
               initial={reducedMotion ? false : { opacity: 0, y: 18 }}
               animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.18 }}
-              className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-[#d7decb] sm:text-[1.32rem]"
+              className="mt-5 max-w-3xl text-pretty text-[1.04rem] leading-8 text-[#d7decb] sm:mt-6 sm:text-[1.32rem]"
             >
               {siteContent.hero.subtitle}
             </motion.p>
@@ -83,12 +83,12 @@ export function Hero() {
               initial={reducedMotion ? false : { opacity: 0, y: 18 }}
               animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.22 }}
-              className="mt-6 flex flex-wrap gap-3"
+              className="mt-5 flex flex-wrap gap-3 sm:mt-6"
             >
               {siteContent.hero.tracks.map((track, index) => (
                 <span
                   key={track}
-                  className={`inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] ${
+                  className={`inline-flex rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] sm:text-xs ${
                     index === 2 ? "crece-outline-tag--warm" : "crece-outline-tag"
                   }`}
                 >
@@ -101,7 +101,7 @@ export function Hero() {
               initial={reducedMotion ? false : { opacity: 0, y: 18 }}
               animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.28 }}
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
+              className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4"
             >
               <a
                 href={siteContent.hero.primaryCta.href}
@@ -122,7 +122,7 @@ export function Hero() {
               initial={reducedMotion ? false : { opacity: 0, y: 18 }}
               animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-14 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-3"
+              className="mt-10 grid max-w-4xl grid-cols-1 gap-3 sm:mt-14 sm:grid-cols-3"
             >
               {siteContent.hero.stats.map((item, index) => (
                 <div key={item.label} className="crece-panel crece-premium-stroke relative rounded-3xl px-5 py-5">
