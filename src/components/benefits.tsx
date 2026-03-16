@@ -20,14 +20,21 @@ export function Benefits() {
         <RevealList className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {siteContent.benefits.items.map((item, index) => {
             const Icon = icons[index % icons.length];
+            const isWarm = index % 2 === 1;
             return (
               <RevealItem key={item.title}>
-                <article className="h-full rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03))] p-6 shadow-[0_10px_40px_rgba(3,7,18,.18)]">
-                  <div className="inline-flex rounded-2xl border border-cyan-300/15 bg-cyan-300/10 p-3 text-cyan-200">
+                <article className="crece-panel h-full rounded-[1.75rem] p-6">
+                  <div
+                    className={`inline-flex rounded-2xl border p-3 ${
+                      isWarm
+                        ? "border-[#f1b64d]/20 bg-[#d88d25]/12 text-[#f3c976]"
+                        : "border-[#a7cb4c]/18 bg-[#a7cb4c]/10 text-[#dce6bd]"
+                    }`}
+                  >
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="mt-5 text-lg font-semibold text-white">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-300">{item.text}</p>
+                  <h3 className="mt-5 text-lg font-semibold text-[#f3efe3]">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#c6cec0]">{item.text}</p>
                 </article>
               </RevealItem>
             );

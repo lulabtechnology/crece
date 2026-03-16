@@ -17,15 +17,15 @@ export function Process() {
         <RevealList className="mt-10 grid gap-4 lg:grid-cols-4">
           {siteContent.process.steps.map((step, index) => (
             <RevealItem key={step.title}>
-              <article className="relative h-full overflow-hidden rounded-[1.8rem] border border-white/10 bg-white/6 p-6">
+              <article className="crece-panel relative h-full overflow-hidden rounded-[1.8rem] p-6">
                 <div className="absolute right-4 top-4 text-6xl font-semibold text-white/6">
                   {String(index + 1).padStart(2, "0")}
                 </div>
-                <div className="relative inline-flex rounded-full border border-white/10 bg-black/25 px-3 py-1 text-xs uppercase tracking-[0.2em] text-cyan-200">
+                <div className={`relative inline-flex rounded-full px-3 py-1 text-xs uppercase tracking-[0.2em] ${index % 2 === 0 ? "crece-outline-tag" : "crece-outline-tag--warm"}`}>
                   Paso {index + 1}
                 </div>
-                <h3 className="relative mt-6 text-xl font-semibold text-white">{step.title}</h3>
-                <p className="relative mt-3 text-sm leading-7 text-slate-300">{step.text}</p>
+                <h3 className="relative mt-6 text-xl font-semibold text-[#f3efe3]">{step.title}</h3>
+                <p className="relative mt-3 text-sm leading-7 text-[#c6cec0]">{step.text}</p>
               </article>
             </RevealItem>
           ))}

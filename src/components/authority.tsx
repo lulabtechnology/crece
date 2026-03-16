@@ -10,8 +10,8 @@ export function Authority() {
     <AnimatedSection className="py-20 sm:py-28">
       <Container className="grid items-center gap-14 lg:grid-cols-[.95fr_1.05fr]">
         <div className="relative order-2 lg:order-1">
-          <div className="absolute -inset-4 rounded-[2rem] bg-indigo-500/12 blur-3xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+          <div className="crece-glow-gold absolute -inset-6 rounded-[2rem] blur-3xl" />
+          <div className="crece-image-frame">
             <Image
               src={siteContent.authority.image}
               alt="Experiencia y autoridad"
@@ -29,13 +29,13 @@ export function Authority() {
             description={siteContent.authority.description}
           />
           <div className="mt-8 grid gap-4">
-            {siteContent.authority.bullets.map((bullet) => (
+            {siteContent.authority.bullets.map((bullet, index) => (
               <div
                 key={bullet}
-                className="flex items-start gap-3 rounded-3xl border border-white/10 bg-white/6 px-5 py-5"
+                className="crece-panel-soft flex items-start gap-3 rounded-3xl px-5 py-5"
               >
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-300" />
-                <p className="text-sm leading-7 text-slate-200">{bullet}</p>
+                <CheckCircle2 className={`mt-0.5 h-5 w-5 ${index % 2 === 0 ? "text-[#a7cb4c]" : "text-[#f1b64d]"}`} />
+                <p className="text-sm leading-7 text-[#d1d8c8]">{bullet}</p>
               </div>
             ))}
           </div>

@@ -2,6 +2,19 @@
 
 Landing page premium para **CRECE**, construida con **Next.js App Router + TypeScript + Tailwind CSS + Motion + lucide-react**.
 
+## Actualización visual incluida
+
+Este ZIP ya viene con un **restyle fuerte de identidad visual** para acercarlo mucho más a lo que pidió el cliente:
+
+- paleta verde bosque + oliva/lima + dorado cálido
+- header con logo más visible
+- hero más premium y menos SaaS azul
+- cards, CTAs y badges corregidos al ADN de CRECE
+- contraste y jerarquía visual mejorados
+- glow y overlays alineados al look financiero premium
+
+---
+
 ## Qué contiene
 
 - Hero full-screen premium con versión desktop y mobile
@@ -62,9 +75,43 @@ Ahí puedes cambiar fácilmente:
 
 ---
 
-## Rutas exactas de imágenes
+## Dónde cambiar la identidad visual
 
-Estas son las rutas principales que pediste y ya están creadas con placeholders funcionales:
+### Paleta y estilo global
+
+```text
+/app/globals.css
+```
+
+Ahí están:
+- fondo general
+- gradientes principales
+- paneles oscuros
+- botones
+- badges
+- glows
+- estilo visual base de toda la landing
+
+### Componentes más sensibles al look premium
+
+```text
+/src/components/header.tsx
+/src/components/hero.tsx
+/src/components/section-heading.tsx
+/src/components/value-fusion.tsx
+/src/components/benefits.tsx
+/src/components/services.tsx
+/src/components/training.tsx
+/src/components/results.tsx
+/src/components/authority.tsx
+/src/components/contact-cta.tsx
+/src/components/contact-form.tsx
+/src/components/footer.tsx
+```
+
+---
+
+## Rutas exactas de imágenes
 
 ```text
 /public/images/brand/logo-crece.png
@@ -76,18 +123,13 @@ Estas son las rutas principales que pediste y ya están creadas con placeholders
 /public/images/sections/cta-desktop.webp
 /public/images/sections/cta-mobile.webp
 /public/images/textures/grid-overlay.png
-```
-
-Rutas adicionales incluidas para enriquecer el diseño:
-
-```text
 /public/images/sections/services-visual.webp
 /public/images/sections/results-visual.webp
 /public/images/sections/fusion-visual.webp
 ```
 
 ### Cómo reemplazar imágenes
-1. Mantén **exactamente el mismo nombre del archivo**.
+1. Mantén exactamente el mismo nombre del archivo.
 2. Sube tu asset final sobre ese archivo.
 3. Si respetas la ruta, no tienes que tocar código.
 
@@ -110,22 +152,17 @@ http://localhost:3000
 
 ## Cómo desplegar en Vercel usando GitHub Web
 
-### Opción práctica con GitHub Web
 1. Crea un repositorio nuevo en GitHub.
-2. Sube **todo el contenido** de este proyecto.
+2. Sube todo el contenido de este proyecto.
 3. Entra a Vercel.
 4. Importa el repositorio.
 5. Deja la configuración por defecto.
 6. Haz deploy.
 
-### Build esperado
-- Framework: Next.js
-- Build Command: `next build`
-- Output: automático
-
 ---
 
 ## Cómo usarlo sin CLI
+
 Puedes:
 - descomprimir este ZIP
 - subir la carpeta al repositorio desde el navegador de GitHub
@@ -135,6 +172,7 @@ Puedes:
 ---
 
 ## Formulario actual
+
 El formulario está preparado para:
 - capturar nombre
 - correo
@@ -142,61 +180,9 @@ El formulario está preparado para:
 - empresa
 - mensaje
 
-Actualmente genera un correo usando `mailto:` con los datos capturados.  
-Si luego quieres integrar un envío real con Resend, Formspree, Make o API propia, el mejor lugar para cambiarlo es:
+Actualmente genera un correo usando `mailto:` con los datos capturados.
+Si luego quieres integrar envío real con Resend, Formspree, Make o API propia, el archivo a tocar es:
 
 ```text
 /src/components/contact-form.tsx
 ```
-
----
-
-## Recomendación de imágenes
-
-### Hero
-- Desktop: 1920x1200 o superior
-- Mobile: 1080x1440 o superior
-
-### Secciones
-- Recomendado: 1400x1000 aprox.
-- Mantén estilo premium, oscuro, financiero, elegante
-
-### CTA final
-- Desktop: 1800x1000
-- Mobile: 1080x1400
-
----
-
-## Personalización rápida
-
-### Contacto
-Edita en:
-
-```text
-/src/data/siteContent.ts
-```
-
-Campos:
-- email
-- phone
-- whatsapp
-- website
-
-### Precios / oferta
-También en:
-
-```text
-/src/data/siteContent.ts
-```
-
-### SEO
-También en:
-
-```text
-/src/data/siteContent.ts
-```
-
----
-
-## Nota
-Este proyecto quedó armado para que se vea premium desde el primer deploy, aun si después reemplazas assets, ajustas copy o conectas un backend de formularios.

@@ -19,12 +19,12 @@ export function ValueFusion() {
           <RevealList className="mt-8 grid gap-4">
             {siteContent.fusion.pillars.map((pillar) => (
               <RevealItem key={pillar.title}>
-                <div className="rounded-3xl border border-white/10 bg-white/6 p-6 backdrop-blur-sm">
+                <div className="crece-panel-soft rounded-3xl p-6">
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-300" />
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 text-[#a7cb4c]" />
                     <div>
-                      <h3 className="text-lg font-semibold text-white">{pillar.title}</h3>
-                      <p className="mt-2 text-sm leading-7 text-slate-300">{pillar.text}</p>
+                      <h3 className="text-lg font-semibold text-[#f3efe3]">{pillar.title}</h3>
+                      <p className="mt-2 text-sm leading-7 text-[#c6cec0]">{pillar.text}</p>
                     </div>
                   </div>
                 </div>
@@ -34,8 +34,8 @@ export function ValueFusion() {
         </div>
 
         <div className="relative">
-          <div className="absolute -inset-4 rounded-[2rem] bg-cyan-400/10 blur-3xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+          <div className="crece-glow-green absolute -inset-6 rounded-[2rem] blur-3xl" />
+          <div className="crece-image-frame">
             <Image
               src={siteContent.fusion.image}
               alt="Visual propuesta fusionada"

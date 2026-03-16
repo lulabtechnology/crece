@@ -20,7 +20,7 @@ export function Training() {
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1.02fr_.98fr]">
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+          <div className="crece-image-frame overflow-hidden">
             <Image
               src={siteContent.training.image}
               alt="Seminario financiero"
@@ -31,35 +31,36 @@ export function Training() {
           </div>
 
           <div className="grid gap-6">
-            <div className="rounded-[2rem] border border-white/10 bg-white/6 p-6">
+            <div className="crece-panel rounded-[2rem] p-6">
               <div className="flex items-center gap-3">
-                <div className="rounded-2xl bg-cyan-300/10 p-3 text-cyan-200">
+                <div className="rounded-2xl border border-[#f1b64d]/22 bg-[#d88d25]/12 p-3 text-[#f3c976]">
                   <GraduationCap className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-sm uppercase tracking-[0.2em] text-slate-400">Oferta</div>
+                  <div className="text-sm uppercase tracking-[0.2em] text-[#9ea792]">Oferta</div>
                   <div className="mt-1 flex items-end gap-3">
-                    <span className="text-4xl font-semibold text-white">{siteContent.training.offer.price}</span>
-                    <span className="pb-1 text-sm text-slate-400 line-through">
+                    <span className="text-4xl font-semibold text-[#f3efe3]">{siteContent.training.offer.price}</span>
+                    <span className="pb-1 text-sm text-[#9ea792] line-through">
                       {siteContent.training.offer.regularPrice}
                     </span>
                   </div>
                 </div>
               </div>
-              <p className="mt-4 text-sm text-cyan-100/90">{siteContent.training.offer.note}</p>
+              <p className="mt-4 text-sm text-[#e8cf9d]">{siteContent.training.offer.note}</p>
             </div>
 
             <RevealList className="grid gap-4 md:grid-cols-2">
               {siteContent.training.details.map((detail, index) => {
                 const Icon = detailIcons[index % detailIcons.length];
+                const isWarm = index % 2 === 0;
                 return (
                   <RevealItem key={detail.label}>
-                    <div className="rounded-3xl border border-white/10 bg-white/6 p-5">
+                    <div className="crece-panel-soft rounded-3xl p-5">
                       <div className="flex items-center gap-3">
-                        <Icon className="h-5 w-5 text-cyan-300" />
+                        <Icon className={`h-5 w-5 ${isWarm ? "text-[#f1b64d]" : "text-[#a7cb4c]"}`} />
                         <div>
-                          <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{detail.label}</p>
-                          <p className="mt-1 text-sm font-medium text-white">{detail.value}</p>
+                          <p className="text-xs uppercase tracking-[0.2em] text-[#9ea792]">{detail.label}</p>
+                          <p className="mt-1 text-sm font-medium text-[#f3efe3]">{detail.value}</p>
                         </div>
                       </div>
                     </div>
@@ -71,25 +72,25 @@ export function Training() {
         </div>
 
         <div className="mt-10 grid gap-6 xl:grid-cols-[.65fr_1.35fr]">
-          <div className="rounded-[2rem] border border-white/10 bg-white/6 p-6">
-            <h3 className="text-lg font-semibold text-white">Razones para asistir</h3>
+          <div className="crece-panel-soft rounded-[2rem] p-6">
+            <h3 className="text-lg font-semibold text-[#f3efe3]">Razones para asistir</h3>
             <ul className="mt-5 grid gap-3">
               {siteContent.training.reasons.map((reason) => (
-                <li key={reason} className="flex items-start gap-3 text-sm text-slate-200">
-                  <BadgeCheck className="mt-0.5 h-5 w-5 text-cyan-300" />
+                <li key={reason} className="flex items-start gap-3 text-sm text-[#d1d8c8]">
+                  <BadgeCheck className="mt-0.5 h-5 w-5 text-[#a7cb4c]" />
                   <span>{reason}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/6 p-6">
-            <h3 className="text-lg font-semibold text-white">Qué aprenderás</h3>
+          <div className="crece-panel-soft rounded-[2rem] p-6">
+            <h3 className="text-lg font-semibold text-[#f3efe3]">Qué aprenderás</h3>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {siteContent.training.topics.map((topic) => (
                 <div
                   key={topic}
-                  className="rounded-2xl border border-white/10 bg-black/15 px-4 py-4 text-sm text-slate-200"
+                  className="rounded-2xl border border-white/8 bg-[#0a1512]/56 px-4 py-4 text-sm text-[#d1d8c8]"
                 >
                   {topic}
                 </div>
