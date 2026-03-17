@@ -15,10 +15,10 @@ export function SectionHeading({ eyebrow, title, description, align = "left" }: 
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="crece-display text-balance text-[2rem] font-semibold leading-[0.98] tracking-[-0.04em] text-[#173225] sm:text-[3rem] lg:text-[4rem]">
+      <h2 className="crece-display text-balance text-[2.15rem] font-semibold leading-[0.96] tracking-[-0.05em] text-[#173225] sm:text-[3.2rem] lg:text-[4.15rem]">
         {title}
       </h2>
-      {description ? <p className="mt-4 text-pretty text-[0.98rem] leading-7 text-[#4f6658] sm:mt-5 sm:text-lg sm:leading-8">{description}</p> : null}
+      {description ? <p className="mt-4 text-pretty text-[1rem] leading-8 text-[#4f6658] sm:mt-5 sm:text-[1.08rem] sm:leading-9">{description}</p> : null}
     </div>
   );
 }
