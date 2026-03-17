@@ -14,9 +14,9 @@ const info = [
 
 export function SeminarPromo() {
   return (
-    <AnimatedSection id={siteContent.seminarPromo.id} className="crece-section-band relative py-20 sm:py-28">
+    <AnimatedSection id={siteContent.seminarPromo.id} className="crece-section-band relative py-14 sm:py-28">
       <Container>
-        <div className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[2.2rem] p-6 sm:p-8 lg:p-10">
+        <div className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[1.8rem] p-5 sm:rounded-[2.2rem] sm:p-8 lg:p-10">
           <div className="absolute inset-0">
             <Image
               src={siteContent.seminarPromo.image}
@@ -28,14 +28,14 @@ export function SeminarPromo() {
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(251,251,246,.96)_0%,rgba(247,251,243,.94)_48%,rgba(240,246,235,.98)_100%)]" />
           </div>
 
-          <div className="relative grid gap-10 lg:grid-cols-[1fr_.92fr] lg:items-center">
+          <div className="relative grid gap-7 sm:gap-10 lg:grid-cols-[1fr_.92fr] lg:items-center">
             <div>
               <span className="crece-outline-tag--warm inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em]">
                 {siteContent.seminarPromo.badge}
               </span>
               <SectionHeading eyebrow="Capacitación" title={siteContent.seminarPromo.title} description={siteContent.seminarPromo.description} />
 
-              <ul className="mt-7 grid gap-3">
+              <ul className="mt-6 grid gap-3 sm:mt-7">
                 {siteContent.seminarPromo.bullets.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-[#4f6658] sm:text-base">
                     <BadgeCheck className="mt-0.5 h-5 w-5 text-[#2b7a47]" />
@@ -44,7 +44,7 @@ export function SeminarPromo() {
                 ))}
               </ul>
 
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-6 flex flex-wrap gap-3 sm:mt-8 sm:gap-4">
                 <a href={siteContent.seminarPromo.cta.href} className="crece-button-primary inline-flex items-center justify-center rounded-full px-6 py-4 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5">
                   {siteContent.seminarPromo.cta.label}
                 </a>
@@ -59,12 +59,12 @@ export function SeminarPromo() {
               </div>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
               {info.map((item, index) => {
                 const Icon = item.icon;
                 const warm = index === 1 || index === 3;
                 return (
-                  <div key={item.label} className="crece-panel-soft rounded-[1.7rem] p-5">
+                  <div key={item.label} className="crece-panel-soft rounded-[1.45rem] p-4 sm:rounded-[1.7rem] sm:p-5">
                     <div className="flex items-start gap-4">
                       <div className={`rounded-2xl border p-3 ${warm ? "border-[#d68b1f]/22 bg-[#efbb5a]/18 text-[#a06413]" : "border-[#2b7a47]/18 bg-[#89b64a]/12 text-[#245f3a]"}`}>
                         <Icon className="h-5 w-5" />

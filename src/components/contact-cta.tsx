@@ -9,7 +9,7 @@ import { SectionHeading } from "./section-heading";
 
 export function ContactCta() {
   return (
-    <AnimatedSection id={siteContent.contact.id} className="relative py-20 sm:py-28">
+    <AnimatedSection id={siteContent.contact.id} className="relative py-14 sm:py-28">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 hidden md:block">
           <Image src={siteContent.contact.ctaImages.desktop} alt="CTA financiero" fill className="object-cover object-center opacity-10 saturate-[0.9]" sizes="100vw" />
@@ -20,11 +20,11 @@ export function ContactCta() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(251,251,246,.72),rgba(247,251,243,.96)_22%,rgba(240,246,235,.98)_100%)]" />
       </div>
 
-      <Container className="grid items-start gap-10 lg:grid-cols-[.9fr_1.1fr]">
+      <Container className="grid items-start gap-7 sm:gap-10 lg:grid-cols-[.9fr_1.1fr]">
         <div>
           <SectionHeading eyebrow="Contacto" title={siteContent.contact.title} description={siteContent.contact.subtitle} />
 
-          <div className="mt-8 grid gap-4">
+          <div className="mt-6 grid gap-4 sm:mt-8">
             <InfoCard icon={<UserRound className="h-5 w-5 text-[#d68b1f]" />} label="Atención" value={siteContent.contact.contactPerson} secondary={siteContent.contact.role} />
             <InfoCard icon={<Mail className="h-5 w-5 text-[#2b7a47]" />} label="Correo" value={siteContent.contact.email} href={`mailto:${siteContent.contact.email}`} />
             <InfoCard icon={<Phone className="h-5 w-5 text-[#d68b1f]" />} label="Teléfono" value={siteContent.contact.phone} href={`tel:${siteContent.contact.phone.replace(/\s+/g, "")}`} />
@@ -51,11 +51,11 @@ function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; la
   );
 
   if (!href) {
-    return <div className="crece-panel-soft flex items-center gap-4 rounded-[1.6rem] px-5 py-5 text-left">{content}</div>;
+    return <div className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.6rem] sm:px-5 sm:py-5 text-left">{content}</div>;
   }
 
   return (
-    <a href={href} className="crece-panel-soft flex items-center gap-4 rounded-[1.6rem] px-5 py-5 text-left transition-colors duration-300 hover:bg-white">
+    <a href={href} className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.6rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white">
       {content}
     </a>
   );

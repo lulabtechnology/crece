@@ -51,7 +51,7 @@ export function ContactForm() {
         <Field label="Empresa" value={form.company} onChange={(value) => setForm((prev) => ({ ...prev, company: value }))} placeholder="Nombre de empresa" />
       </div>
 
-      <div className="mt-4">
+      <div className="mt-3 sm:mt-4">
         <label className="mb-2 block text-sm font-medium text-[#365240]">Mensaje</label>
         <textarea
           value={form.message}
@@ -62,7 +62,7 @@ export function ContactForm() {
         />
       </div>
 
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row">
         <button type="submit" className="crece-button-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5">
           <Send className="h-4 w-4" />
           Enviar solicitud

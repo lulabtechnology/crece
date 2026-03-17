@@ -10,17 +10,17 @@ const detailIcons = [CalendarDays, Clock3, MonitorSmartphone, BadgeCheck];
 
 export function Training() {
   return (
-    <AnimatedSection id={siteContent.training.id} className="pt-4 pb-20 sm:pb-28">
+    <AnimatedSection id={siteContent.training.id} className="pt-2 pb-14 sm:pt-4 sm:pb-28">
       <Container>
         <SectionHeading eyebrow="Programa del seminario" title={siteContent.training.title} description={siteContent.training.description} align="center" />
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[1.02fr_.98fr]">
+        <div className="mt-8 grid gap-5 sm:mt-12 sm:gap-6 lg:grid-cols-[1.02fr_.98fr]">
           <div className="crece-image-frame crece-premium-stroke overflow-hidden">
             <Image src={siteContent.training.image} alt="Programa del seminario" width={1200} height={900} className="h-full w-full object-cover" />
           </div>
 
           <div className="grid gap-6">
-            <div className="crece-panel crece-premium-stroke rounded-[2rem] p-6">
+            <div className="crece-panel crece-premium-stroke rounded-[1.7rem] p-5 sm:rounded-[2rem] sm:p-6">
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl border border-[#d68b1f]/22 bg-[#efbb5a]/18 p-3 text-[#a06413]">
                   <GraduationCap className="h-5 w-5" />
@@ -58,8 +58,8 @@ export function Training() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 xl:grid-cols-[.66fr_1.34fr]">
-          <div className="crece-panel-soft rounded-[2rem] p-6">
+        <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 xl:grid-cols-[.66fr_1.34fr]">
+          <div className="crece-panel-soft rounded-[1.7rem] p-5 sm:rounded-[2rem] sm:p-6">
             <h3 className="crece-display text-[1.45rem] font-semibold text-[#173225]">Por qué asistir</h3>
             <ul className="mt-5 grid gap-3">
               {siteContent.training.reasons.map((reason) => (
@@ -71,7 +71,7 @@ export function Training() {
             </ul>
           </div>
 
-          <div className="crece-panel-soft rounded-[2rem] p-6">
+          <div className="crece-panel-soft rounded-[1.7rem] p-5 sm:rounded-[2rem] sm:p-6">
             <h3 className="crece-display text-[1.45rem] font-semibold text-[#173225]">Contenido del seminario</h3>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {siteContent.training.topics.map((topic) => (

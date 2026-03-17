@@ -9,7 +9,7 @@ const icons = [Landmark, HandCoins, PiggyBank, WalletCards, BriefcaseBusiness, B
 
 export function Benefits() {
   return (
-    <AnimatedSection id="financiamientos" className="crece-section-band py-20 sm:py-28">
+    <AnimatedSection id="financiamientos" className="crece-section-band py-14 sm:py-28">
       <Container>
         <SectionHeading
           eyebrow={siteContent.benefits.eyebrow}
@@ -17,13 +17,13 @@ export function Benefits() {
           description={siteContent.benefits.description}
         />
 
-        <RevealList className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <RevealList className="mt-8 grid gap-4 sm:mt-10 md:grid-cols-2 xl:grid-cols-3">
           {siteContent.benefits.items.map((item, index) => {
             const Icon = icons[index % icons.length];
             const isWarm = index === 1 || index === 3;
             return (
               <RevealItem key={item.title}>
-                <article className="crece-panel crece-premium-stroke h-full rounded-[1.8rem] p-6">
+                <article className="crece-panel crece-premium-stroke h-full rounded-[1.6rem] p-5 sm:rounded-[1.8rem] sm:p-6">
                   <div
                     className={`inline-flex rounded-2xl border p-3 ${
                       isWarm
