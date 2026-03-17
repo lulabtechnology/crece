@@ -53,13 +53,24 @@ export function Services() {
             ))}
           </RevealList>
 
-          <a
-            href={siteContent.services.cta.href}
-            className="crece-button-primary mt-6 sm:mt-8 inline-flex items-center gap-2 rounded-full px-6 py-4 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5"
-          >
-            {siteContent.services.cta.label}
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
+            <a
+              href={siteContent.services.cta.href}
+              className="crece-button-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5"
+            >
+              {siteContent.services.cta.label}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href={siteContent.services.websiteCta.href}
+              target="_blank"
+              rel="noreferrer"
+              className="crece-button-secondary inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-semibold transition-colors duration-300 hover:bg-white"
+            >
+              {siteContent.services.websiteCta.label}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </Container>
 

@@ -12,6 +12,14 @@ export function Footer() {
               {item.label}
             </a>
           ))}
+          <a
+            href={`https://${siteContent.contact.website}`}
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-[#a86715] transition-colors duration-300 hover:text-[#8d5910]"
+          >
+            {siteContent.footer.websiteLabel}
+          </a>
         </div>
       </Container>
     </footer>

@@ -5,81 +5,80 @@ export const siteContent = {
     logo: "/images/brand/logo-crece.png"
   },
   seo: {
-    title: "CRECE | Consultoría financiera, inversiones, financiamientos y capacitación",
+    title: "CRECE | Consultoría financiera y gerencia financiera tercerizada",
     description:
-      "CRECE es una firma de consultoría financiera e inversiones que ofrece diagnóstico financiero, gerencia financiera tercerizada, productos de financiamiento, acompañamiento en inversiones y capacitación ejecutiva.",
+      "CRECE acompaña a empresas con consultoría financiera, diagnóstico, valoración y gerencia financiera tercerizada, con respaldo profesional y atención personalizada.",
     url: "https://www.crecepanama.com.pa",
     image: "/images/hero/hero-desktop.webp",
     keywords: [
       "consultoría financiera",
       "gerencia financiera tercerizada",
-      "inversiones y financiamientos",
-      "factoring",
-      "leasing",
-      "capital de trabajo",
-      "capacitación financiera",
+      "diagnóstico financiero",
+      "valoración de empresas",
+      "planes de negocio",
       "Panamá"
     ]
   },
   navigation: [
     { label: "Empresa", href: "#empresa" },
     { label: "Consultoría", href: "#consultoria" },
-    { label: "Financiamientos", href: "#financiamientos" },
-    { label: "Capacitación", href: "#seminario" },
+    { label: "Respaldo", href: "#resultados" },
     { label: "Contacto", href: "#contacto" }
   ],
   hero: {
-    eyebrow: "Consultoría financiera e inversiones",
-    titleLead: "Respaldo financiero",
-    titleAccent: "para decidir mejor",
-    titleTail: "y crecer con más orden.",
+    eyebrow: "Consultoría financiera y gerencia financiera tercerizada",
+    titleLead: "Consultoría financiera",
+    titleAccent: "para ordenar decisiones",
+    titleTail: "y crecer con criterio.",
     subtitle:
-      "CRECE presenta una oferta clara y separada: consultoría financiera y gerencia financiera tercerizada, inversiones y financiamientos, y capacitación ejecutiva para empresas y profesionales.",
+      "CRECE acompaña a empresas que necesitan revisar su información financiera, mejorar control, fortalecer decisiones gerenciales y contar con respaldo experto sin inflar su estructura interna.",
     primaryCta: { label: "Solicitar orientación", href: "#contacto" },
-    secondaryCta: { label: "Conocer servicios", href: "#consultoria" },
-    tracks: ["Consultoría financiera", "Inversiones y financiamientos", "Capacitación ejecutiva"],
+    secondaryCta: { label: "Ir a la web principal", href: "https://www.crecepanama.com.pa" },
+    tracks: ["Diagnóstico financiero", "Gerencia financiera tercerizada", "Acompañamiento ejecutivo"],
     stats: [
       { value: "30+", label: "años de experiencia en banca y finanzas" },
-      { value: "22", label: "años de trayectoria en el Instituto Bancario Internacional" },
-      { value: "3", label: "líneas principales de servicio" }
+      { value: "22", label: "años de trayectoria en capacitación ejecutiva" },
+      { value: "1", label: "línea principal destacada en esta landing" }
     ],
     images: {
       desktop: "/images/hero/hero-desktop.webp",
       mobile: "/images/hero/hero-mobile.webp",
       gridOverlay: "/images/textures/grid-overlay.png"
     },
-    sideCardTitle: "Una firma financiera con enfoque institucional",
+    sideCardTitle: "Consultoría con criterio financiero y acompañamiento real",
     sideCardLines: [
-      "Consultoría financiera y gerencia financiera tercerizada",
-      "Inversiones, corretaje y facilidades crediticias",
-      "Seminarios y capacitación ejecutiva"
-    ]
+      "Diagnóstico y lectura financiera para decisiones con más claridad",
+      "Gerencia financiera tercerizada para seguimiento y control",
+      "Valoración, presupuesto, KPIs y apoyo a planes de negocio"
+    ],
+    bottomNote: "Para inversiones, financiamientos y capacitación ejecutiva, conoce la web principal de CRECE.",
+    bottomNoteLink: { label: "Visitar crecepanama.com.pa", href: "https://www.crecepanama.com.pa" }
   },
   businessLines: {
-    eyebrow: "Nuestras líneas",
-    title: "Tres frentes claros para atender necesidades financieras, empresariales y formativas.",
+    eyebrow: "Más información",
+    title: "Otros servicios de CRECE disponibles en la web principal.",
     description:
-      "CRECE reúne servicios de consultoría, soluciones de inversión y financiamiento, y programas de capacitación con un enfoque práctico, profesional y cercano.",
+      "Esta landing se concentra en consultoría financiera. Si quieres explorar inversiones, financiamientos o capacitación, te conviene continuar en el sitio principal de CRECE.",
     items: [
       {
-        label: "Consultoría",
-        title: "Diagnóstico, valoración y gerencia financiera tercerizada",
-        text: "Apoyo para ordenar la información financiera, fortalecer la toma de decisiones y acompañar a la gerencia con criterio técnico.",
-        href: "#consultoria"
-      },
-      {
         label: "Financiamientos",
-        title: "Inversiones, corretaje y facilidades crediticias",
-        text: "Soluciones para capital de trabajo, factoring, leasing, préstamos, garantías, corretaje de negocios y evaluación financiera.",
-        href: "#financiamientos"
+        title: "Opciones para liquidez, capital de trabajo y estructuración financiera",
+        text: "Conoce alternativas como facilidades crediticias, factoring, leasing, cartas de crédito, garantías y otros apoyos para crecimiento y operación.",
+        href: "https://www.crecepanama.com.pa",
+        ctaLabel: "Ver más en la web"
       },
       {
         label: "Capacitación",
-        title: "Seminarios y formación ejecutiva",
-        text: "Programas en análisis financiero, instituciones financieras, tesorería, riesgos, evaluación de proyectos y más.",
-        href: "#seminario"
+        title: "Seminarios y formación ejecutiva para fortalecer criterio financiero",
+        text: "Encuentra información sobre programas de análisis financiero, tesorería, riesgos, instituciones financieras y otros temas de capacitación.",
+        href: "https://www.crecepanama.com.pa",
+        ctaLabel: "Explorar programas"
       }
-    ]
+    ],
+    websiteCta: {
+      label: "Ir al sitio principal de CRECE",
+      href: "https://www.crecepanama.com.pa"
+    }
   },
   institutional: {
     id: "empresa",
@@ -88,7 +87,7 @@ export const siteContent = {
       "CRECE es una firma de consultoría financiera e inversiones encabezada por Bolívar Lobo, con amplia experiencia en banca, finanzas, riesgos y formación ejecutiva. Su propuesta combina atención cercana, lectura técnica y soluciones aplicadas a la realidad de cada cliente.",
     image: "/images/sections/about-visual.webp",
     highlights: [
-      "Consultoría financiera e inversiones",
+      "Consultoría financiera",
       "Experiencia en banca, finanzas y riesgos",
       "Atención profesional y personalizada"
     ],
@@ -98,16 +97,12 @@ export const siteContent = {
         text: "Se analiza la situación de la empresa para comprobar su salud financiera, identificar alertas y detectar oportunidades de mejora con mayor claridad."
       },
       {
-        title: "Valoración de empresas",
-        text: "Se estima el valor real del negocio para venta, atracción de socios, negociaciones, fusiones u otras decisiones importantes."
+        title: "Valoración y planes de negocio",
+        text: "Se estima el valor del negocio y se estructuran planes útiles para accionistas, inversionistas, prestamistas y gerencias."
       },
       {
         title: "Gerencia financiera tercerizada",
-        text: "Se asumen funciones similares a las de un gerente financiero, ayudando a ordenar, analizar y acompañar decisiones sin elevar innecesariamente la estructura interna."
-      },
-      {
-        title: "Planes de negocio",
-        text: "Se elaboran o revisan planes desde una visión útil para accionistas, inversionistas, prestamistas y gerencias."
+        text: "Se asumen funciones similares a las de un gerente financiero para ordenar, analizar y acompañar decisiones sin elevar innecesariamente la estructura interna."
       }
     ],
     sideNoteTitle: "Respaldo profesional",
@@ -148,7 +143,7 @@ export const siteContent = {
   },
   services: {
     id: "consultoria",
-    title: "Consultoría financiera y gerencia financiera tercerizada para empresas que necesitan criterio y acompañamiento real.",
+    title: "Consultoría financiera y gerencia financiera tercerizada para empresas que necesitan criterio, control y acompañamiento real.",
     description:
       "Esta línea ayuda a revisar información, ordenar prioridades, fortalecer el control y apoyar decisiones gerenciales con una mirada financiera más sólida.",
     image: "/images/sections/services-visual.webp",
@@ -168,9 +163,7 @@ export const siteContent = {
       "Presupuesto financiero y control de gastos",
       "Gestión de cuentas por pagar y por cobrar",
       "Planificación financiera y de inversiones",
-      "Análisis de KPIs y estados financieros",
-      "Apoyo en planes de negocio",
-      "Seguimiento ejecutivo y control continuo"
+      "Análisis de KPIs y estados financieros"
     ],
     advantages: [
       {
@@ -193,13 +186,17 @@ export const siteContent = {
     cta: {
       label: "Hablar sobre consultoría",
       href: "#contacto"
+    },
+    websiteCta: {
+      label: "Ver otros servicios en la web",
+      href: "https://www.crecepanama.com.pa"
     }
   },
   results: {
     id: "resultados",
-    title: "Experiencia y trayectoria que respaldan la propuesta de CRECE.",
+    title: "Trayectoria que respalda cada recomendación financiera.",
     description:
-      "La fortaleza de la marca está en su recorrido profesional, su cercanía con instituciones financieras y su capacidad para convertir experiencia en soluciones útiles.",
+      "La fortaleza de CRECE está en su recorrido profesional, su cercanía con instituciones financieras y su capacidad para convertir experiencia en soluciones útiles.",
     image: "/images/sections/results-visual.webp",
     metrics: [
       { value: "30+", label: "años de experiencia en banca y finanzas" },
@@ -302,9 +299,9 @@ export const siteContent = {
   },
   contact: {
     id: "contacto",
-    title: "Conversemos según tu necesidad: consultoría, financiamiento o capacitación.",
+    title: "Conversemos sobre la necesidad financiera de tu empresa.",
     subtitle:
-      "Contáctanos para recibir orientación sobre consultoría financiera, gerencia financiera tercerizada, productos de financiamiento o programas de capacitación.",
+      "Si estás evaluando consultoría financiera o gerencia financiera tercerizada, podemos orientarte. Para más información sobre otros servicios, también puedes continuar en la web principal de CRECE.",
     contactPerson: "Bolívar Lobo",
     role: "Consultoría financiera e inversiones",
     email: "bolivarlobo4@gmail.com",
@@ -317,7 +314,8 @@ export const siteContent = {
     }
   },
   footer: {
-    legal: "CRECE © 2026. Consultoría financiera, inversiones, financiamientos y capacitación ejecutiva."
+    legal: "CRECE © 2026. Consultoría financiera e inversiones.",
+    websiteLabel: "Sitio principal"
   }
 } as const;
 

@@ -1,14 +1,9 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
-import { BusinessLines } from "@/components/business-lines";
 import { InstitutionalOverview } from "@/components/institutional-overview";
-import { Benefits } from "@/components/benefits";
 import { Services } from "@/components/services";
 import { Results } from "@/components/results";
-import { Authority } from "@/components/authority";
-import { Process } from "@/components/process";
-import { SeminarPromo } from "@/components/seminar-promo";
-import { Training } from "@/components/training";
+import { BusinessLines } from "@/components/business-lines";
 import { ContactCta } from "@/components/contact-cta";
 import { Footer } from "@/components/footer";
 
@@ -18,14 +13,9 @@ export default function HomePage() {
       <Header />
       <Hero />
       <InstitutionalOverview />
-      <BusinessLines />
       <Services />
-      <Benefits />
-      <SeminarPromo />
-      <Training />
       <Results />
-      <Authority />
-      <Process />
+      <BusinessLines />
       <ContactCta />
       <Footer />
     </main>

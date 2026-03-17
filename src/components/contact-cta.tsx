@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { Globe, Mail, Phone, UserRound } from "lucide-react";
+import { ArrowRight, Globe, Mail, MessageCircle, Phone, UserRound } from "lucide-react";
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
@@ -23,6 +23,27 @@ export function ContactCta() {
       <Container className="grid items-start gap-7 sm:gap-10 lg:grid-cols-[.9fr_1.1fr]">
         <div>
           <SectionHeading eyebrow="Contacto" title={siteContent.contact.title} description={siteContent.contact.subtitle} />
+
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
+            <a
+              href={`https://wa.me/${siteContent.contact.whatsapp}?text=${encodeURIComponent("Hola, quiero más información sobre consultoría financiera en CRECE.")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="crece-button-primary inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Hablar por WhatsApp
+            </a>
+            <a
+              href={`https://${siteContent.contact.website}`}
+              target="_blank"
+              rel="noreferrer"
+              className="crece-button-secondary inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold transition-colors duration-300 hover:bg-white"
+            >
+              <Globe className="h-4 w-4 text-[#2b7a47]" />
+              Ver web principal
+            </a>
+          </div>
 
           <div className="mt-6 grid gap-4 sm:mt-8">
             <InfoCard icon={<UserRound className="h-5 w-5 text-[#d68b1f]" />} label="Atención" value={siteContent.contact.contactPerson} secondary={siteContent.contact.role} />
@@ -55,8 +76,9 @@ function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; la
   }
 
   return (
-    <a href={href} className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.6rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white">
+    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined} className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.6rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white">
       {content}
+      <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-[#b57113]" />
     </a>
   );
 }

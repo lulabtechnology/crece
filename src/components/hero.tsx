@@ -8,6 +8,7 @@ import { Container } from "./container";
 
 export function Hero() {
   const reducedMotion = useReducedMotion();
+  const isSecondaryExternal = siteContent.hero.secondaryCta.href.startsWith("http");
 
   return (
     <section className="relative overflow-clip border-b border-[#0f4e2f]/8">
@@ -86,9 +87,28 @@ export function Hero() {
             </a>
             <a
               href={siteContent.hero.secondaryCta.href}
+              target={isSecondaryExternal ? "_blank" : undefined}
+              rel={isSecondaryExternal ? "noreferrer" : undefined}
               className="crece-button-secondary inline-flex items-center justify-center rounded-full px-5 py-3.5 text-sm font-semibold backdrop-blur-md transition-colors duration-300 hover:bg-white sm:px-6 sm:py-4"
             >
               {siteContent.hero.secondaryCta.label}
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial={reducedMotion ? false : { opacity: 0, y: 16 }}
+            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, delay: 0.34 }}
+            className="mt-4 flex flex-wrap items-center gap-2 text-sm text-[#5c7060]"
+          >
+            <span>{siteContent.hero.bottomNote}</span>
+            <a
+              href={siteContent.hero.bottomNoteLink.href}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-[#a86715] transition-colors duration-300 hover:text-[#8d5910]"
+            >
+              {siteContent.hero.bottomNoteLink.label}
             </a>
           </motion.div>
 
