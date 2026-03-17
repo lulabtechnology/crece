@@ -9,13 +9,14 @@ const icons = [Building2, BriefcaseBusiness, GraduationCap];
 
 export function BusinessLines() {
   return (
-    <AnimatedSection className="relative py-12 sm:-mt-8 sm:py-0">
+    <AnimatedSection className="relative py-20 sm:py-24">
       <Container>
         <div className="crece-panel crece-premium-stroke overflow-hidden rounded-[2rem] p-6 sm:p-8">
           <SectionHeading
             eyebrow={siteContent.businessLines.eyebrow}
             title={siteContent.businessLines.title}
             description={siteContent.businessLines.description}
+            align="center"
           />
 
           <RevealList className="mt-8 grid gap-4 lg:grid-cols-3">

@@ -69,9 +69,9 @@ export function InstitutionalOverview() {
             />
           </div>
           <div className="crece-panel absolute -bottom-6 left-6 max-w-sm rounded-[1.5rem] p-5">
-            <div className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#8a6a2f]">Enfoque correcto de marca</div>
+            <div className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#8a6a2f]">{siteContent.institutional.sideNoteTitle}</div>
             <p className="mt-3 text-sm leading-7 text-[#4f6658]">
-              Más corporativa, más clara y más confiable. Menos fintech oscura y más firma financiera institucional.
+              {siteContent.institutional.sideNoteText}
             </p>
           </div>
         </div>

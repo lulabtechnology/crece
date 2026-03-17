@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { Globe, Mail, Phone } from "lucide-react";
+import { Globe, Mail, Phone, UserRound } from "lucide-react";
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
@@ -25,6 +25,7 @@ export function ContactCta() {
           <SectionHeading eyebrow="Contacto" title={siteContent.contact.title} description={siteContent.contact.subtitle} />
 
           <div className="mt-8 grid gap-4">
+            <InfoCard icon={<UserRound className="h-5 w-5 text-[#d68b1f]" />} label="Atención" value={siteContent.contact.contactPerson} secondary={siteContent.contact.role} />
             <InfoCard icon={<Mail className="h-5 w-5 text-[#2b7a47]" />} label="Correo" value={siteContent.contact.email} href={`mailto:${siteContent.contact.email}`} />
             <InfoCard icon={<Phone className="h-5 w-5 text-[#d68b1f]" />} label="Teléfono" value={siteContent.contact.phone} href={`tel:${siteContent.contact.phone.replace(/\s+/g, "")}`} />
             <InfoCard icon={<Globe className="h-5 w-5 text-[#2b7a47]" />} label="Web" value={siteContent.contact.website} href={`https://${siteContent.contact.website}`} />
@@ -37,14 +38,25 @@ export function ContactCta() {
   );
 }
 
-function InfoCard({ icon, label, value, href }: { icon: ReactNode; label: string; value: string; href: string }) {
-  return (
-    <a href={href} className="crece-panel-soft flex items-center gap-4 rounded-[1.6rem] px-5 py-5 text-left transition-colors duration-300 hover:bg-white">
+function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; label: string; value: string; href?: string; secondary?: string }) {
+  const content = (
+    <>
       <div className="rounded-2xl border border-[#0f4e2f]/8 bg-white/90 p-3">{icon}</div>
       <div>
         <div className="text-xs uppercase tracking-[0.2em] text-[#6d7d70]">{label}</div>
         <div className="mt-1 text-sm font-medium text-[#173225] sm:text-base">{value}</div>
+        {secondary ? <div className="mt-1 text-sm text-[#5e7063]">{secondary}</div> : null}
       </div>
+    </>
+  );
+
+  if (!href) {
+    return <div className="crece-panel-soft flex items-center gap-4 rounded-[1.6rem] px-5 py-5 text-left">{content}</div>;
+  }
+
+  return (
+    <a href={href} className="crece-panel-soft flex items-center gap-4 rounded-[1.6rem] px-5 py-5 text-left transition-colors duration-300 hover:bg-white">
+      {content}
     </a>
   );
 }

@@ -17,15 +17,15 @@ export default function HomePage() {
     <main className="crece-shell relative overflow-hidden text-[#173225]">
       <Header />
       <Hero />
-      <BusinessLines />
       <InstitutionalOverview />
+      <BusinessLines />
       <Services />
       <Benefits />
+      <SeminarPromo />
+      <Training />
       <Results />
       <Authority />
       <Process />
-      <SeminarPromo />
-      <Training />
       <ContactCta />
       <Footer />
     </main>

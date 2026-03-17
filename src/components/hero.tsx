@@ -130,16 +130,14 @@ export function Hero() {
               </div>
               <div className="flex flex-col justify-between rounded-[1.5rem] bg-[linear-gradient(180deg,rgba(247,251,243,.96),rgba(235,243,228,.92))] p-5 text-[#173225]">
                 <div>
-                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[#7b6a39]">{siteContent.hero.cardEyebrow}</div>
+                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[#7b6a39]">Presentación institucional</div>
                   <h3 className="crece-display mt-3 text-[1.7rem] leading-tight font-semibold">
-                    {siteContent.hero.cardTitle}
+                    {siteContent.hero.sideCardTitle}
                   </h3>
                 </div>
                 <div className="mt-6 grid gap-3 text-sm text-[#4c6555]">
-                  {siteContent.hero.cardItems.map((item) => (
-                    <div key={item} className="rounded-2xl border border-[#0f4e2f]/8 bg-white/80 px-4 py-3">
-                      {item}
-                    </div>
+                  {siteContent.hero.sideCardLines.map((line) => (
+                    <div key={line} className="rounded-2xl border border-[#0f4e2f]/8 bg-white/80 px-4 py-3">{line}</div>
                   ))}
                 </div>
               </div>
