@@ -9,7 +9,7 @@ import { SectionHeading } from "./section-heading";
 
 export function ContactCta() {
   return (
-    <AnimatedSection id={siteContent.contact.id} className="relative py-14 sm:py-24">
+    <AnimatedSection id={siteContent.contact.id} className="relative py-14 sm:py-28">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 hidden md:block">
           <Image src={siteContent.contact.ctaImages.desktop} alt="CTA financiero" fill className="object-cover object-center opacity-10 saturate-[0.9]" sizes="100vw" />
