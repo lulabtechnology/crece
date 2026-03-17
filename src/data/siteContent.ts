@@ -20,8 +20,8 @@ export const siteContent = {
     ]
   },
   navigation: [
-    { label: "Empresa", href: "#empresa" },
     { label: "Consultoría", href: "#consultoria" },
+    { label: "Empresa", href: "#empresa" },
     { label: "Contacto", href: "#contacto" }
   ],
   hero: {
@@ -31,33 +31,27 @@ export const siteContent = {
     titleTail: "",
     subtitle:
       "CRECE acompaña a empresas que necesitan revisar su información financiera, mejorar controles, fortalecer decisiones gerenciales y contar con respaldo experto sin incrementar su estructura interna.",
-    primaryCta: null,
-    secondaryCta: null,
+    primaryCta: { label: "", href: "#contacto" },
+    secondaryCta: { label: "", href: "https://www.crecepanama.com.pa" },
     tracks: [],
-    stats: [],
+    stats: [
+      { value: "30+", label: "años de experiencia en banca y finanzas" },
+      { value: "22", label: "años de trayectoria en capacitación ejecutiva" },
+      { value: "1", label: "enfoque consultivo presentado en esta página" }
+    ],
     images: {
       desktop: "/images/hero/hero-desktop.webp",
       mobile: "/images/hero/hero-mobile.webp",
       gridOverlay: "/images/textures/grid-overlay.png"
     },
-    sideCardEyebrow: "Consultoría CRECE",
     sideCardTitle: "En qué consiste la consultoría de CRECE",
-    sideCardItems: [
-      {
-        title: "Diagnóstico financiero",
-        text: "Revisión de la salud financiera para detectar alertas, oportunidades y decisiones prioritarias."
-      },
-      {
-        title: "Gerencia financiera tercerizada",
-        text: "Seguimiento, lectura ejecutiva y acompañamiento gerencial sin incrementar la estructura interna."
-      },
-      {
-        title: "Valoración y planes de negocio",
-        text: "Apoyo para estimar valor, ordenar proyecciones y sustentar decisiones ante socios o inversionistas."
-      }
+    sideCardLines: [
+      "Diagnóstico financiero para entender la situación real del negocio",
+      "Gerencia financiera tercerizada para seguimiento, análisis y acompañamiento",
+      "Valoración, presupuesto y apoyo a planes de negocio con criterio técnico"
     ],
     bottomNote: "",
-    bottomNoteLink: null
+    bottomNoteLink: { label: "", href: "https://www.crecepanama.com.pa" }
   },
   businessLines: {
     eyebrow: "Más información",
@@ -87,15 +81,28 @@ export const siteContent = {
   },
   institutional: {
     id: "empresa",
-    title: "Una firma orientada a aportar criterio financiero, experiencia real y acompañamiento profesional.",
+    title: "En qué consiste la consultoría de CRECE.",
     description:
-      "CRECE es una firma de consultoría financiera e inversiones encabezada por Bolívar Lobo, con amplia experiencia en banca, finanzas, riesgos y formación ejecutiva. Su propuesta combina atención cercana, lectura técnica y soluciones aplicadas a la realidad de cada cliente.",
+      "La consultoría de CRECE ayuda a revisar información, ordenar prioridades, fortalecer controles y acompañar decisiones gerenciales con una mirada financiera práctica, clara y técnicamente sustentada.",
     image: "/images/sections/about-visual.webp",
     highlights: [],
-    contributions: [],
-    sideNoteTitle: "Respaldo profesional",
+    contributions: [
+      {
+        title: "Diagnóstico financiero",
+        text: "Se revisa la situación de la empresa para comprobar su salud financiera, identificar alertas y detectar oportunidades de mejora con mayor claridad."
+      },
+      {
+        title: "Valoración y planes de negocio",
+        text: "Se estima el valor del negocio y se estructuran planes útiles para accionistas, inversionistas, prestamistas y gerencias con base financiera sólida."
+      },
+      {
+        title: "Gerencia financiera tercerizada",
+        text: "Se asumen funciones similares a las de un gerente financiero para ordenar, analizar y acompañar decisiones sin incrementar innecesariamente la estructura interna."
+      }
+    ],
+    sideNoteTitle: "Respaldo y experiencia",
     sideNoteText:
-      "Más de 30 años de experiencia en banca y finanzas, trayectoria vinculada al Instituto Bancario Internacional y referencias de formación como INCAE respaldan el criterio técnico de CRECE."
+      "CRECE combina experiencia en banca, finanzas, riesgos y formación ejecutiva para aterrizar decisiones con criterio, cercanía y utilidad real para la empresa."
   },
   benefits: {
     eyebrow: "Inversiones y financiamientos",
@@ -198,78 +205,52 @@ export const siteContent = {
       "CRECE reúne experiencia profesional en entidades financieras, docencia especializada y acompañamiento técnico para empresas y decisiones de inversión.",
     image: "/images/sections/authority-visual.webp",
     bullets: [
-      "Experiencia en entidades financieras, riesgos y decisiones de inversión.",
-      "Trayectoria en formación ejecutiva y acompañamiento técnico para empresas.",
-      "Criterio práctico y cercano para aterrizar decisiones con respaldo profesional."
-    ],
-    cards: [
-      {
-        title: "Trayectoria bancaria",
-        text: "Experiencia en instituciones como BLADEX, Banco Nacional, HSBC, BAC, Banistmo, COLAC y otras referencias del sector financiero."
-      },
-      {
-        title: "Formación y docencia",
-        text: "Vínculos con el Instituto Bancario Internacional, seminarios in house y programas ejecutivos orientados a decisiones útiles."
-      },
-      {
-        title: "Enfoque práctico",
-        text: "Recomendaciones basadas en criterio técnico, realidad empresarial y acompañamiento cercano, sin discursos genéricos."
-      }
+      "Más de 30 años de experiencia en banca y finanzas",
+      "Vínculos o experiencia con Unión de Bancos Suizos, BLADEX, Caja de Ahorros, Banco Nacional, HSBC, BAC y Banistmo",
+      "22 años de trabajo en el Instituto Bancario Internacional",
+      "Seminarios cursados en INCAE, Bankers Trust New York y New York Institute of Finance",
+      "Respaldo de AAA-Negocios, Kesdee y alianzas de trabajo en Centroamérica, Estados Unidos y el sector inmobiliario"
     ]
   },
   process: {
-    title: "Una forma clara de trabajar con cada cliente.",
+    title: "Cómo se atiende cada necesidad dentro de CRECE.",
     description:
-      "Cada caso se revisa con orden, lectura financiera y una propuesta concreta según la necesidad real del cliente.",
+      "El proceso permite identificar si el cliente necesita consultoría, financiamiento o capacitación, y definir el alcance adecuado de manera clara y ordenada.",
     steps: [
       {
-        title: "Escuchar la necesidad",
-        text: "Se identifica el contexto, la situación financiera y el tipo de apoyo que realmente necesita la empresa o el cliente."
+        title: "Identificación de la necesidad",
+        text: "Se define si el requerimiento corresponde a consultoría, gerencia financiera tercerizada, financiamiento o capacitación."
       },
       {
-        title: "Analizar la información",
-        text: "Se revisan datos, indicadores y estructura financiera para construir una lectura más clara del escenario."
+        title: "Evaluación y alcance",
+        text: "Se revisa el contexto del cliente y se determina la solución, producto o programa más adecuado."
       },
       {
-        title: "Proponer acciones útiles",
-        text: "Se entregan recomendaciones, acompañamiento o alternativas financieras aplicables a la realidad del negocio."
+        title: "Implementación",
+        text: "Se ejecuta el servicio o acompañamiento con seguimiento, claridad y orientación práctica."
+      },
+      {
+        title: "Continuidad",
+        text: "Si el cliente lo requiere, el apoyo puede ampliarse hacia otras líneas de servicio dentro de la firma."
       }
     ]
   },
   seminarPromo: {
     id: "seminario",
-    badge: "Capacitación ejecutiva",
-    title: "Seminario de análisis financiero con IA",
+    title: "Capacitación y seminarios como línea independiente dentro de CRECE.",
     description:
-      "Programa presencial diseñado para fortalecer criterio financiero con herramientas prácticas y enfoque aplicado.",
+      "Además de consultoría e inversiones, CRECE ofrece programas de capacitación orientados a análisis financiero, banca, tesorería, inversiones, riesgos y evaluación.",
     image: "/images/sections/training-visual.webp",
+    badge: "Capacitación",
     date: "7 al 16 de abril 2026",
     schedule: "5:30 p.m. a 8:30 p.m.",
     format: "Presencial",
     investment: "$299",
-    bullets: [
-      "Análisis de estados financieros con IA",
-      "Técnicas de valorización y proyección",
-      "Herramientas de IA en finanzas"
-    ],
     urgency: "Cupos limitados",
-    availabilityNote: "Consulta disponibilidad y reserva tu espacio con anticipación.",
-    cta: { label: "Solicitar información del seminario", href: "#contacto" }
-  },
-  seminar: {
-    id: "seminario",
-    title: "Seminario de análisis financiero con IA",
-    description:
-      "Programa presencial diseñado para fortalecer criterio financiero con herramientas prácticas y enfoque aplicado.",
-    date: "7 al 16 de abril 2026",
-    schedule: "5:30 p.m. a 8:30 p.m.",
-    duration: "7 sesiones",
-    modality: "Presencial",
-    price: "$299",
-    topics: [
-      "Análisis de estados financieros con IA",
-      "Técnicas de valorización y proyección",
-      "Herramientas de IA en finanzas"
+    bullets: [
+      "Análisis financiero corporativo, comercial y pyme",
+      "Análisis de instituciones financieras y finanzas para no financieros",
+      "Tesorería, inversiones, riesgos y evaluación de proyectos"
     ],
     availabilityNote: "Consulta disponibilidad y reserva tu espacio con anticipación.",
     cta: { label: "Solicitar información del seminario", href: "#contacto" }
@@ -315,7 +296,7 @@ export const siteContent = {
     id: "contacto",
     title: "Cualquier consulta puntual.",
     subtitle:
-      "Si estás evaluando consultoría financiera o gerencia financiera tercerizada, podemos orientarte. Para más información sobre otros servicios, también puedes continuar en la web principal de CRECE.",
+      "Si estás evaluando consultoría financiera o gerencia financiera tercerizada, podemos orientarte y revisar contigo la necesidad puntual de tu empresa.",
     contactPerson: "Bolívar Lobo",
     role: "Consultoría financiera e inversiones",
     email: "bolivarlobo4@gmail.com",

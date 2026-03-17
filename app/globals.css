@@ -5,8 +5,8 @@
   --crece-bg: #f7f7f1;
   --crece-bg-deep: #0f4e2f;
   --crece-bg-soft: #eef4ea;
-  --crece-panel: rgba(255, 255, 255, 0.9);
-  --crece-panel-soft: rgba(244, 248, 239, 0.92);
+  --crece-panel: rgba(255, 255, 255, 0.88);
+  --crece-panel-soft: rgba(244, 248, 239, 0.9);
   --crece-border: rgba(15, 78, 47, 0.12);
   --crece-border-strong: rgba(214, 139, 31, 0.22);
   --crece-text: #173225;
@@ -16,7 +16,7 @@
   --crece-accent-2: #89b64a;
   --crece-gold: #d68b1f;
   --crece-gold-soft: #efbb5a;
-  --crece-shadow: 0 18px 50px rgba(18, 52, 34, 0.09);
+  --crece-shadow: 0 20px 58px rgba(18, 52, 34, 0.11);
 }
 
 * {
@@ -36,8 +36,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(137, 182, 74, 0.18), transparent 22%),
-    radial-gradient(circle at 85% 0%, rgba(214, 139, 31, 0.16), transparent 16%),
+    radial-gradient(circle at top left, rgba(137, 182, 74, 0.16), transparent 22%),
+    radial-gradient(circle at 85% 0%, rgba(214, 139, 31, 0.14), transparent 16%),
     linear-gradient(180deg, #fbfbf6 0%, #f5f7f0 46%, #eef4ea 100%);
   color: var(--crece-text);
   font-family: var(--font-body), Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -70,52 +70,51 @@ img {
 
 .crece-display {
   font-family: var(--font-display), var(--font-body), sans-serif;
-  font-variation-settings: "wght" 650;
 }
 
 .crece-shell {
   background:
-    radial-gradient(circle at 12% 0%, rgba(137, 182, 74, 0.13), transparent 20%),
+    radial-gradient(circle at 12% 0%, rgba(137, 182, 74, 0.12), transparent 20%),
     radial-gradient(circle at 88% 0%, rgba(214, 139, 31, 0.12), transparent 18%),
     linear-gradient(180deg, #fbfbf6 0%, #f8faf4 32%, #f0f5eb 64%, #fbfbf6 100%);
 }
 
 .crece-panel {
   border: 1px solid rgba(15, 78, 47, 0.1);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 243, 0.95));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 251, 243, 0.94));
   box-shadow: var(--crece-shadow);
   backdrop-filter: blur(16px);
 }
 
 .crece-panel-soft {
   border: 1px solid rgba(15, 78, 47, 0.08);
-  background: linear-gradient(180deg, rgba(247, 251, 243, 0.94), rgba(240, 246, 235, 0.9));
+  background: linear-gradient(180deg, rgba(247, 251, 243, 0.92), rgba(240, 246, 235, 0.86));
   backdrop-filter: blur(14px);
 }
 
 .crece-premium-stroke {
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.54),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
     0 24px 70px rgba(18, 52, 34, 0.08);
 }
 
 .crece-outline-tag {
-  border: 1px solid rgba(43, 122, 71, 0.16);
-  background: linear-gradient(180deg, rgba(137, 182, 74, 0.16), rgba(255, 255, 255, 0.78));
+  border: 1px solid rgba(43, 122, 71, 0.14);
+  background: linear-gradient(180deg, rgba(137, 182, 74, 0.16), rgba(255, 255, 255, 0.7));
   color: #245f3a;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.54);
 }
 
 .crece-outline-tag--warm {
   border: 1px solid rgba(214, 139, 31, 0.2);
-  background: linear-gradient(180deg, rgba(239, 187, 90, 0.22), rgba(255, 255, 255, 0.78));
+  background: linear-gradient(180deg, rgba(239, 187, 90, 0.22), rgba(255, 255, 255, 0.74));
   color: #8f5610;
 }
 
 .crece-button-primary {
-  background: linear-gradient(135deg, #f1bf60 0%, #d68b1f 100%);
+  background: linear-gradient(135deg, #efbb5a 0%, #d68b1f 100%);
   color: #173225;
-  box-shadow: 0 18px 40px rgba(214, 139, 31, 0.2);
+  box-shadow: 0 20px 44px rgba(214, 139, 31, 0.24);
 }
 
 .crece-button-primary:hover {
@@ -124,7 +123,7 @@ img {
 
 .crece-button-secondary {
   border: 1px solid rgba(15, 78, 47, 0.14);
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(255, 255, 255, 0.7);
   color: var(--crece-text);
 }
 
@@ -133,7 +132,7 @@ img {
   overflow: hidden;
   border-radius: 2rem;
   border: 1px solid rgba(15, 78, 47, 0.1);
-  background: rgba(241, 246, 236, 0.92);
+  background: rgba(241, 246, 236, 0.9);
   box-shadow: var(--crece-shadow);
 }
 
@@ -148,11 +147,11 @@ img {
 }
 
 .crece-glow-green {
-  background: radial-gradient(circle, rgba(137, 182, 74, 0.2) 0%, rgba(137, 182, 74, 0.05) 42%, transparent 74%);
+  background: radial-gradient(circle, rgba(137, 182, 74, 0.18) 0%, rgba(137, 182, 74, 0.04) 42%, transparent 74%);
 }
 
 .crece-glow-gold {
-  background: radial-gradient(circle, rgba(214, 139, 31, 0.2) 0%, rgba(214, 139, 31, 0.05) 42%, transparent 74%);
+  background: radial-gradient(circle, rgba(214, 139, 31, 0.18) 0%, rgba(214, 139, 31, 0.04) 42%, transparent 74%);
 }
 
 .crece-grid-bg {
@@ -163,7 +162,7 @@ img {
 }
 
 .crece-heading-accent {
-  background: linear-gradient(135deg, #1d6b3f 0%, #4b9a3d 42%, #91bc47 72%, #d68b1f 100%);
+  background: linear-gradient(135deg, #1e6d40 0%, #86b147 55%, #d68b1f 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
