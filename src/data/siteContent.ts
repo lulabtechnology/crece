@@ -196,6 +196,12 @@ export const siteContent = {
     title: "Experiencia en banca, riesgos, financiamiento y formación ejecutiva.",
     description:
       "CRECE reúne experiencia profesional en entidades financieras, docencia especializada y acompañamiento técnico para empresas y decisiones de inversión.",
+    image: "/images/sections/authority-visual.webp",
+    bullets: [
+      "Experiencia en entidades financieras, riesgos y decisiones de inversión.",
+      "Trayectoria en formación ejecutiva y acompañamiento técnico para empresas.",
+      "Criterio práctico y cercano para aterrizar decisiones con respaldo profesional."
+    ],
     cards: [
       {
         title: "Trayectoria bancaria",
@@ -213,6 +219,8 @@ export const siteContent = {
   },
   process: {
     title: "Una forma clara de trabajar con cada cliente.",
+    description:
+      "Cada caso se revisa con orden, lectura financiera y una propuesta concreta según la necesidad real del cliente.",
     steps: [
       {
         title: "Escuchar la necesidad",
@@ -227,6 +235,26 @@ export const siteContent = {
         text: "Se entregan recomendaciones, acompañamiento o alternativas financieras aplicables a la realidad del negocio."
       }
     ]
+  },
+  seminarPromo: {
+    id: "seminario",
+    badge: "Capacitación ejecutiva",
+    title: "Seminario de análisis financiero con IA",
+    description:
+      "Programa presencial diseñado para fortalecer criterio financiero con herramientas prácticas y enfoque aplicado.",
+    image: "/images/sections/training-visual.webp",
+    date: "7 al 16 de abril 2026",
+    schedule: "5:30 p.m. a 8:30 p.m.",
+    format: "Presencial",
+    investment: "$299",
+    bullets: [
+      "Análisis de estados financieros con IA",
+      "Técnicas de valorización y proyección",
+      "Herramientas de IA en finanzas"
+    ],
+    urgency: "Cupos limitados",
+    availabilityNote: "Consulta disponibilidad y reserva tu espacio con anticipación.",
+    cta: { label: "Solicitar información del seminario", href: "#contacto" }
   },
   seminar: {
     id: "seminario",
