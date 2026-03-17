@@ -80,7 +80,7 @@ export function SeminarPromo() {
               <div className="crece-panel-soft rounded-[1.7rem] border border-[#d68b1f]/12 p-5 sm:col-span-2">
                 <div className="text-xs uppercase tracking-[0.22em] text-[#a06413]">Disponibilidad</div>
                 <div className="crece-display mt-2 text-2xl font-semibold text-[#173225]">{siteContent.seminarPromo.urgency}</div>
-                <p className="mt-2 text-sm leading-7 text-[#4f6658]">Esta línea se mantiene aparte para que no compita visual ni comercialmente con la consultoría ni con el perfil institucional.</p>
+                <p className="mt-2 text-sm leading-7 text-[#4f6658]">{siteContent.seminarPromo.availabilityNote}</p>
               </div>
             </div>
           </div>

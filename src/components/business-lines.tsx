@@ -15,7 +15,7 @@ export function BusinessLines() {
           <SectionHeading
             eyebrow={siteContent.businessLines.eyebrow}
             title={siteContent.businessLines.title}
-            description="La landing está reorganizada para que cada bloque cumpla una función comercial clara y se parezca más a la lógica del tríptico institucional."
+            description={siteContent.businessLines.description}
           />
 
           <RevealList className="mt-8 grid gap-4 lg:grid-cols-3">
