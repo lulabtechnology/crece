@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { BusinessLines } from "@/components/business-lines";
 import { InstitutionalOverview } from "@/components/institutional-overview";
 import { Benefits } from "@/components/benefits";
 import { Services } from "@/components/services";
@@ -13,12 +14,13 @@ import { Footer } from "@/components/footer";
 
 export default function HomePage() {
   return (
-    <main className="crece-shell relative overflow-hidden text-white">
+    <main className="crece-shell relative overflow-hidden text-[#173225]">
       <Header />
       <Hero />
+      <BusinessLines />
       <InstitutionalOverview />
-      <Benefits />
       <Services />
+      <Benefits />
       <Results />
       <Authority />
       <Process />

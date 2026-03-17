@@ -1,31 +1,23 @@
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
-import { SectionHeading } from "./section-heading";
 import { RevealItem, RevealList } from "./reveal-list";
+import { SectionHeading } from "./section-heading";
 
 export function Process() {
   return (
-    <AnimatedSection className="py-20 sm:py-24">
+    <AnimatedSection className="crece-section-band py-20 sm:py-28">
       <Container>
-        <SectionHeading
-          eyebrow="Implementación"
-          title={siteContent.process.title}
-          description={siteContent.process.description}
-        />
+        <SectionHeading eyebrow="Cómo funciona" title={siteContent.process.title} description={siteContent.process.description} />
 
-        <RevealList className="mt-10 grid gap-4 lg:grid-cols-4">
+        <RevealList className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {siteContent.process.steps.map((step, index) => (
             <RevealItem key={step.title}>
               <article className="crece-panel crece-premium-stroke relative h-full overflow-hidden rounded-[1.8rem] p-6">
-                <div className="absolute right-4 top-4 crece-display text-6xl font-semibold text-white/6">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-                <div className={`relative inline-flex rounded-full px-3 py-1 text-xs uppercase tracking-[0.2em] ${index % 2 === 0 ? "crece-outline-tag" : "crece-outline-tag--warm"}`}>
-                  Paso {index + 1}
-                </div>
-                <h3 className="crece-display relative mt-6 text-[1.5rem] font-semibold text-[#f5efe4]">{step.title}</h3>
-                <p className="relative mt-3 text-sm leading-7 text-[#c6cec0]">{step.text}</p>
+                <div className={`absolute left-0 top-0 h-full w-1 ${index % 2 === 0 ? "bg-[#2b7a47]/28" : "bg-[#d68b1f]/28"}`} />
+                <div className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[#7a8677]">Paso {index + 1}</div>
+                <h3 className="crece-display mt-4 text-[1.38rem] font-semibold text-[#173225]">{step.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[#4f6658]">{step.text}</p>
               </article>
             </RevealItem>
           ))}

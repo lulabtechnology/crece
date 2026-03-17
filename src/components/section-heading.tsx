@@ -5,12 +5,7 @@ type SectionHeadingProps = {
   align?: "left" | "center";
 };
 
-export function SectionHeading({
-  eyebrow,
-  title,
-  description,
-  align = "left"
-}: SectionHeadingProps) {
+export function SectionHeading({ eyebrow, title, description, align = "left" }: SectionHeadingProps) {
   const alignment = align === "center" ? "mx-auto text-center" : "text-left";
 
   return (
@@ -20,14 +15,10 @@ export function SectionHeading({
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="crece-display text-balance text-[2.45rem] font-semibold leading-[0.95] tracking-[-0.05em] text-[#f5efe4] sm:text-[3.3rem] lg:text-[4.3rem]">
+      <h2 className="crece-display text-balance text-[2.35rem] font-semibold leading-[0.96] tracking-[-0.05em] text-[#173225] sm:text-[3rem] lg:text-[4rem]">
         {title}
       </h2>
-      {description ? (
-        <p className="mt-5 text-pretty text-base leading-8 text-[#cdd4c5] sm:text-lg">
-          {description}
-        </p>
-      ) : null}
+      {description ? <p className="mt-5 text-pretty text-base leading-8 text-[#4f6658] sm:text-lg">{description}</p> : null}
     </div>
   );
 }

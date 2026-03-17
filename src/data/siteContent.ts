@@ -5,45 +5,43 @@ export const siteContent = {
     logo: "/images/brand/logo-crece.png"
   },
   seo: {
-    title: "CRECE | Consultoría financiera, gerencia tercerizada y seminarios ejecutivos",
+    title: "CRECE | Consultoría financiera, inversiones, gerencia tercerizada y capacitación",
     description:
-      "CRECE presenta por separado su perfil institucional, su línea de consultoría y gerencia financiera tercerizada, y su seminario ejecutivo de análisis financiero con IA.",
+      "CRECE presenta su perfil institucional, su línea de consultoría y gerencia financiera tercerizada, su oferta de inversiones y financiamientos, y su programa de capacitación ejecutiva.",
     url: "https://www.crecepanama.com",
     image: "/images/hero/hero-desktop.webp",
     keywords: [
       "consultoría financiera",
+      "inversiones y financiamientos",
       "gerencia financiera tercerizada",
-      "seminario análisis financiero",
-      "finanzas corporativas",
-      "control financiero",
-      "Panamá",
-      "KPIs financieros"
+      "seminarios de finanzas",
+      "factoring",
+      "leasing",
+      "capital de trabajo",
+      "Panamá"
     ]
   },
   navigation: [
     { label: "Empresa", href: "#empresa" },
-    { label: "Consultoría", href: "#gerencia" },
-    { label: "Seminario", href: "#seminario" },
+    { label: "Consultoría", href: "#consultoria" },
+    { label: "Financiamientos", href: "#financiamientos" },
+    { label: "Capacitación", href: "#seminario" },
     { label: "Contacto", href: "#contacto" }
   ],
   hero: {
     eyebrow: "Consultoría financiera e inversiones",
-    titleLead: "La firma financiera que ayuda a",
-    titleAccent: "ordenar, decidir y crecer",
-    titleTail: "con más control.",
+    titleLead: "Orden financiero,",
+    titleAccent: "criterio ejecutivo",
+    titleTail: "y soluciones que ayudan a crecer.",
     subtitle:
-      "Esta versión separa claramente el anuncio institucional, la línea de consultoría y gerencia financiera tercerizada, y la promoción del seminario. La idea es que el cliente entienda rápido qué es CRECE, cómo contribuye y qué solución concreta puede activar.",
-    primaryCta: { label: "Solicitar diagnóstico", href: "#contacto" },
-    secondaryCta: { label: "Explorar consultoría", href: "#gerencia" },
-    tracks: [
-      "Anuncio institucional",
-      "Consultoría y gerencia financiera tercerizada",
-      "Seminario ejecutivo independiente"
-    ],
+      "CRECE debe sentirse como una firma financiera seria, institucional y cercana. Esta versión separa mejor la empresa, la consultoría y gerencia financiera tercerizada, la línea de inversiones y financiamientos, y la capacitación ejecutiva.",
+    primaryCta: { label: "Solicitar orientación", href: "#contacto" },
+    secondaryCta: { label: "Ver líneas de servicio", href: "#empresa" },
+    tracks: ["Consultoría", "Inversiones y financiamientos", "Capacitación ejecutiva"],
     stats: [
-      { value: "15+", label: "años de experiencia" },
-      { value: "15–20%", label: "incremento promedio de liquidez" },
-      { value: "100%", label: "confidencialidad garantizada" }
+      { value: "30+", label: "años de experiencia en banca y finanzas" },
+      { value: "22", label: "años de trayectoria en el Instituto Bancario Internacional" },
+      { value: "3", label: "líneas principales claramente separadas" }
     ],
     images: {
       desktop: "/images/hero/hero-desktop.webp",
@@ -52,219 +50,230 @@ export const siteContent = {
     }
   },
   businessLines: {
-    eyebrow: "Estructura clara",
-    title: "Tres mensajes distintos dentro de una sola landing mejor organizada.",
+    eyebrow: "Nuestros productos",
+    title: "Una presentación más cercana al material institucional que el cliente sí reconoce como propio.",
     items: [
       {
-        label: "Empresa",
-        title: "Qué es CRECE",
-        text: "Un bloque institucional para explicar quiénes son, cómo trabajan y en qué pueden contribuir dentro de la empresa.",
-        href: "#empresa"
-      },
-      {
         label: "Consultoría",
-        title: "Gerencia financiera tercerizada",
-        text: "Una línea concreta para vender dirección financiera externa, control, seguimiento y acompañamiento ejecutivo con sus ventajas.",
-        href: "#gerencia"
+        title: "Diagnóstico, valoración y gerencia financiera tercerizada",
+        text: "Desde revisión financiera hasta acompañamiento gerencial externo para ordenar, analizar y tomar decisiones con más base.",
+        href: "#consultoria"
       },
       {
-        label: "Seminario",
-        title: "Capacitación aparte",
-        text: "Un anuncio independiente para el seminario, con su propia promoción, programa, inversión y urgencia comercial.",
+        label: "Financiamientos",
+        title: "Inversiones, corretaje y facilidades crediticias",
+        text: "Opciones para capital de trabajo, leasing, factoring, préstamos, garantías y acompañamiento en negocios o inversiones.",
+        href: "#financiamientos"
+      },
+      {
+        label: "Capacitación",
+        title: "Seminarios y formación ejecutiva",
+        text: "Oferta formativa separada, con cursos y seminarios aplicados a finanzas, riesgos, tesorería y análisis financiero.",
         href: "#seminario"
       }
     ]
   },
   institutional: {
     id: "empresa",
-    title: "Qué es CRECE y cómo puede contribuir dentro de tu empresa.",
+    title: "Quiénes somos y cómo puede contribuir CRECE dentro de una empresa.",
     description:
-      "CRECE es una firma de consultoría financiera e inversiones orientada a fortalecer control, criterio y toma de decisiones. Este bloque funciona como anuncio institucional: presenta la empresa, su enfoque y la forma en que aporta valor a dueños, gerencias y equipos con responsabilidad financiera.",
+      "CRECE es una firma de consultoría financiera e inversiones con una presentación más institucional que disruptiva. El enfoque correcto es transmitir experiencia, confianza, criterio empresarial y capacidad de acompañar decisiones en empresas, banca, riesgos, financiamiento y capacitación.",
     image: "/images/sections/about-visual.webp",
     highlights: [
-      "Firma financiera con visión ejecutiva",
-      "Control, análisis y acompañamiento",
-      "Aporte práctico para empresas en crecimiento"
+      "Firma financiera con perfil institucional",
+      "Trayectoria en banca, finanzas y riesgos",
+      "Acompañamiento práctico y ejecutivo"
     ],
     contributions: [
       {
-        title: "Diagnóstico con criterio",
-        text: "Se analiza el contexto financiero del negocio para identificar desorden, riesgos, señales de alerta y oportunidades reales de mejora."
+        title: "Diagnóstico financiero",
+        text: "Se estudia la empresa, se revisa su salud financiera y se detectan alertas, desorden u oportunidades reales de mejora."
       },
       {
-        title: "Lectura gerencial de números",
-        text: "La información financiera se traduce en mensajes accionables para gerencia, dueños y responsables de operación."
+        title: "Valoración y lectura gerencial",
+        text: "La información financiera se convierte en criterio para vender, negociar, crecer, atraer socios o decidir con más claridad."
       },
       {
-        title: "Orden y seguimiento",
-        text: "Se fortalecen rutinas de presupuesto, flujo, indicadores y revisión para que las decisiones no dependan de intuición."
+        title: "Gerencia financiera tercerizada",
+        text: "Se cubren funciones similares a un gerente financiero externo, ayudando a ganar control sin sobredimensionar estructura interna."
       },
       {
-        title: "Acompañamiento aplicable",
-        text: "La intervención no se queda en teoría: aterriza en prioridades, control y decisiones concretas para la empresa."
+        title: "Planes y decisiones empresariales",
+        text: "Se aterrizan prioridades financieras, presupuestos, flujos y planes de negocio desde una mirada útil para dueños y gerencias."
       }
     ]
   },
   benefits: {
-    title: "Por qué CRECE puede convertirse en una ventaja estratégica para la empresa.",
+    eyebrow: "Inversiones y financiamientos",
+    title: "Productos y soluciones que CRECE puede activar según la necesidad del negocio o del inversionista.",
     description:
-      "La parte institucional debe sentirse seria, premium y confiable. Esta sección responde por qué la firma aporta valor más allá de un servicio puntual.",
+      "A partir del material institucional recibido, esta parte debía existir como línea separada. Aquí no se vende capacitación ni solo consultoría: se muestra un portafolio concreto de soluciones financieras.",
     items: [
       {
-        title: "Enfoque ejecutivo real",
-        text: "Se trabaja con la lógica del negocio, no con teoría financiera aislada del día a día empresarial."
+        title: "Corretaje de valores y negocios",
+        text: "Acompañamiento para inversiones, compraventa de negocios y orientación sobre precio o estructura financiera de la operación."
       },
       {
-        title: "Criterio para decidir",
-        text: "Los números se convierten en claridad para decidir mejor sobre liquidez, gastos, crecimiento e inversión."
+        title: "Facilidades crediticias",
+        text: "Búsqueda de soluciones de corto, mediano y largo plazo alineadas al uso real que tendrá el financiamiento dentro de la empresa."
       },
       {
-        title: "Confidencialidad y rigor",
-        text: "La información crítica se maneja con profesionalismo, discreción y alta responsabilidad."
+        title: "Capital de trabajo, factoring y leasing",
+        text: "Alternativas para sostener operación, liquidez y crecimiento sin depender de una sola fuente financiera."
       },
       {
-        title: "Intervención escalable",
-        text: "El acompañamiento puede adaptarse a la etapa, complejidad y ritmo de crecimiento de cada empresa."
+        title: "Préstamos, cartas de crédito y garantías",
+        text: "Opciones para comercio, expansión, respaldo de operaciones y estructuración de necesidades más puntuales."
+      },
+      {
+        title: "Bienes raíces y productos conexos",
+        text: "Asesoría en compra, venta, alquiler con opción y administración relacionada con operaciones inmobiliarias o de inversión."
+      },
+      {
+        title: "Evaluación de proyectos e inversiones",
+        text: "Lectura financiera para decidir con mejor criterio sobre proyectos, riesgos, retorno esperado y viabilidad económica."
       }
     ]
   },
   services: {
-    id: "gerencia",
-    title: "Consultoría financiera y gerencia financiera tercerizada para negocios que necesitan más control sin inflar estructura interna.",
+    id: "consultoria",
+    title: "Consultoría financiera y gerencia financiera tercerizada con enfoque ejecutivo, no con apariencia de fintech.",
     description:
-      "Aquí la landing debe vender una acción concreta: dirección financiera externa con acompañamiento estratégico, control continuo y ventajas claras frente a asumir de inmediato un gerente interno de tiempo completo.",
+      "Esta línea debe sentirse seria, clara y comercial. La propuesta es ayudar a ordenar información, fortalecer criterio y acompañar decisiones sin obligar a contratar de inmediato una estructura interna completa.",
     image: "/images/sections/services-visual.webp",
     pillars: [
       {
         title: "Consultoría financiera",
-        text: "Ideal para revisar, ordenar y fortalecer decisiones en momentos clave del negocio."
+        text: "Intervenciones puntuales o periódicas para analizar, ordenar y fortalecer decisiones en momentos clave del negocio."
       },
       {
         title: "Gerencia financiera tercerizada",
-        text: "Ideal para empresas que necesitan una capa externa de dirección, seguimiento y control de forma más constante."
+        text: "Acompañamiento externo más constante para seguimiento, control, revisión de indicadores y apoyo directo a la gerencia."
       }
     ],
     list: [
-      "Presupuesto financiero y control de gastos",
+      "Diagnóstico financiero de la empresa",
+      "Valoración del negocio o de oportunidades concretas",
+      "Presupuesto y control de gastos",
       "Gestión de cuentas por pagar y por cobrar",
       "Planificación financiera y de inversiones",
-      "Evaluación y gestión de riesgos",
-      "Consultoría directa y acompañamiento ejecutivo",
-      "Análisis de KPIs y estados financieros"
+      "KPIs, estados financieros y alertas",
+      "Apoyo en planes de negocio",
+      "Seguimiento ejecutivo y control continuo"
     ],
     advantages: [
       {
-        title: "Menor costo fijo",
-        text: "Accedes a dirección financiera estratégica sin asumir de entrada el costo completo de un gerente interno a tiempo completo."
+        title: "Más control sin inflar nómina",
+        text: "La empresa accede a criterio financiero y acompañamiento serio sin asumir desde el inicio un gerente interno de tiempo completo."
       },
       {
-        title: "Más control gerencial",
-        text: "Se instalan rutinas, seguimiento y lectura de indicadores para tomar decisiones con mayor orden y anticipación."
+        title: "Visión más objetiva",
+        text: "Una capa externa ayuda a ver riesgos, decisiones y prioridades con más frialdad y más foco empresarial."
       },
       {
-        title: "Soporte en decisiones críticas",
-        text: "La empresa gana criterio para inversión, liquidez, gastos, crecimiento y manejo de riesgos financieros."
+        title: "Soporte para decidir",
+        text: "Liquidez, gastos, crecimiento, inversión o riesgo se leen mejor cuando existe seguimiento financiero ordenado."
       },
       {
-        title: "Escala contigo",
-        text: "El acompañamiento puede crecer según tu etapa sin obligarte a sobredimensionar estructura demasiado pronto."
+        title: "Escalabilidad",
+        text: "El acompañamiento puede crecer según la etapa del negocio y adaptarse a la complejidad real de la operación."
       }
     ],
     cta: {
-      label: "Quiero evaluar esta línea",
+      label: "Hablar sobre consultoría",
       href: "#contacto"
     }
   },
   results: {
     id: "resultados",
-    title: "Resultados que respaldan la propuesta consultiva y gerencial.",
+    title: "Trayectoria, respaldo y experiencia que sostienen la propuesta de valor.",
     description:
-      "La promesa no se queda en discurso. El enfoque de CRECE combina ejecución, lectura gerencial y confidencialidad para generar decisiones más sólidas.",
+      "En esta marca pesa más la confianza institucional que el look futurista. Por eso esta sección refuerza la autoridad profesional detrás de la firma.",
     image: "/images/sections/results-visual.webp",
     metrics: [
-      { value: "15–20%", label: "incremento promedio de liquidez" },
-      { value: "5–8%", label: "mejora en margen de rentabilidad neta" },
-      { value: "100%", label: "confidencialidad garantizada" }
+      { value: "30+", label: "años de experiencia en banca y finanzas" },
+      { value: "22", label: "años vinculados al Instituto Bancario Internacional" },
+      { value: "INCAE", label: "y otras referencias de formación y respaldo profesional" }
     ]
   },
   authority: {
-    title: "Experiencia que combina profundidad técnica con lectura real del negocio.",
+    title: "Una firma con experiencia en banca, riesgos, financiamiento y formación ejecutiva.",
     description:
-      "Más de 15 años de experiencia en análisis financiero corporativo, acompañando decisiones complejas en empresas consolidadas y entornos de crecimiento.",
+      "El tono correcto para CRECE es más corporativo, más claro y más institucional. Aquí conviene resaltar recorrido, entidades relacionadas y capacidad técnica por encima del espectáculo visual.",
     image: "/images/sections/authority-visual.webp",
     bullets: [
-      "Más de 15 años de experiencia",
-      "Experiencia en análisis financiero corporativo",
-      "Trabajo con empresas Fortune 500 y startups",
-      "Enfoque práctico basado en experiencia real",
-      "Tecnología aplicada, escalabilidad y profesionalismo"
+      "Experiencia en banca y finanzas con más de 30 años de trayectoria",
+      "Participación o vínculo con instituciones como Unión de Bancos Suizos, BLADEX, Banco Nacional, HSBC, BAC y Banistmo",
+      "22 años de trabajo en el Instituto Bancario Internacional",
+      "Seminarios cursados en INCAE, Bankers Trust New York y New York Institute of Finance",
+      "Capacidad para combinar consultoría, financiamiento y capacitación en un mismo ecosistema empresarial"
     ]
   },
   process: {
-    title: "Cómo se activa la consultoría o la gerencia financiera tercerizada.",
+    title: "Cómo se activa una relación con CRECE según el tipo de necesidad.",
     description:
-      "Un flujo claro para transformar diagnóstico, análisis y seguimiento en decisiones concretas con control continuo.",
+      "La web ya no debe sentirse como un solo mensaje fusionado. El flujo ayuda a entender cómo entra cada línea y cómo se convierte en una solución concreta.",
     steps: [
       {
-        title: "Diagnóstico inicial",
-        text: "Entendemos situación actual, dolores, prioridades y nivel de control financiero existente."
+        title: "Identificación de la necesidad",
+        text: "Se define si lo que se necesita es diagnóstico y consultoría, apoyo gerencial continuo, financiamiento o capacitación."
       },
       {
         title: "Definición de alcance",
-        text: "Se aterriza si conviene una consultoría puntual, una intervención continua o un esquema de gerencia tercerizada."
+        text: "Se aterriza el servicio, producto financiero o programa formativo que mejor encaja con la etapa y objetivo de la empresa."
       },
       {
-        title: "Implementación y seguimiento",
-        text: "Se estructuran indicadores, presupuestos, alertas, flujo y decisiones prioritarias con acompañamiento ejecutivo."
+        title: "Ejecución con seguimiento",
+        text: "La intervención se lleva a terreno con orden, revisión, acompañamiento y pasos claros para que aporte valor real."
       },
       {
-        title: "Ajuste y continuidad",
-        text: "La empresa gana una capa externa de dirección para revisar avances, corregir y escalar con más criterio."
+        title: "Continuidad o escalamiento",
+        text: "Si la necesidad crece, CRECE puede ampliar el acompañamiento hacia gerencia tercerizada, financiamiento o capacitación complementaria."
       }
     ]
   },
   seminarPromo: {
     id: "seminario",
-    title: "Seminario de análisis financiero con IA — anuncio independiente del resto de la oferta.",
+    title: "Capacitación y seminarios: una línea aparte, con identidad propia dentro de CRECE.",
     description:
-      "Este bloque funciona como promoción separada. No compite con el mensaje institucional ni con la gerencia financiera tercerizada; se presenta como capacitación ejecutiva con CTA propio.",
+      "La capacitación no debe mezclarse con toda la narrativa institucional. Aquí se presenta como oferta separada, con promoción, fecha, modalidad e inversión propias.",
     image: "/images/sections/training-visual.webp",
-    badge: "Seminario separado",
+    badge: "Capacitación",
     date: "7 al 16 de abril 2026",
     schedule: "5:30 p.m. a 8:30 p.m.",
     format: "Presencial",
     investment: "$299",
     urgency: "Cupos limitados",
     bullets: [
-      "Domina técnicas de análisis financiero con IA",
-      "Aprende metodologías modernas para valorar empresas",
-      "Toma decisiones basadas en datos precisos y proyecciones optimizadas"
+      "Análisis financiero corporativo, comercial y pyme",
+      "Análisis de instituciones financieras y finanzas para no financieros",
+      "Talleres y herramientas aplicadas para decisiones con mayor criterio"
     ],
-    cta: { label: "Reservar cupo", href: "#contacto" }
+    cta: { label: "Solicitar información del seminario", href: "#contacto" }
   },
   training: {
     id: "programa-seminario",
-    title: "Programa del seminario y lo que aprenderás.",
+    title: "Contenido de capacitación que se siente más cercano al tríptico institucional del cliente.",
     description:
-      "La capacitación se muestra aparte, con más detalle de contenidos, formato e inversión. Así el usuario entiende que es una oferta distinta dentro del ecosistema CRECE.",
+      "Este bloque mantiene la promoción del seminario actual, pero se inserta dentro de una línea de capacitación más coherente con la marca y con sus antecedentes formativos.",
     image: "/images/sections/training-visual.webp",
     reasons: [
-      "Casos reales y aplicación práctica",
-      "Herramientas actuales para valorar y proyectar",
-      "Mejor criterio para leer estados financieros y KPIs",
-      "Uso aplicado de IA en finanzas",
+      "Experiencia académica y profesional aplicada",
+      "Seminarios útiles para empresas, banca y perfiles no financieros",
+      "Contenidos de tesorería, inversiones, riesgos y evaluación",
+      "Formato ejecutivo y práctico",
       "Certificado incluido"
     ],
     topics: [
-      "Análisis de Estados Financieros con IA",
-      "Técnicas de valorización y proyección",
-      "Herramientas de IA aplicadas a finanzas",
-      "Ratios e Indicadores Clave (KPIs)",
-      "Rentabilidad, liquidez y solvencia",
-      "Flujo de Caja y Capital de Trabajo",
-      "Análisis Vertical y Horizontal",
-      "Proyecciones Financieras",
-      "Detección de alertas financieras"
+      "Análisis financiero corporativo y comercial",
+      "Análisis de instituciones financieras",
+      "Finanzas para no financieros",
+      "Tesorería e inversiones",
+      "Finanzas corporativas",
+      "Factoring y leasing",
+      "Evaluación de proyectos",
+      "Corredor de valores",
+      "Riesgos"
     ],
     details: [
       { label: "Fecha", value: "7 al 16 de abril 2026" },
@@ -275,14 +284,14 @@ export const siteContent = {
     offer: {
       price: "$299",
       regularPrice: "",
-      note: "Bloque formativo separado de la consultoría y de la gerencia financiera tercerizada."
+      note: "La capacitación se presenta por separado para que el cliente entienda que es una oferta distinta de la consultoría y de los productos financieros."
     }
   },
   contact: {
     id: "contacto",
-    title: "Conversemos según tu necesidad: empresa, consultoría o seminario.",
+    title: "Conversemos según tu necesidad: consultoría, financiamiento o capacitación.",
     subtitle:
-      "Puedes escribir para conocer mejor a CRECE, consultar la línea de consultoría y gerencia financiera tercerizada, o pedir información del seminario por separado.",
+      "Escríbenos para conocer mejor a CRECE, explorar consultoría y gerencia financiera tercerizada, revisar opciones de financiamiento o pedir información del seminario.",
     email: "info@crecepanama.com.pa",
     phone: "+507 6678-9720",
     whatsapp: "50766789720",
@@ -293,7 +302,7 @@ export const siteContent = {
     }
   },
   footer: {
-    legal: "CRECE © 2026. Consultoría financiera e inversiones, gerencia financiera tercerizada y seminarios ejecutivos."
+    legal: "CRECE © 2026. Consultoría financiera e inversiones, productos financieros y capacitación ejecutiva."
   }
 } as const;
 

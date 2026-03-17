@@ -4,27 +4,31 @@ import { Container } from "./container";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[#f1b64d]/10 bg-[#07110d]/84 backdrop-blur-xl">
-      <Container className="flex min-h-[72px] items-center justify-between gap-3 py-3 sm:min-h-24 sm:gap-4 sm:py-4">
-        <a href="#" className="min-w-0 flex-1 sm:flex-none">
-          <div className="relative h-[48px] w-[136px] min-[380px]:h-[56px] min-[380px]:w-[164px] sm:h-[94px] sm:w-[320px] lg:h-[102px] lg:w-[380px]">
+    <header className="sticky top-0 z-50 border-b border-[#0f4e2f]/8 bg-[rgba(251,251,246,0.92)] backdrop-blur-xl">
+      <Container className="flex min-h-[5.6rem] items-center justify-between gap-4 py-3">
+        <a href="#" className="flex items-center gap-3 rounded-full bg-white/70 px-3 py-2 shadow-[0_12px_30px_rgba(18,52,34,0.06)]">
+          <div className="relative h-[3.3rem] w-[4.7rem] sm:h-[3.8rem] sm:w-[5.5rem] lg:h-[4.1rem] lg:w-[5.9rem]">
             <Image
               src={siteContent.brand.logo}
               alt={siteContent.brand.name}
               fill
-              className="object-contain object-left drop-shadow-[0_0_30px_rgba(167,203,76,0.14)]"
-              sizes="(min-width: 1024px) 380px, (min-width: 640px) 320px, (min-width: 380px) 164px, 136px"
+              className="object-contain object-left"
+              sizes="(min-width: 1024px) 94px, (min-width: 640px) 88px, 75px"
               priority
             />
           </div>
+          <div className="hidden sm:block">
+            <div className="crece-display text-lg font-semibold tracking-[-0.04em] text-[#163126]">{siteContent.brand.name}</div>
+            <div className="text-[0.72rem] uppercase tracking-[0.18em] text-[#6a7b6f]">{siteContent.brand.tagline}</div>
+          </div>
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {siteContent.navigation.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold tracking-[0.12em] text-[#d9decf] transition-colors duration-300 hover:text-[#f5efe4]"
+              className="text-sm font-semibold tracking-[0.08em] text-[#365240] transition-colors duration-300 hover:text-[#163126]"
             >
               {item.label}
             </a>
@@ -33,11 +37,9 @@ export function Header() {
 
         <a
           href="#contacto"
-          className="crece-button-primary inline-flex shrink-0 items-center rounded-full px-3.5 py-2.5 text-[11px] font-semibold leading-none transition-transform duration-300 hover:-translate-y-0.5 sm:px-5 sm:py-3 sm:text-sm"
-          aria-label="Agendar diagnóstico"
+          className="crece-button-primary inline-flex items-center rounded-full px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] transition-transform duration-300 hover:-translate-y-0.5 sm:px-5 sm:text-sm"
         >
-          <span className="sm:hidden">Agenda</span>
-          <span className="hidden sm:inline">Agendar diagnóstico</span>
+          Solicitar orientación
         </a>
       </Container>
     </header>
