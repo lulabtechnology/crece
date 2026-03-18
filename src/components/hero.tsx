@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { Building2, ChevronDown, HandCoins, LineChart } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { siteContent } from "@/data/siteContent";
 import { Container } from "./container";
+
+const sideCardIcons = [Building2, LineChart, HandCoins];
 
 export function Hero() {
   const reducedMotion = useReducedMotion();
@@ -87,21 +89,39 @@ export function Hero() {
                   {siteContent.hero.sideCardIntro}
                 </p>
                 <div className="mt-4 grid gap-2.5 text-sm text-[#4c6555] sm:mt-5 sm:gap-3">
-                  {siteContent.hero.sideCardItems.map((item, index) => (
-                    <div
-                      key={item.title}
-                      className={`rounded-[1.2rem] border px-4 py-3 sm:rounded-[1.35rem] ${
-                        index === 1
-                          ? "border-[#d68b1f]/14 bg-white/86"
-                          : "border-[#0f4e2f]/8 bg-white/80"
-                      }`}
-                    >
-                      <div className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#7b6a39]">
-                        {item.title}
+                  {siteContent.hero.sideCardItems.map((item, index) => {
+                    const Icon = sideCardIcons[index % sideCardIcons.length];
+                    const warm = index === 1;
+
+                    return (
+                      <div
+                        key={item.title}
+                        className={`rounded-[1.2rem] border px-4 py-3 sm:rounded-[1.35rem] ${
+                          warm
+                            ? "border-[#d68b1f]/18 bg-white/88"
+                            : "border-[#0f4e2f]/8 bg-white/82"
+                        }`}
+                      >
+                        <div className="flex items-start gap-3">
+                          <div
+                            className={`mt-0.5 inline-flex rounded-2xl border p-2.5 ${
+                              warm
+                                ? "border-[#d68b1f]/22 bg-[#efbb5a]/14 text-[#a06413]"
+                                : "border-[#2b7a47]/16 bg-[#89b64a]/10 text-[#245f3a]"
+                            }`}
+                          >
+                            <Icon className="h-[1.125rem] w-[1.125rem]" />
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <div className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#7b6a39]">
+                              {item.title}
+                            </div>
+                            <p className="mt-2 text-[0.92rem] leading-6 text-[#4c6555]">{item.text}</p>
+                          </div>
+                        </div>
                       </div>
-                      <p className="mt-2 text-[0.92rem] leading-6 text-[#4c6555]">{item.text}</p>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>

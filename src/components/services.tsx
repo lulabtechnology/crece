@@ -3,7 +3,6 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
-import { SectionHeading } from "./section-heading";
 import { RevealItem, RevealList } from "./reveal-list";
 
 export function Services() {
@@ -24,25 +23,7 @@ export function Services() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <SectionHeading
-            eyebrow="Consultoría"
-            title={siteContent.services.title}
-            description={siteContent.services.description}
-          />
-
-          <div className="mt-6 grid gap-4 sm:mt-8 md:grid-cols-2">
-            {siteContent.services.pillars.map((pillar, index) => (
-              <article key={pillar.title} className="crece-panel-soft rounded-[1.6rem] p-5 sm:rounded-[1.8rem] sm:p-6">
-                <div className={`inline-flex rounded-full px-3 py-1 text-xs uppercase tracking-[0.22em] ${index === 1 ? "crece-outline-tag--warm" : "crece-outline-tag"}`}>
-                  Línea {index + 1}
-                </div>
-                <h3 className="crece-display mt-5 text-[1.45rem] font-semibold text-[#173225]">{pillar.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#4f6658]">{pillar.text}</p>
-              </article>
-            ))}
-          </div>
-
-          <RevealList className="mt-6 grid gap-4 sm:mt-8">
+          <RevealList className="grid gap-4">
             {siteContent.services.list.map((service) => (
               <RevealItem key={service}>
                 <div className="crece-panel-soft group flex items-center justify-between gap-4 rounded-[1.6rem] px-4 py-4 sm:rounded-3xl sm:px-5 sm:py-5 transition-colors duration-300 hover:bg-white">
