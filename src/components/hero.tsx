@@ -96,23 +96,6 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={reducedMotion ? false : { opacity: 0, y: 16 }}
-            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, delay: 0.34 }}
-            className="mt-4 flex flex-wrap items-center gap-2 text-sm text-[#5c7060]"
-          >
-            <span>{siteContent.hero.bottomNote}</span>
-            <a
-              href={siteContent.hero.bottomNoteLink.href}
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold text-[#a86715] transition-colors duration-300 hover:text-[#8d5910]"
-            >
-              {siteContent.hero.bottomNoteLink.label}
-            </a>
-          </motion.div>
-
-          <motion.div
             initial={reducedMotion ? false : { opacity: 0, y: 18 }}
             animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

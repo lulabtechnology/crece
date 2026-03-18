@@ -28,10 +28,10 @@ export const siteContent = {
   hero: {
     eyebrow: "Consultoría financiera y gerencia financiera tercerizada",
     titleLead: "Consultoría financiera",
-    titleAccent: "para ordenar decisiones",
-    titleTail: "y crecer con criterio.",
+    titleAccent: "para Tomar decisiones",
+    titleTail: "y Aumentar rentabilidad y reducir riesgos.",
     subtitle:
-      "CRECE acompaña a empresas que necesitan revisar su información financiera, mejorar control, fortalecer decisiones gerenciales y contar con respaldo experto sin inflar su estructura interna.",
+      "CRECE acompaña a empresas que necesitan revisar su información financiera, mejorar control, fortalecer decisiones gerenciales y contar con respaldo experto sin incrementar su estructura interna.",
     primaryCta: { label: "Solicitar orientación", href: "#contacto" },
     secondaryCta: { label: "Ir a la web principal", href: "https://www.crecepanama.com.pa" },
     tracks: ["Diagnóstico financiero", "Gerencia financiera tercerizada", "Acompañamiento ejecutivo"],
