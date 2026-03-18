@@ -36,7 +36,8 @@ export function ContactForm() {
         "",
         "Mensaje:",
         form.message
-      ].join("\n")
+      ].join("
+")
     );
 
     window.location.href = `mailto:${siteContent.contact.email}?subject=${subject}&body=${body}`;
@@ -52,13 +53,13 @@ export function ContactForm() {
       </div>
 
       <div className="mt-3 sm:mt-4">
-        <label className="mb-2 block text-sm font-medium text-[#365240]">Mensaje</label>
+        <label className="mb-2 block text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[#365240]">Mensaje</label>
         <textarea
           value={form.message}
           onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
           placeholder="Cuéntanos si te interesa consultoría, productos financieros o capacitación."
           rows={5}
-          className="w-full rounded-2xl border border-[#0f4e2f]/10 bg-white/80 px-4 py-3 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44"
+          className="crece-field-surface w-full rounded-2xl px-4 py-3 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44"
         />
       </div>
 
@@ -87,13 +88,13 @@ type FieldProps = {
 function Field({ label, value, onChange, placeholder, type = "text" }: FieldProps) {
   return (
     <div>
-      <label className="mb-2 block text-sm font-medium text-[#365240]">{label}</label>
+      <label className="mb-2 block text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[#365240]">{label}</label>
       <input
         type={type}
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-2xl border border-[#0f4e2f]/10 bg-white/80 px-4 py-3 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44"
+        className="crece-field-surface w-full rounded-2xl px-4 py-3 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44"
       />
     </div>
   );

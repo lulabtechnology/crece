@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Manrope, Sora } from "next/font/google";
+import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { siteContent } from "@/data/siteContent";
 
@@ -10,7 +10,7 @@ const manrope = Manrope({
   display: "swap"
 });
 
-const sora = Sora({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap"
@@ -54,7 +54,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${manrope.variable} ${sora.variable} scroll-smooth`}>
+    <html lang="es" className={`${manrope.variable} ${plusJakartaSans.variable} scroll-smooth`}>
       <body>{children}</body>
     </html>
   );

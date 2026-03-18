@@ -12,12 +12,12 @@ export function ContactCta() {
     <AnimatedSection id={siteContent.contact.id} className="relative py-14 sm:py-28">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 hidden md:block">
-          <Image src={siteContent.contact.ctaImages.desktop} alt="CTA financiero" fill className="object-cover object-center opacity-10 saturate-[0.9]" sizes="100vw" />
+          <Image src={siteContent.contact.ctaImages.desktop} alt="CTA financiero" fill className="object-cover object-center opacity-[0.12] saturate-[0.94]" sizes="100vw" />
         </div>
         <div className="absolute inset-0 md:hidden">
-          <Image src={siteContent.contact.ctaImages.mobile} alt="CTA financiero móvil" fill className="object-cover object-center opacity-12 saturate-[0.9]" sizes="100vw" />
+          <Image src={siteContent.contact.ctaImages.mobile} alt="CTA financiero móvil" fill className="object-cover object-center opacity-[0.14] saturate-[0.94]" sizes="100vw" />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(251,251,246,.72),rgba(247,251,243,.96)_22%,rgba(240,246,235,.98)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(251,251,246,.7),rgba(247,251,243,.94)_22%,rgba(240,246,235,.98)_100%)]" />
       </div>
 
       <Container className="grid items-start gap-7 sm:gap-10 lg:grid-cols-[.9fr_1.1fr]">
@@ -62,9 +62,9 @@ export function ContactCta() {
 function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; label: string; value: string; href?: string; secondary?: string }) {
   const content = (
     <>
-      <div className="rounded-2xl border border-[#0f4e2f]/8 bg-white/90 p-3">{icon}</div>
+      <div className="rounded-[1.1rem] border border-[#0f4e2f]/8 bg-white/90 p-3 shadow-[0_10px_24px_rgba(18,52,34,0.05)]">{icon}</div>
       <div>
-        <div className="text-xs uppercase tracking-[0.2em] text-[#6d7d70]">{label}</div>
+        <div className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#6d7d70]">{label}</div>
         <div className="mt-1 text-sm font-medium text-[#173225] sm:text-base">{value}</div>
         {secondary ? <div className="mt-1 text-sm text-[#5e7063]">{secondary}</div> : null}
       </div>
@@ -72,11 +72,11 @@ function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; la
   );
 
   if (!href) {
-    return <div className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.6rem] sm:px-5 sm:py-5 text-left">{content}</div>;
+    return <div className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.65rem] sm:px-5 sm:py-5 text-left">{content}</div>;
   }
 
   return (
-    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined} className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.6rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white">
+    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined} className="crece-panel-soft flex items-center gap-4 rounded-[1.45rem] px-4 py-4 sm:rounded-[1.65rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white">
       {content}
       <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-[#b57113]" />
     </a>
