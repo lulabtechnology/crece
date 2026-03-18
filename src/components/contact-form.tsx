@@ -36,8 +36,7 @@ export function ContactForm() {
         "",
         "Mensaje:",
         form.message
-      ].join("
-")
+      ].join("\n")
     );
 
     window.location.href = `mailto:${siteContent.contact.email}?subject=${subject}&body=${body}`;
