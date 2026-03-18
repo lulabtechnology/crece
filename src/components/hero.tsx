@@ -12,9 +12,9 @@ export function Hero() {
   return (
     <section className="relative overflow-clip border-b border-[#0f4e2f]/8">
       <div className="absolute inset-0 bg-[linear-gradient(180deg,#fbfbf6_0%,#f7f9f2_44%,#eef4ea_100%)]" />
-      <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-[radial-gradient(circle_at_10%_0%,rgba(137,182,74,.18),transparent_40%),radial-gradient(circle_at_90%_0%,rgba(214,139,31,.14),transparent_34%)]" />
-      <div className="absolute left-[-10%] top-[16%] h-[18rem] w-[18rem] rounded-full crece-glow-green blur-3xl" />
-      <div className="absolute right-[-8%] top-[8%] h-[16rem] w-[16rem] rounded-full crece-glow-gold blur-3xl" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_10%_0%,rgba(137,182,74,.18),transparent_40%),radial-gradient(circle_at_90%_0%,rgba(214,139,31,.14),transparent_34%)] sm:h-32" />
+      <div className="crece-glow-green absolute left-[-10%] top-[16%] h-[18rem] w-[18rem] rounded-full blur-3xl" />
+      <div className="crece-glow-gold absolute right-[-8%] top-[8%] h-[16rem] w-[16rem] rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 right-0 h-36 bg-[linear-gradient(180deg,transparent,rgba(43,122,71,.04))]" />
       <div className="absolute left-0 right-0 top-0 h-20 overflow-hidden sm:h-28">
         <div className="absolute -left-[8%] top-5 h-24 w-[68%] rotate-[-6deg] rounded-r-full bg-[#d68b1f]" />
@@ -47,14 +47,13 @@ export function Hero() {
             initial={reducedMotion ? false : { opacity: 0, y: 18 }}
             animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-6 grid max-w-4xl grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-3"
+            className="mt-6 grid max-w-3xl grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2"
           >
             {siteContent.hero.stats.map((item, index) => (
-              <div key={item.label} className="crece-panel crece-premium-stroke relative rounded-3xl px-4 py-4 sm:px-5 sm:py-5">
-                <div
-                  className={`absolute inset-x-6 top-0 h-px ${index === 1 ? "bg-[#d68b1f]/42" : "bg-[#2b7a47]/32"}`}
-                />
-                <div className="crece-display text-2xl font-semibold text-[#173225] sm:text-[2.2rem]">{item.value}</div>
+              <div key={item.title} className="crece-panel crece-premium-stroke relative rounded-3xl px-4 py-4 sm:px-5 sm:py-5">
+                <div className={`absolute inset-x-6 top-0 h-px ${index === 1 ? "bg-[#d68b1f]/42" : "bg-[#2b7a47]/32"}`} />
+                <div className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[#6f7f73] sm:text-[0.72rem]">{item.title}</div>
+                <div className="crece-display mt-2 text-2xl font-semibold text-[#173225] sm:text-[2.2rem]">{item.value}</div>
                 <div className="mt-2 text-sm tracking-[0.04em] text-[#617264]">{item.label}</div>
               </div>
             ))}
@@ -68,27 +67,40 @@ export function Hero() {
           className="relative"
         >
           <div className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[1.7rem] p-2.5 sm:rounded-[2rem] sm:p-4">
-            <div className="grid gap-2.5 sm:gap-3 md:grid-cols-[.94fr_1.06fr] lg:grid-cols-1 xl:grid-cols-[.94fr_1.06fr]">
-              <div className="crece-panel-soft relative min-h-[14rem] overflow-hidden rounded-[1.35rem] border border-[#0f4e2f]/8 sm:min-h-[18rem] sm:rounded-[1.5rem]">
+            <div className="grid gap-2.5 sm:gap-3 md:grid-cols-[.94fr_1.06fr] lg:grid-cols-1 xl:grid-cols-[.88fr_1.12fr]">
+              <div className="crece-panel-soft relative min-h-[14rem] overflow-hidden rounded-[1.35rem] border border-[#0f4e2f]/8 sm:min-h-[18rem] sm:rounded-[1.5rem] xl:min-h-full">
                 <Image
                   src={siteContent.hero.images.mobile}
                   alt="Visual institucional CRECE"
                   fill
                   className="object-cover object-center opacity-95"
-                  sizes="(min-width: 1280px) 28vw, (min-width: 1024px) 32vw, 100vw"
+                  sizes="(min-width: 1280px) 24vw, (min-width: 1024px) 30vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,.02),rgba(15,78,47,.16))]" />
               </div>
-              <div className="flex flex-col justify-between rounded-[1.35rem] bg-[linear-gradient(180deg,rgba(247,251,243,.96),rgba(235,243,228,.92))] p-4 text-[#173225] sm:rounded-[1.5rem] sm:p-5">
-                <div>
-                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[#7b6a39]">Presentación institucional</div>
-                  <h3 className="crece-display mt-3 text-[1.45rem] leading-tight font-semibold sm:text-[1.7rem]">
-                    {siteContent.hero.sideCardTitle}
-                  </h3>
-                </div>
-                <div className="mt-4 grid gap-2.5 text-sm text-[#4c6555] sm:mt-6 sm:gap-3">
-                  {siteContent.hero.sideCardLines.map((line) => (
-                    <div key={line} className="rounded-2xl border border-[#0f4e2f]/8 bg-white/80 px-4 py-2.5 sm:py-3">{line}</div>
+              <div className="flex flex-col rounded-[1.35rem] bg-[linear-gradient(180deg,rgba(247,251,243,.96),rgba(235,243,228,.92))] p-4 text-[#173225] sm:rounded-[1.5rem] sm:p-5">
+                <div className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[#7b6a39]">Presentación institucional</div>
+                <h3 className="crece-display mt-3 text-[1.35rem] leading-tight font-semibold sm:text-[1.6rem]">
+                  {siteContent.hero.sideCardTitle}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#4c6555] sm:mt-4">
+                  {siteContent.hero.sideCardIntro}
+                </p>
+                <div className="mt-4 grid gap-2.5 text-sm text-[#4c6555] sm:mt-5 sm:gap-3">
+                  {siteContent.hero.sideCardItems.map((item, index) => (
+                    <div
+                      key={item.title}
+                      className={`rounded-[1.2rem] border px-4 py-3 sm:rounded-[1.35rem] ${
+                        index === 1
+                          ? "border-[#d68b1f]/14 bg-white/86"
+                          : "border-[#0f4e2f]/8 bg-white/80"
+                      }`}
+                    >
+                      <div className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#7b6a39]">
+                        {item.title}
+                      </div>
+                      <p className="mt-2 text-[0.92rem] leading-6 text-[#4c6555]">{item.text}</p>
+                    </div>
                   ))}
                 </div>
               </div>

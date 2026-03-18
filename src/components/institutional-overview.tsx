@@ -3,7 +3,6 @@ import { Building2, HandCoins, LineChart, ShieldCheck } from "lucide-react";
 import { siteContent } from "@/data/siteContent";
 import { AnimatedSection } from "./animated-section";
 import { Container } from "./container";
-import { SectionHeading } from "./section-heading";
 import { RevealItem, RevealList } from "./reveal-list";
 
 const icons = [Building2, LineChart, HandCoins, ShieldCheck];
@@ -11,28 +10,9 @@ const icons = [Building2, LineChart, HandCoins, ShieldCheck];
 export function InstitutionalOverview() {
   return (
     <AnimatedSection id={siteContent.institutional.id} className="crece-section-band relative py-14 sm:py-28">
-      <Container className="grid items-center gap-8 sm:gap-14 lg:grid-cols-[1.02fr_.98fr]">
+      <Container className="grid items-start gap-8 sm:gap-14 lg:grid-cols-[1.02fr_.98fr]">
         <div>
-          <SectionHeading
-            eyebrow="Empresa"
-            title={siteContent.institutional.title}
-            description={siteContent.institutional.description}
-          />
-
-          <div className="mt-6 flex flex-wrap gap-2.5 sm:mt-7 sm:gap-3">
-            {siteContent.institutional.highlights.map((highlight, index) => (
-              <span
-                key={highlight}
-                className={`inline-flex rounded-full px-3.5 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.18em] sm:px-4 sm:text-xs sm:tracking-[0.22em] ${
-                  index === 1 ? "crece-outline-tag--warm" : "crece-outline-tag"
-                }`}
-              >
-                {highlight}
-              </span>
-            ))}
-          </div>
-
-          <RevealList className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-2">
+          <RevealList className="grid gap-4 sm:grid-cols-2">
             {siteContent.institutional.contributions.map((item, index) => {
               const Icon = icons[index % icons.length];
               const warm = index === 1 || index === 3;

@@ -36,20 +36,38 @@ export const siteContent = {
     secondaryCta: { label: "Ir a la web principal", href: "https://www.crecepanama.com.pa" },
     tracks: ["Diagnóstico financiero", "Gerencia financiera tercerizada", "Acompañamiento ejecutivo"],
     stats: [
-      { value: "30+", label: "años de experiencia en banca y finanzas" },
-      { value: "22", label: "años de trayectoria en capacitación ejecutiva" },
-      { value: "1", label: "línea principal destacada en esta landing" }
+      {
+        title: "Experiencia en banca y finanzas",
+        value: "30+",
+        label: "años de experiencia acumulada"
+      },
+      {
+        title: "Trayectoria en formación ejecutiva",
+        value: "22",
+        label: "años de recorrido en capacitación ejecutiva"
+      }
     ],
     images: {
       desktop: "/images/hero/hero-desktop.webp",
       mobile: "/images/hero/hero-mobile.webp",
       gridOverlay: "/images/textures/grid-overlay.png"
     },
-    sideCardTitle: "Consultoría con criterio financiero y acompañamiento real",
-    sideCardLines: [
-      "Diagnóstico y lectura financiera para decisiones con más claridad",
-      "Gerencia financiera tercerizada para seguimiento y control",
-      "Valoración, presupuesto, KPIs y apoyo a planes de negocio"
+    sideCardTitle: "Así acompaña CRECE las decisiones financieras de tu empresa",
+    sideCardIntro:
+      "CRECE es una firma de consultoría financiera e inversiones encabezada por Bolívar Lobo, con amplia experiencia en banca, finanzas, riesgos y formación ejecutiva. Su propuesta combina atención cercana, lectura técnica y soluciones aplicadas a la realidad de cada cliente.",
+    sideCardItems: [
+      {
+        title: "Diagnóstico financiero",
+        text: "Se analiza la situación de la empresa para comprobar su salud financiera, identificar alertas y detectar oportunidades de mejora con mayor claridad."
+      },
+      {
+        title: "Valoración y planes de negocio",
+        text: "Se estima el valor del negocio y se estructuran planes útiles para accionistas, inversionistas, prestamistas y gerencias."
+      },
+      {
+        title: "Gerencia financiera tercerizada",
+        text: "Se asumen funciones similares a las de un gerente financiero para ordenar, analizar y acompañar decisiones sin elevar innecesariamente la estructura interna."
+      }
     ],
     bottomNote: "Para inversiones, financiamientos y capacitación ejecutiva, conoce la web principal de CRECE.",
     bottomNoteLink: { label: "Visitar crecepanama.com.pa", href: "https://www.crecepanama.com.pa" }
