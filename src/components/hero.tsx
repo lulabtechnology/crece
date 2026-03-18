@@ -1,14 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, ChevronDown, Sparkles } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { siteContent } from "@/data/siteContent";
 import { Container } from "./container";
 
 export function Hero() {
   const reducedMotion = useReducedMotion();
-  const isSecondaryExternal = siteContent.hero.secondaryCta.href.startsWith("http");
 
   return (
     <section className="relative overflow-clip border-b border-[#0f4e2f]/8">
@@ -24,21 +23,11 @@ export function Hero() {
 
       <Container className="relative grid min-h-[calc(100svh-4.7rem)] items-center gap-8 py-10 sm:min-h-[calc(100vh-5.6rem)] sm:gap-12 sm:py-20 lg:grid-cols-[1.06fr_.94fr] lg:py-24">
         <div className="max-w-3xl pt-4 sm:pt-14 lg:pt-16">
-          <motion.div
-            initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="crece-outline-tag inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.72rem] backdrop-blur-md sm:px-4 sm:text-sm"
-          >
-            <Sparkles className="h-4 w-4 text-[#d68b1f]" />
-            {siteContent.hero.eyebrow}
-          </motion.div>
-
           <motion.h1
             initial={reducedMotion ? false : { opacity: 0, y: 24, filter: "blur(10px)" }}
             animate={reducedMotion ? {} : { opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.85, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="crece-display mt-5 max-w-5xl text-balance text-[2.55rem] leading-[0.94] font-semibold tracking-[-0.06em] text-[#173225] sm:mt-6 sm:text-[4.05rem] lg:text-[5.35rem]"
+            className="crece-display max-w-5xl text-balance text-[2.55rem] leading-[0.94] font-semibold tracking-[-0.06em] text-[#173225] sm:text-[4.05rem] lg:text-[5.35rem]"
           >
             <span className="block">{siteContent.hero.titleLead}</span>
             <span className="crece-heading-accent block">{siteContent.hero.titleAccent}</span>
@@ -57,49 +46,8 @@ export function Hero() {
           <motion.div
             initial={reducedMotion ? false : { opacity: 0, y: 18 }}
             animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.22 }}
-            className="mt-5 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3"
-          >
-            {siteContent.hero.tracks.map((track, index) => (
-              <span
-                key={track}
-                className={`inline-flex rounded-full px-3.5 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.2em] sm:px-4 sm:text-[0.68rem] sm:tracking-[0.24em] ${
-                  index === 1 ? "crece-outline-tag--warm" : "crece-outline-tag"
-                }`}
-              >
-                {track}
-              </span>
-            ))}
-          </motion.div>
-
-          <motion.div
-            initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.28 }}
-            className="mt-8 flex flex-col gap-3 sm:mt-10 sm:gap-4 sm:flex-row"
-          >
-            <a
-              href={siteContent.hero.primaryCta.href}
-              className="crece-button-primary group inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5 sm:px-6 sm:py-4"
-            >
-              {siteContent.hero.primaryCta.label}
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-            <a
-              href={siteContent.hero.secondaryCta.href}
-              target={isSecondaryExternal ? "_blank" : undefined}
-              rel={isSecondaryExternal ? "noreferrer" : undefined}
-              className="crece-button-secondary inline-flex items-center justify-center rounded-full px-5 py-3.5 text-sm font-semibold backdrop-blur-md transition-colors duration-300 hover:bg-white sm:px-6 sm:py-4"
-            >
-              {siteContent.hero.secondaryCta.label}
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-9 grid max-w-4xl grid-cols-1 gap-3 sm:mt-14 sm:grid-cols-3"
+            className="mt-6 grid max-w-4xl grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-3"
           >
             {siteContent.hero.stats.map((item, index) => (
               <div key={item.label} className="crece-panel crece-premium-stroke relative rounded-3xl px-4 py-4 sm:px-5 sm:py-5">
