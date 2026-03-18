@@ -21,6 +21,7 @@ export function BusinessLines() {
             eyebrow={siteContent.businessLines.eyebrow}
             title={siteContent.businessLines.title}
             description={siteContent.businessLines.description}
+            theme="dark"
           />
 
           <div className="mt-8 grid gap-4 sm:mt-10 lg:grid-cols-2">

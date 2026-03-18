@@ -24,20 +24,22 @@ export function Hero() {
 
       <Container className="relative grid min-h-[calc(100svh-5.9rem)] items-center gap-10 py-14 sm:min-h-[calc(100vh-6.8rem)] sm:gap-14 sm:py-20 lg:grid-cols-[1.04fr_.96fr] lg:py-24">
         <div className="max-w-[48rem] pt-5 sm:pt-10 lg:pt-14">
-          <motion.div
-            initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.04 }}
-            className="crece-outline-tag inline-flex items-center rounded-full px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.24em]"
-          >
-            {siteContent.hero.eyebrow}
-          </motion.div>
+          {siteContent.hero.eyebrow ? (
+            <motion.div
+              initial={reducedMotion ? false : { opacity: 0, y: 18 }}
+              animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.04 }}
+              className="crece-outline-tag inline-flex items-center rounded-full px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.24em]"
+            >
+              {siteContent.hero.eyebrow}
+            </motion.div>
+          ) : null}
 
           <motion.h1
             initial={reducedMotion ? false : { opacity: 0, y: 24, filter: "blur(10px)" }}
             animate={reducedMotion ? {} : { opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.85, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="crece-display mt-5 max-w-[50rem] text-balance text-[3.35rem] leading-[0.88] font-semibold tracking-[-0.085em] text-[#173225] sm:mt-7 sm:text-[5.2rem] lg:text-[6.6rem]"
+            className="crece-display mt-2 max-w-[50rem] text-balance text-[3.35rem] leading-[0.88] font-semibold tracking-[-0.085em] text-[#173225] sm:mt-4 sm:text-[5.2rem] lg:text-[6.6rem]"
           >
             <span className="block">{siteContent.hero.titleLead}</span>
             <span className="crece-heading-accent block">{siteContent.hero.titleAccent}</span>
