@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[#0f4e2f]/8 py-6 sm:py-8">
       <Container>
-        <div className="crece-panel-soft flex flex-col items-start justify-between gap-4 rounded-[1.45rem] px-5 py-4 text-sm text-[#6d7d70] sm:flex-row sm:items-center sm:px-6">
+        <div className="crece-panel-soft flex flex-col items-start justify-between gap-4 rounded-[1.55rem] px-5 py-4 text-sm text-[#6d7d70] sm:flex-row sm:items-center sm:px-6">
           <p>{siteContent.footer.legal}</p>
           <div className="flex flex-wrap items-center gap-4">
             {siteContent.navigation.map((item) => (

@@ -3,10 +3,13 @@ type SectionHeadingProps = {
   title: string;
   description?: string;
   align?: "left" | "center";
+  theme?: "light" | "dark";
 };
 
-export function SectionHeading({ eyebrow, title, description, align = "left" }: SectionHeadingProps) {
+export function SectionHeading({ eyebrow, title, description, align = "left", theme = "light" }: SectionHeadingProps) {
   const alignment = align === "center" ? "mx-auto text-center" : "text-left";
+  const textTitle = theme === "dark" ? "text-white" : "text-[#173225]";
+  const textDescription = theme === "dark" ? "text-white/74" : "text-[#4f6658]";
 
   return (
     <div className={`max-w-[58rem] ${alignment}`}>
@@ -15,10 +18,10 @@ export function SectionHeading({ eyebrow, title, description, align = "left" }: 
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="crece-display text-balance text-[2.45rem] font-semibold leading-[0.9] tracking-[-0.072em] text-[#173225] sm:text-[3.6rem] lg:text-[5rem]">
+      <h2 className={`crece-display text-balance text-[2.7rem] font-semibold leading-[0.88] tracking-[-0.078em] sm:text-[3.9rem] lg:text-[5.2rem] ${textTitle}`}>
         {title}
       </h2>
-      {description ? <p className="mt-4 text-pretty text-[1.02rem] leading-7 text-[#4f6658] sm:mt-5 sm:text-[1.18rem] sm:leading-8">{description}</p> : null}
+      {description ? <p className={`mt-4 max-w-[48rem] text-pretty text-[1.02rem] leading-7 sm:mt-5 sm:text-[1.18rem] sm:leading-8 ${textDescription}`}>{description}</p> : null}
     </div>
   );
 }

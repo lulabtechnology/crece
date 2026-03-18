@@ -16,8 +16,8 @@
   --crece-accent-2: #89b64a;
   --crece-gold: #d68b1f;
   --crece-gold-soft: #efbb5a;
-  --crece-shadow: 0 34px 95px rgba(18, 52, 34, 0.12);
-  --crece-shadow-soft: 0 22px 58px rgba(18, 52, 34, 0.08);
+  --crece-shadow: 0 38px 110px rgba(18, 52, 34, 0.14);
+  --crece-shadow-soft: 0 24px 64px rgba(18, 52, 34, 0.09);
 }
 
 * {
@@ -37,10 +37,10 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 10% -2%, rgba(137, 182, 74, 0.18), transparent 22%),
-    radial-gradient(circle at 88% 0%, rgba(214, 139, 31, 0.16), transparent 18%),
-    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.76), transparent 28%),
-    linear-gradient(180deg, #fcfcf7 0%, #f7faf3 28%, #edf4e8 64%, #f9fbf7 100%);
+    radial-gradient(circle at 10% -2%, rgba(137, 182, 74, 0.2), transparent 20%),
+    radial-gradient(circle at 88% 0%, rgba(214, 139, 31, 0.18), transparent 18%),
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.84), transparent 28%),
+    linear-gradient(180deg, #fcfcf7 0%, #f3f8ef 30%, #eaf1e4 66%, #f9fbf7 100%);
   color: var(--crece-text);
   font-family: var(--font-body), Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
@@ -76,17 +76,17 @@ img {
 
 .crece-shell {
   background:
-    radial-gradient(circle at 8% 0%, rgba(137, 182, 74, 0.14), transparent 18%),
-    radial-gradient(circle at 92% 0%, rgba(214, 139, 31, 0.12), transparent 16%),
-    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.76), transparent 20%),
-    linear-gradient(180deg, #fcfcf7 0%, #f9fbf5 18%, #f1f6ec 44%, #edf3e8 72%, #f9fbf7 100%);
+    radial-gradient(circle at 8% 0%, rgba(137, 182, 74, 0.18), transparent 16%),
+    radial-gradient(circle at 92% 0%, rgba(214, 139, 31, 0.14), transparent 15%),
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.82), transparent 22%),
+    linear-gradient(180deg, #fcfcf7 0%, #f8fbf4 18%, #eff5ea 42%, #e9f1e4 72%, #f9fbf7 100%);
 }
 
 .crece-panel {
   border: 1px solid rgba(15, 78, 47, 0.08);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 252, 245, 0.95)),
-    radial-gradient(circle at top right, rgba(214, 139, 31, 0.1), transparent 28%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 244, 0.94)),
+    radial-gradient(circle at top right, rgba(214, 139, 31, 0.12), transparent 28%);
   box-shadow: var(--crece-shadow);
   backdrop-filter: blur(20px);
 }
@@ -94,26 +94,26 @@ img {
 .crece-panel-soft {
   border: 1px solid rgba(15, 78, 47, 0.08);
   background:
-    linear-gradient(180deg, rgba(249, 252, 246, 0.95), rgba(241, 247, 236, 0.88)),
-    radial-gradient(circle at top left, rgba(137, 182, 74, 0.09), transparent 35%);
+    linear-gradient(180deg, rgba(250, 252, 247, 0.96), rgba(241, 247, 236, 0.9)),
+    radial-gradient(circle at top left, rgba(137, 182, 74, 0.1), transparent 35%);
   box-shadow: var(--crece-shadow-soft);
   backdrop-filter: blur(18px);
 }
 
 .crece-premium-stroke {
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 1px 0 rgba(255, 255, 255, 0.76),
     inset 0 -1px 0 rgba(15, 78, 47, 0.03),
     0 28px 78px rgba(18, 52, 34, 0.11);
 }
 
 .crece-outline-tag {
   border: 1px solid rgba(43, 122, 71, 0.15);
-  background: linear-gradient(180deg, rgba(137, 182, 74, 0.16), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(180deg, rgba(137, 182, 74, 0.16), rgba(255, 255, 255, 0.84));
   color: #245f3a;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.66),
-    0 10px 24px rgba(18, 52, 34, 0.05);
+    0 12px 28px rgba(18, 52, 34, 0.05);
 }
 
 .crece-outline-tag--warm {
@@ -123,22 +123,22 @@ img {
 }
 
 .crece-button-primary {
-  background: linear-gradient(135deg, #f3c76e 0%, #dd9c36 52%, #c9770f 100%);
+  background: linear-gradient(135deg, #f4ca74 0%, #dd9c36 50%, #c9770f 100%);
   color: #173225;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.38),
     0 22px 48px rgba(214, 139, 31, 0.28);
 }
 
 .crece-button-primary:hover {
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
     0 28px 60px rgba(214, 139, 31, 0.32);
 }
 
 .crece-button-secondary {
   border: 1px solid rgba(15, 78, 47, 0.14);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(245, 249, 241, 0.82));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(245, 249, 241, 0.84));
   color: var(--crece-text);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.72),
@@ -223,44 +223,36 @@ img {
 .crece-brand-shell {
   position: relative;
   overflow: hidden;
-  border-radius: 1.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 2.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.74);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 249, 241, 0.94)),
-    radial-gradient(circle at top right, rgba(214, 139, 31, 0.1), transparent 24%);
-  padding: 0.7rem 1rem;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(244, 249, 241, 0.95)),
+    radial-gradient(circle at top right, rgba(214, 139, 31, 0.14), transparent 28%);
+  padding: 0.78rem 1rem;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 22px 48px rgba(18, 52, 34, 0.09);
+    inset 0 1px 0 rgba(255, 255, 255, 0.76),
+    0 24px 52px rgba(18, 52, 34, 0.1);
 }
 
-.crece-brand-shell::after {
-  content: "";
-  position: absolute;
-  right: -1.25rem;
-  top: -1.25rem;
-  height: 4.5rem;
-  width: 4.5rem;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(214, 139, 31, 0.16), transparent 72%);
-  pointer-events: none;
+.crece-nav-shell {
+  border: 1px solid rgba(15, 78, 47, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(246, 250, 242, 0.48));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 16px 34px rgba(18, 52, 34, 0.06);
 }
 
 .crece-nav-pill {
   position: relative;
   overflow: hidden;
   border-radius: 999px;
-  border: 1px solid rgba(15, 78, 47, 0.08);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(246, 250, 242, 0.5));
-  padding: 0.78rem 1.2rem;
+  border: 1px solid transparent;
+  padding: 0.85rem 1.18rem;
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #355140;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.66),
-    0 10px 24px rgba(18, 52, 34, 0.05);
   transition: all 220ms ease;
 }
 
@@ -271,7 +263,7 @@ img {
   color: #163126;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 16px 30px rgba(18, 52, 34, 0.07);
+    0 14px 26px rgba(18, 52, 34, 0.06);
 }
 
 .crece-stat-card {
@@ -283,6 +275,6 @@ img {
 
 @media (min-width: 640px) {
   .crece-brand-shell {
-    padding: 0.82rem 1.3rem;
+    padding: 0.86rem 1.3rem;
   }
 }
