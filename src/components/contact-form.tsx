@@ -43,7 +43,8 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="crece-panel crece-premium-stroke rounded-[2rem] p-6 sm:p-7">
+    <form onSubmit={handleSubmit} className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[2.1rem] p-6 sm:rounded-[2.4rem] sm:p-8">
+      <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(214,139,31,.34),rgba(43,122,71,.28),transparent)]" />
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label="Nombre" value={form.name} onChange={(value) => setForm((prev) => ({ ...prev, name: value }))} placeholder="Tu nombre" />
         <Field label="Correo" value={form.email} onChange={(value) => setForm((prev) => ({ ...prev, email: value }))} placeholder="tu@correo.com" type="email" />
@@ -51,18 +52,18 @@ export function ContactForm() {
         <Field label="Empresa" value={form.company} onChange={(value) => setForm((prev) => ({ ...prev, company: value }))} placeholder="Nombre de empresa" />
       </div>
 
-      <div className="mt-3 sm:mt-4">
+      <div className="mt-4 sm:mt-5">
         <label className="mb-2 block text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[#365240]">Mensaje</label>
         <textarea
           value={form.message}
           onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
           placeholder="Cuéntanos si te interesa consultoría, productos financieros o capacitación."
           rows={5}
-          className="crece-field-surface w-full rounded-2xl px-4 py-3 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44"
+          className="crece-field-surface w-full rounded-[1.35rem] px-4 py-3.5 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44 focus:shadow-[0_0_0_4px_rgba(137,182,74,0.08)]"
         />
       </div>
 
-      <div className="mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row">
+      <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row">
         <button type="submit" className="crece-button-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5">
           <Send className="h-4 w-4" />
           Enviar solicitud
@@ -93,7 +94,7 @@ function Field({ label, value, onChange, placeholder, type = "text" }: FieldProp
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
-        className="crece-field-surface w-full rounded-2xl px-4 py-3 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44"
+        className="crece-field-surface w-full rounded-[1.35rem] px-4 py-3.5 text-sm text-[#173225] outline-none ring-0 placeholder:text-[#7a8677] transition focus:border-[#2b7a47]/44 focus:shadow-[0_0_0_4px_rgba(137,182,74,0.08)]"
       />
     </div>
   );

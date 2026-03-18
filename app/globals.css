@@ -16,8 +16,8 @@
   --crece-accent-2: #89b64a;
   --crece-gold: #d68b1f;
   --crece-gold-soft: #efbb5a;
-  --crece-shadow: 0 26px 80px rgba(18, 52, 34, 0.11);
-  --crece-shadow-soft: 0 18px 52px rgba(18, 52, 34, 0.08);
+  --crece-shadow: 0 34px 95px rgba(18, 52, 34, 0.12);
+  --crece-shadow-soft: 0 22px 58px rgba(18, 52, 34, 0.08);
 }
 
 * {
@@ -37,10 +37,10 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 12% -2%, rgba(137, 182, 74, 0.17), transparent 22%),
-    radial-gradient(circle at 88% 2%, rgba(214, 139, 31, 0.13), transparent 18%),
-    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.7), transparent 28%),
-    linear-gradient(180deg, #fcfcf7 0%, #f6f9f2 36%, #eef4ea 68%, #f9fbf6 100%);
+    radial-gradient(circle at 10% -2%, rgba(137, 182, 74, 0.18), transparent 22%),
+    radial-gradient(circle at 88% 0%, rgba(214, 139, 31, 0.16), transparent 18%),
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.76), transparent 28%),
+    linear-gradient(180deg, #fcfcf7 0%, #f7faf3 28%, #edf4e8 64%, #f9fbf7 100%);
   color: var(--crece-text);
   font-family: var(--font-body), Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
@@ -76,81 +76,87 @@ img {
 
 .crece-shell {
   background:
-    radial-gradient(circle at 8% 0%, rgba(137, 182, 74, 0.13), transparent 18%),
-    radial-gradient(circle at 92% 0%, rgba(214, 139, 31, 0.11), transparent 16%),
-    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.74), transparent 20%),
-    linear-gradient(180deg, #fcfcf7 0%, #f9fbf5 20%, #f2f7ee 44%, #edf3e8 72%, #f9fbf7 100%);
+    radial-gradient(circle at 8% 0%, rgba(137, 182, 74, 0.14), transparent 18%),
+    radial-gradient(circle at 92% 0%, rgba(214, 139, 31, 0.12), transparent 16%),
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.76), transparent 20%),
+    linear-gradient(180deg, #fcfcf7 0%, #f9fbf5 18%, #f1f6ec 44%, #edf3e8 72%, #f9fbf7 100%);
 }
 
 .crece-panel {
   border: 1px solid rgba(15, 78, 47, 0.08);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(248, 252, 245, 0.94)),
-    radial-gradient(circle at top right, rgba(214, 139, 31, 0.08), transparent 28%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 252, 245, 0.95)),
+    radial-gradient(circle at top right, rgba(214, 139, 31, 0.1), transparent 28%);
   box-shadow: var(--crece-shadow);
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(20px);
 }
 
 .crece-panel-soft {
   border: 1px solid rgba(15, 78, 47, 0.08);
   background:
-    linear-gradient(180deg, rgba(248, 252, 245, 0.92), rgba(241, 247, 236, 0.86)),
-    radial-gradient(circle at top left, rgba(137, 182, 74, 0.08), transparent 35%);
+    linear-gradient(180deg, rgba(249, 252, 246, 0.95), rgba(241, 247, 236, 0.88)),
+    radial-gradient(circle at top left, rgba(137, 182, 74, 0.09), transparent 35%);
   box-shadow: var(--crece-shadow-soft);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
 }
 
 .crece-premium-stroke {
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.62),
-    inset 0 -1px 0 rgba(15, 78, 47, 0.02),
-    0 26px 70px rgba(18, 52, 34, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 -1px 0 rgba(15, 78, 47, 0.03),
+    0 28px 78px rgba(18, 52, 34, 0.11);
 }
 
 .crece-outline-tag {
   border: 1px solid rgba(43, 122, 71, 0.15);
-  background: linear-gradient(180deg, rgba(137, 182, 74, 0.16), rgba(255, 255, 255, 0.78));
+  background: linear-gradient(180deg, rgba(137, 182, 74, 0.16), rgba(255, 255, 255, 0.8));
   color: #245f3a;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.62),
-    0 10px 22px rgba(18, 52, 34, 0.04);
+    inset 0 1px 0 rgba(255, 255, 255, 0.66),
+    0 10px 24px rgba(18, 52, 34, 0.05);
 }
 
 .crece-outline-tag--warm {
   border: 1px solid rgba(214, 139, 31, 0.22);
-  background: linear-gradient(180deg, rgba(239, 187, 90, 0.2), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(180deg, rgba(239, 187, 90, 0.2), rgba(255, 255, 255, 0.82));
   color: #8f5610;
 }
 
 .crece-button-primary {
-  background: linear-gradient(135deg, #f0bf63 0%, #dc9b34 52%, #ca7d11 100%);
+  background: linear-gradient(135deg, #f3c76e 0%, #dd9c36 52%, #c9770f 100%);
   color: #173225;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.34),
-    0 20px 44px rgba(214, 139, 31, 0.24);
+    inset 0 1px 0 rgba(255, 255, 255, 0.36),
+    0 22px 48px rgba(214, 139, 31, 0.28);
 }
 
 .crece-button-primary:hover {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.38),
-    0 26px 58px rgba(214, 139, 31, 0.28);
+    0 28px 60px rgba(214, 139, 31, 0.32);
 }
 
 .crece-button-secondary {
   border: 1px solid rgba(15, 78, 47, 0.14);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(245, 249, 241, 0.76));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(245, 249, 241, 0.82));
   color: var(--crece-text);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.62),
-    0 14px 30px rgba(18, 52, 34, 0.06);
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 16px 34px rgba(18, 52, 34, 0.07);
+}
+
+.crece-button-secondary:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 22px 42px rgba(18, 52, 34, 0.09);
 }
 
 .crece-image-frame {
   position: relative;
   overflow: hidden;
-  border-radius: 2.2rem;
-  border: 1px solid rgba(15, 78, 47, 0.09);
-  background: rgba(241, 246, 236, 0.92);
+  border-radius: 2.35rem;
+  border: 1px solid rgba(15, 78, 47, 0.1);
+  background: rgba(241, 246, 236, 0.94);
   box-shadow: var(--crece-shadow);
 }
 
@@ -160,16 +166,16 @@ img {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(22, 49, 38, 0.1)),
-    linear-gradient(120deg, rgba(137, 182, 74, 0.08), transparent 40%, rgba(214, 139, 31, 0.08));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(22, 49, 38, 0.12)),
+    linear-gradient(120deg, rgba(137, 182, 74, 0.08), transparent 40%, rgba(214, 139, 31, 0.1));
 }
 
 .crece-glow-green {
-  background: radial-gradient(circle, rgba(137, 182, 74, 0.2) 0%, rgba(137, 182, 74, 0.05) 42%, transparent 74%);
+  background: radial-gradient(circle, rgba(137, 182, 74, 0.24) 0%, rgba(137, 182, 74, 0.06) 42%, transparent 74%);
 }
 
 .crece-glow-gold {
-  background: radial-gradient(circle, rgba(214, 139, 31, 0.2) 0%, rgba(214, 139, 31, 0.05) 42%, transparent 74%);
+  background: radial-gradient(circle, rgba(214, 139, 31, 0.22) 0%, rgba(214, 139, 31, 0.06) 42%, transparent 74%);
 }
 
 .crece-grid-bg {
@@ -197,7 +203,7 @@ img {
   right: 0;
   top: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(214, 139, 31, 0.26), rgba(43, 122, 71, 0.26), transparent);
+  background: linear-gradient(90deg, transparent, rgba(214, 139, 31, 0.24), rgba(43, 122, 71, 0.24), transparent);
 }
 
 .crece-link-pill {
@@ -210,6 +216,73 @@ img {
 
 .crece-field-surface {
   border: 1px solid rgba(15, 78, 47, 0.1);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(246, 250, 242, 0.86));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(246, 250, 242, 0.88));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.74);
+}
+
+.crece-brand-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 249, 241, 0.94)),
+    radial-gradient(circle at top right, rgba(214, 139, 31, 0.1), transparent 24%);
+  padding: 0.7rem 1rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 22px 48px rgba(18, 52, 34, 0.09);
+}
+
+.crece-brand-shell::after {
+  content: "";
+  position: absolute;
+  right: -1.25rem;
+  top: -1.25rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(214, 139, 31, 0.16), transparent 72%);
+  pointer-events: none;
+}
+
+.crece-nav-pill {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 78, 47, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(246, 250, 242, 0.5));
+  padding: 0.78rem 1.2rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #355140;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.66),
+    0 10px 24px rgba(18, 52, 34, 0.05);
+  transition: all 220ms ease;
+}
+
+.crece-nav-pill:hover {
+  transform: translateY(-1px);
+  border-color: rgba(214, 139, 31, 0.16);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 251, 244, 0.82));
+  color: #163126;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 16px 30px rgba(18, 52, 34, 0.07);
+}
+
+.crece-stat-card {
+  border: 1px solid rgba(15, 78, 47, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 242, 0.92)),
+    radial-gradient(circle at top right, rgba(214, 139, 31, 0.08), transparent 28%);
+}
+
+@media (min-width: 640px) {
+  .crece-brand-shell {
+    padding: 0.82rem 1.3rem;
+  }
 }
