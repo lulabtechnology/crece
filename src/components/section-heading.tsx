@@ -18,10 +18,10 @@ export function SectionHeading({ eyebrow, title, description, align = "left", th
           {eyebrow}
         </span>
       ) : null}
-      <h2 className={`crece-display text-balance text-[2.7rem] font-semibold leading-[0.88] tracking-[-0.078em] sm:text-[3.9rem] lg:text-[5.2rem] ${textTitle}`}>
+      <h2 className={`crece-display max-w-full text-balance text-[2.2rem] font-semibold leading-[0.92] tracking-[-0.058em] sm:text-[3.6rem] lg:text-[5.2rem] ${textTitle}`}>
         {title}
       </h2>
-      {description ? <p className={`mt-4 max-w-[48rem] text-pretty text-[1.02rem] leading-7 sm:mt-5 sm:text-[1.18rem] sm:leading-8 ${textDescription}`}>{description}</p> : null}
+      {description ? <p className={`mt-4 max-w-[48rem] text-pretty text-[0.98rem] leading-7 sm:mt-5 sm:text-[1.12rem] sm:leading-8 ${textDescription}`}>{description}</p> : null}
     </div>
   );
 }

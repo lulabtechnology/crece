@@ -28,16 +28,28 @@ export function InstitutionalOverview() {
                 Empresa
               </div>
 
-              <div className="absolute inset-x-4 bottom-4 sm:inset-x-6 sm:bottom-6">
-                <div className="max-w-[42rem] rounded-[1.55rem] border border-white/22 bg-[linear-gradient(180deg,rgba(255,255,255,.95),rgba(245,249,241,.9))] p-5 text-[#173225] shadow-[0_24px_60px_rgba(18,52,34,0.14)] backdrop-blur-xl sm:rounded-[1.8rem] sm:p-6">
+              <div className="absolute inset-x-6 bottom-6 hidden sm:block">
+                <div className="max-w-[40rem] rounded-[1.8rem] border border-white/22 bg-[linear-gradient(180deg,rgba(255,255,255,.95),rgba(245,249,241,.9))] p-6 text-[#173225] shadow-[0_24px_60px_rgba(18,52,34,0.14)] backdrop-blur-xl">
                   <div className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#7c662f]">Perfil institucional</div>
-                  <h2 className="crece-display mt-3 max-w-[34rem] text-balance text-[1.75rem] leading-[0.98] font-semibold tracking-[-0.055em] sm:text-[2.4rem] lg:text-[2.85rem]">
+                  <h2 className="crece-display mt-3 max-w-[32rem] text-balance text-[2.3rem] leading-[0.98] font-semibold tracking-[-0.05em] lg:text-[2.7rem]">
                     {siteContent.institutional.title}
                   </h2>
-                  <p className="mt-4 max-w-[38rem] text-[0.96rem] leading-7 text-[#4e6557] sm:text-[1rem]">
+                  <p className="mt-4 max-w-[36rem] text-[1rem] leading-7 text-[#4e6557]">
                     {siteContent.institutional.description}
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className="mt-4 sm:hidden">
+              <div className="rounded-[1.55rem] border border-[#0f4e2f]/8 bg-[linear-gradient(180deg,rgba(255,255,255,.96),rgba(245,249,241,.92))] p-5 text-[#173225] shadow-[0_18px_44px_rgba(18,52,34,0.12)]">
+                <div className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#7c662f]">Perfil institucional</div>
+                <h2 className="crece-display mt-3 text-balance text-[2rem] leading-[0.96] font-semibold tracking-[-0.05em]">
+                  {siteContent.institutional.title}
+                </h2>
+                <p className="mt-3 text-[0.98rem] leading-7 text-[#4e6557]">
+                  {siteContent.institutional.description}
+                </p>
               </div>
             </div>
           </div>

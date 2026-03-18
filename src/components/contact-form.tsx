@@ -43,13 +43,13 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[2.15rem] p-6 sm:rounded-[2.45rem] sm:p-8">
+    <form onSubmit={handleSubmit} className="crece-panel crece-premium-stroke relative min-w-0 overflow-hidden rounded-[2rem] p-4 sm:rounded-[2.45rem] sm:p-8">
       <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(214,139,31,.34),rgba(43,122,71,.28),transparent)]" />
       <div className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#7b632d]">Escríbenos</div>
-      <h3 className="crece-display mt-3 text-[1.7rem] leading-[1.02] font-semibold tracking-[-0.05em] text-[#173225] sm:text-[2.1rem]">
+      <h3 className="crece-display mt-3 text-[1.5rem] leading-[1.05] font-semibold tracking-[-0.04em] text-[#173225] sm:text-[2.1rem]">
         Cuéntanos qué necesitas.
       </h3>
-      <p className="mt-3 max-w-[32rem] text-[0.98rem] leading-7 text-[#52695b]">
+      <p className="mt-3 max-w-[32rem] text-[0.95rem] leading-7 text-[#52695b] sm:text-[0.98rem]">
         Déjanos algunos datos y podrás iniciar una conversación por correo o por WhatsApp con mayor contexto.
       </p>
 

@@ -39,7 +39,7 @@ export function Hero() {
             initial={reducedMotion ? false : { opacity: 0, y: 24, filter: "blur(10px)" }}
             animate={reducedMotion ? {} : { opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.85, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="crece-display mt-2 max-w-[50rem] text-balance text-[3.35rem] leading-[0.88] font-semibold tracking-[-0.085em] text-[#173225] sm:mt-4 sm:text-[5.2rem] lg:text-[6.6rem]"
+            className="crece-display mt-2 max-w-[50rem] text-balance text-[2.95rem] leading-[0.9] font-semibold tracking-[-0.07em] text-[#173225] sm:mt-4 sm:text-[5.2rem] lg:text-[6.6rem]"
           >
             <span className="block">{siteContent.hero.titleLead}</span>
             <span className="crece-heading-accent block">{siteContent.hero.titleAccent}</span>
@@ -130,15 +130,15 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="relative flex flex-col rounded-[1.7rem] border border-[#0f4e2f]/8 bg-[linear-gradient(180deg,rgba(250,252,247,.98),rgba(235,244,228,.96))] p-5 text-[#173225] sm:rounded-[2rem] sm:p-6">
-                <div className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-[#8d641d]">Cómo ayuda CRECE</div>
-                <h3 className="crece-display mt-3 text-[1.7rem] leading-[1.02] font-semibold tracking-[-0.055em] sm:text-[2.05rem]">
+              <div className="relative flex min-w-0 flex-col rounded-[1.7rem] border border-[#0f4e2f]/8 bg-[linear-gradient(180deg,rgba(250,252,247,.98),rgba(235,244,228,.96))] p-4 text-[#173225] sm:rounded-[2rem] sm:p-6">
+                <div className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#8d641d] sm:text-[0.72rem]">Cómo ayuda CRECE</div>
+                <h3 className="crece-display mt-3 text-balance text-[1.48rem] leading-[1.04] font-semibold tracking-[-0.04em] sm:text-[2.05rem]">
                   {siteContent.hero.sideCardTitle}
                 </h3>
-                <p className="mt-4 max-w-[32rem] text-[0.98rem] leading-7 text-[#4d6657] sm:text-[1.02rem]">
+                <p className="mt-3 max-w-[32rem] text-[0.95rem] leading-6 text-[#4d6657] sm:mt-4 sm:text-[1.02rem] sm:leading-7">
                   {siteContent.hero.sideCardIntro}
                 </p>
-                <div className="mt-5 grid gap-3.5 text-sm text-[#4c6555] sm:mt-6">
+                <div className="mt-4 grid gap-3 text-sm text-[#4c6555] sm:mt-6 sm:gap-3.5">
                   {siteContent.hero.sideCardItems.map((item, index) => {
                     const Icon = sideCardIcons[index % sideCardIcons.length];
                     const warm = index === 1;
@@ -146,7 +146,7 @@ export function Hero() {
                     return (
                       <div
                         key={item.title}
-                        className={`relative overflow-hidden rounded-[1.35rem] border px-4 py-4 sm:rounded-[1.5rem] ${
+                        className={`relative overflow-hidden rounded-[1.2rem] border px-3.5 py-3.5 sm:rounded-[1.5rem] sm:px-4 sm:py-4 ${
                           warm
                             ? "border-[#d68b1f]/22 bg-[linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,247,232,.9))]"
                             : "border-[#0f4e2f]/10 bg-[linear-gradient(180deg,rgba(255,255,255,.94),rgba(244,249,240,.9))]"
@@ -155,7 +155,7 @@ export function Hero() {
                         <div className="absolute inset-x-4 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(214,139,31,.25),transparent)]" />
                         <div className="flex items-start gap-3.5">
                           <div
-                            className={`mt-0.5 inline-flex rounded-[1.1rem] border p-2.5 ${
+                            className={`mt-0.5 inline-flex shrink-0 rounded-[1rem] border p-2.5 ${
                               warm
                                 ? "border-[#d68b1f]/26 bg-[#efbb5a]/16 text-[#a06413]"
                                 : "border-[#2b7a47]/16 bg-[#89b64a]/11 text-[#245f3a]"
@@ -164,10 +164,10 @@ export function Hero() {
                             <Icon className="h-[1.08rem] w-[1.08rem]" />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <div className={`text-[0.68rem] font-semibold uppercase tracking-[0.22em] ${warm ? "text-[#8d641d]" : "text-[#47614f]"}`}>
+                            <div className={`text-[0.62rem] font-semibold uppercase tracking-[0.18em] sm:text-[0.68rem] sm:tracking-[0.22em] ${warm ? "text-[#8d641d]" : "text-[#47614f]"}`}>
                               {item.title}
                             </div>
-                            <p className="mt-2.5 text-[0.95rem] leading-6 text-[#4c6555]">{item.text}</p>
+                            <p className="mt-2 text-[0.92rem] leading-6 text-[#4c6555] sm:mt-2.5 sm:text-[0.95rem]">{item.text}</p>
                           </div>
                         </div>
                       </div>

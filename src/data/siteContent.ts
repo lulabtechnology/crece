@@ -52,21 +52,21 @@ export const siteContent = {
       mobile: "/images/hero/hero-mobile.webp",
       gridOverlay: "/images/textures/grid-overlay.png"
     },
-    sideCardTitle: "Qué resuelve la consultoría de CRECE",
+    sideCardTitle: "Por qué contratar a CRECE",
     sideCardIntro:
-      "Una lectura financiera clara para empresas que necesitan control, criterio y acompañamiento ejecutivo.",
+      "Criterio financiero senior, atención cercana y una forma de trabajo que se adapta a lo que realmente necesita tu empresa.",
     sideCardItems: [
       {
-        title: "Diagnóstico financiero",
-        text: "Lectura clara de cifras, alertas y prioridades para decidir mejor." 
+        title: "Lectura financiera con criterio",
+        text: "No solo entrega datos: ayuda a interpretar cifras, riesgos y prioridades para tomar decisiones con mejor sustento."
       },
       {
-        title: "Valoración y planes de negocio",
-        text: "Valoración del negocio y planes con sustento financiero para decisiones clave." 
+        title: "Consultoría puntual",
+        text: "Para situaciones específicas o coyunturales que necesitan análisis claro, respuesta rápida y orientación precisa."
       },
       {
-        title: "Gerencia financiera tercerizada",
-        text: "Soporte externo para control, seguimiento y lectura ejecutiva sin agrandar la estructura." 
+        title: "Consultoría integral",
+        text: "Para necesidades estructurales que requieren orden, seguimiento, control y acompañamiento continuo del negocio."
       }
     ],
     bottomNote: "Para inversiones, financiamientos y capacitación ejecutiva, conoce la web principal de CRECE.",
@@ -100,9 +100,9 @@ export const siteContent = {
   },
   institutional: {
     id: "empresa",
-    title: "Una firma con criterio técnico, lectura ejecutiva del negocio y atención cercana.",
+    title: "Lo que hace diferente a CRECE.",
     description:
-      "CRECE es una firma de consultoría financiera e inversiones encabezada por Bolívar Lobo, con amplia experiencia en banca, finanzas, riesgos y formación ejecutiva. Su propuesta combina cercanía, lectura técnica y soluciones aplicadas a la realidad de cada cliente.",
+      "Experiencia financiera senior, lectura ejecutiva del negocio y acompañamiento cercano para aterrizar decisiones a la realidad de cada empresa.",
     image: "/images/sections/about-visual.webp",
     highlights: [
       "Consultoría financiera",
@@ -161,27 +161,27 @@ export const siteContent = {
   },
   services: {
     id: "consultoria",
-    title: "En qué consiste la consultoría de CRECE.",
+    title: "Qué tipo de apoyo puede contratar hoy tu empresa.",
     description:
-      "Diagnóstico, lectura financiera, control gerencial y acompañamiento externo para decisiones que necesitan mayor claridad y mejor sustento.",
+      "CRECE ofrece dos formas de acompañamiento: consultoría puntual para situaciones específicas, y consultoría integral para necesidades estructurales con seguimiento continuo.",
     image: "/images/sections/services-visual.webp",
     pillars: [
       {
-        title: "Consultoría financiera",
-        text: "Intervenciones puntuales o periódicas para analizar la empresa, revisar indicadores y apoyar decisiones relevantes."
+        title: "Consultoría puntual",
+        text: "Para coyunturas, decisiones concretas, evaluaciones específicas o situaciones que requieren criterio financiero inmediato."
       },
       {
-        title: "Gerencia financiera tercerizada",
-        text: "Acompañamiento externo para seguimiento, control, lectura ejecutiva y soporte continuo a la dirección del negocio."
+        title: "Consultoría integral",
+        text: "Para ordenar la estructura financiera, dar seguimiento, fortalecer el control y acompañar decisiones de manera continua."
       }
     ],
     list: [
-      "Diagnóstico financiero de la empresa",
-      "Valoración del negocio y de operaciones relevantes",
-      "Presupuesto financiero y control de gastos",
-      "Gestión de cuentas por pagar y por cobrar",
-      "Planificación financiera y de inversiones",
-      "Análisis de KPIs y estados financieros"
+      "Diagnóstico y lectura financiera del negocio",
+      "Priorización de alertas, riesgos y decisiones relevantes",
+      "Control gerencial, presupuesto y seguimiento",
+      "Valoración y sustento financiero para operaciones clave",
+      "Análisis de indicadores y estados financieros",
+      "Acompañamiento ejecutivo con enfoque práctico"
     ],
     advantages: [
       {
@@ -317,9 +317,9 @@ export const siteContent = {
   },
   contact: {
     id: "contacto",
-    title: "Hablemos de la necesidad financiera de tu empresa.",
+    title: "Conversemos sobre la necesidad financiera de tu empresa.",
     subtitle:
-      "Si estás evaluando consultoría financiera o gerencia financiera tercerizada, CRECE puede orientarte con una mirada clara, cercana y profesional.",
+      "Cuéntanos si hoy necesitas resolver una situación puntual o estructurar un acompañamiento más integral. CRECE te ayuda a definir el alcance correcto.",
     contactPerson: "Bolívar Lobo",
     role: "Consultoría financiera e inversiones",
     email: "bolivarlobo4@gmail.com",

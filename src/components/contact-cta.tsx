@@ -21,15 +21,15 @@ export function ContactCta() {
       </div>
 
       <Container>
-        <div className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[2.15rem] p-5 sm:rounded-[2.6rem] sm:p-8 lg:p-10">
+        <div className="crece-panel crece-premium-stroke relative overflow-hidden rounded-[2rem] p-4 sm:rounded-[2.6rem] sm:p-8 lg:p-10">
           <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(214,139,31,.34),rgba(43,122,71,.28),transparent)]" />
           <div className="grid items-start gap-8 sm:gap-12 lg:grid-cols-[.9fr_1.1fr]">
-            <div>
+            <div className="min-w-0">
               <SectionHeading eyebrow="Contacto" title={siteContent.contact.title} description={siteContent.contact.subtitle} />
 
-              <div className="mt-7 rounded-[1.7rem] border border-[#0f4e2f]/8 bg-[linear-gradient(180deg,rgba(16,58,35,.92),rgba(14,45,29,.88))] p-5 text-white shadow-[0_28px_68px_rgba(9,27,18,0.18)] sm:p-6">
+              <div className="mt-7 rounded-[1.55rem] border border-[#0f4e2f]/8 bg-[linear-gradient(180deg,rgba(16,58,35,.92),rgba(14,45,29,.88))] p-4 text-white shadow-[0_28px_68px_rgba(9,27,18,0.18)] sm:rounded-[1.7rem] sm:p-6">
                 <div className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/70">Atención directa</div>
-                <p className="crece-display mt-3 max-w-[26rem] text-balance text-[1.45rem] leading-[1.04] font-semibold tracking-[-0.05em] sm:text-[1.9rem]">
+                <p className="crece-display mt-3 max-w-[26rem] text-balance text-[1.28rem] leading-[1.06] font-semibold tracking-[-0.04em] sm:text-[1.9rem]">
                   Una conversación clara para entender qué necesita hoy tu empresa.
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -74,16 +74,16 @@ function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; la
   const content = (
     <>
       <div className="rounded-[1.15rem] border border-[#0f4e2f]/8 bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(18,52,34,0.06)]">{icon}</div>
-      <div>
+      <div className="min-w-0">
         <div className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#6d7d70]">{label}</div>
-        <div className="mt-1 text-sm font-medium text-[#173225] sm:text-[1.02rem]">{value}</div>
+        <div className="mt-1 min-w-0 break-words text-sm font-medium text-[#173225] sm:text-[1.02rem]">{value}</div>
         {secondary ? <div className="mt-1 text-sm text-[#5e7063]">{secondary}</div> : null}
       </div>
     </>
   );
 
   if (!href) {
-    return <div className="crece-panel-soft flex items-center gap-4 rounded-[1.55rem] px-4 py-4 sm:rounded-[1.75rem] sm:px-5 sm:py-5 text-left">{content}</div>;
+    return <div className="crece-panel-soft flex min-w-0 items-center gap-4 rounded-[1.55rem] px-4 py-4 sm:rounded-[1.75rem] sm:px-5 sm:py-5 text-left">{content}</div>;
   }
 
   return (
@@ -91,7 +91,7 @@ function InfoCard({ icon, label, value, href, secondary }: { icon: ReactNode; la
       href={href}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noreferrer" : undefined}
-      className="crece-panel-soft flex items-center gap-4 rounded-[1.55rem] px-4 py-4 sm:rounded-[1.75rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white"
+      className="crece-panel-soft flex min-w-0 items-center gap-4 rounded-[1.55rem] px-4 py-4 sm:rounded-[1.75rem] sm:px-5 sm:py-5 text-left transition-colors duration-300 hover:bg-white"
     >
       {content}
       <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-[#b57113]" />
