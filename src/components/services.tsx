@@ -54,20 +54,6 @@ export function Services() {
           </div>
         </div>
       </Container>
-
-      <Container>
-        <div className="mt-8 grid gap-4 sm:mt-10 md:grid-cols-2 xl:grid-cols-4">
-          {siteContent.services.advantages.map((item, index) => (
-            <article key={item.title} className="crece-panel crece-premium-stroke rounded-[1.6rem] p-5 sm:rounded-[1.8rem] sm:p-6">
-              <div className={`inline-flex rounded-full px-3 py-1 text-xs uppercase tracking-[0.22em] ${index % 2 === 0 ? "crece-outline-tag" : "crece-outline-tag--warm"}`}>
-                Ventaja {index + 1}
-              </div>
-              <h3 className="crece-display mt-5 text-[1.38rem] font-semibold text-[#173225]">{item.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-[#4f6658]">{item.text}</p>
-            </article>
-          ))}
-        </div>
-      </Container>
     </AnimatedSection>
   );
 }

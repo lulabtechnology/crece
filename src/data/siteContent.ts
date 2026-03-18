@@ -76,7 +76,7 @@ export const siteContent = {
     eyebrow: "Más información",
     title: "Otros servicios de CRECE disponibles en la web principal.",
     description:
-      "Esta landing se concentra en consultoría financiera. Si quieres explorar inversiones, financiamientos o capacitación, te conviene continuar en el sitio principal de CRECE.",
+      "Si quieres explorar inversiones, financiamientos o capacitación, te conviene continuar en el sitio principal de CRECE.",
     items: [
       {
         label: "Financiamientos",
@@ -202,7 +202,7 @@ export const siteContent = {
       }
     ],
     cta: {
-      label: "Hablar sobre consultoría",
+      label: "Para mas detalles",
       href: "#contacto"
     },
     websiteCta: {
